@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MailingModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MailingModelStoreContainer">
+    <EntitySet Name="Mailing" EntityType="MailingModel.Store.Mailing" store:Type="Tables" store:Schema="dbo" store:Name="Mailing">
+      <DefiningQuery>SELECT 
+      [Mailing].[id_mail] AS [id_mail], 
+      [Mailing].[id_tipo_mail] AS [id_tipo_mail], 
+      [Mailing].[mail_to] AS [mail_to], 
+      [Mailing].[fecha_solicitud] AS [fecha_solicitud], 
+      [Mailing].[id_agente_mail] AS [id_agente_mail], 
+      [Mailing].[fecha_envio] AS [fecha_envio], 
+      [Mailing].[id_estado_mail] AS [id_estado_mail], 
+      [Mailing].[mail_llave_externa] AS [mail_llave_externa], 
+      [Mailing].[retorno_server_mail] AS [retorno_server_mail]
+      FROM [dbo].[Mailing] AS [Mailing]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'mailing.dbo.Mailing' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Mailing">
+    <Key>
+      <PropertyRef Name="id_mail" />
+      <PropertyRef Name="id_tipo_mail" />
+      <PropertyRef Name="mail_to" />
+      <PropertyRef Name="fecha_solicitud" />
+      <PropertyRef Name="id_estado_mail" />
+    </Key>
+    <Property Name="id_mail" Type="int" Nullable="false" />
+    <Property Name="id_tipo_mail" Type="int" Nullable="false" />
+    <Property Name="mail_to" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="fecha_solicitud" Type="datetime" Nullable="false" />
+    <Property Name="id_agente_mail" Type="int" />
+    <Property Name="fecha_envio" Type="datetime" />
+    <Property Name="id_estado_mail" Type="smallint" Nullable="false" />
+    <Property Name="mail_llave_externa" Type="varchar" MaxLength="255" />
+    <Property Name="retorno_server_mail" Type="int" />
+  </EntityType>
+  <Function Name="proc_mail_confirmar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psAgenteMail" Type="varchar" Mode="In" />
+    <Parameter Name="piIdMail" Type="int" Mode="In" />
+    <Parameter Name="piRetServerMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_ConsultaPago" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="piIdCuenta" Type="int" Mode="In" />
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_ConsultaPagoGeneral" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="piIdPago" Type="bigint" Mode="In" />
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_ConsultaPagoGeneralNR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="piIdPago" Type="bigint" Mode="In" />
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_ConsultaPagoNR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="piIdCuenta" Type="bigint" Mode="In" />
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_enviar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+    <Parameter Name="psMailTo" Type="varchar" Mode="In" />
+    <Parameter Name="psMailLlaveExterna" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_html" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="piIdMail" Type="int" Mode="In" />
+    <Parameter Name="psMailTo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_ImagenesCorreo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="proc_mail_leer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psAgenteMail" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_leer_Efectivo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psIdMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_leer_encabezado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="piIdMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_leer_parametro" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+    <Parameter Name="piIdParametro" Type="int" Mode="In" />
+    <Parameter Name="psValorParametro" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="proc_mail_leer_tipo_01" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psLlaveExterna" Type="varchar" Mode="In" />
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+    <Parameter Name="piIdMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_leer_tipo_02" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psLlaveExterna" Type="varchar" Mode="In" />
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+    <Parameter Name="piIdMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_leer_tipo_03" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psLlaveExterna" Type="varchar" Mode="In" />
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+    <Parameter Name="piIdMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_leer_tipo_06" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psLlaveExterna" Type="varchar" Mode="In" />
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+    <Parameter Name="piIdMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_leer_tipo_07" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psLlaveExterna" Type="varchar" Mode="In" />
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+    <Parameter Name="piIdMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_leer_tipo_08" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psLlaveExterna" Type="varchar" Mode="In" />
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+    <Parameter Name="piIdMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_leer_tipo_09" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psLlaveExterna" Type="varchar" Mode="In" />
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+    <Parameter Name="piIdMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_leer_tipo_10" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psLlaveExterna" Type="varchar" Mode="In" />
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+    <Parameter Name="piIdMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_leer_tipo_11" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psLlaveExterna" Type="varchar" Mode="In" />
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+    <Parameter Name="piIdMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_leer_tipo_12" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psLlaveExterna" Type="varchar" Mode="In" />
+    <Parameter Name="piIdTipoMail" Type="int" Mode="In" />
+    <Parameter Name="piIdMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_leer1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psAgenteMail" Type="varchar" Mode="In" />
+    <Parameter Name="psIdMail" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="proc_mail_parser_var" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psMsg" Type="varchar" Mode="In" />
+    <Parameter Name="psTag" Type="varchar" Mode="In" />
+    <Parameter Name="psValor" Type="varchar" Mode="In" />
+    <Parameter Name="psMsgOut" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="proc_MarcaEnProceso" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idmailing" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_MarcaRespuestaEnvio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idmailing" Type="int" Mode="In" />
+    <Parameter Name="retorno" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_ObtenerDatosMail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdMail" Type="int" Mode="In" />
+  </Function>
+  <Function Name="proc_ObtenerHilos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="proc_ResetMail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idmailing" Type="int" Mode="In" />
+  </Function>
+  <Function Name="procU_Reemplazar_Acentos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="psTx_Original" Type="varchar" Mode="In" />
+    <Parameter Name="tiene_acento" Type="char" Mode="In" />
+    <Parameter Name="psTx_OriginalOut" Type="varchar" Mode="InOut" />
+  </Function>
+</Schema>

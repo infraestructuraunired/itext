@@ -1,0 +1,1050 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UniredModelStoreContainer" CdmEntityContainer="UniredEntities">
+    <EntitySetMapping Name="ImagenesCorreo">
+      <EntityTypeMapping TypeName="UniredModel.ImagenesCorreo">
+        <MappingFragment StoreEntitySet="ImagenesCorreo">
+          <ScalarProperty Name="IdImagenesCorreo" ColumnName="IdImagenesCorreo" />
+          <ScalarProperty Name="NombreImagen" ColumnName="NombreImagen" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="binario" ColumnName="binario" />
+          <ScalarProperty Name="Posicion" ColumnName="Posicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AbonoDinamico">
+      <EntityTypeMapping TypeName="UniredModel.AbonoDinamico">
+        <MappingFragment StoreEntitySet="AbonoDinamico">
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="IdEmpresaRubro" ColumnName="IdEmpresaRubro" />
+          <ScalarProperty Name="Largo" ColumnName="Largo" />
+          <ScalarProperty Name="TipoMetadato" ColumnName="TipoMetadato" />
+          <ScalarProperty Name="CodigoAtributo" ColumnName="CodigoAtributo" />
+          <ScalarProperty Name="NombreAtributo" ColumnName="NombreAtributo" />
+          <ScalarProperty Name="IdAbonoDinamico" ColumnName="IdAbonoDinamico" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Applications">
+      <EntityTypeMapping TypeName="UniredModel.Applications">
+        <MappingFragment StoreEntitySet="Applications">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AtributoImprimir">
+      <EntityTypeMapping TypeName="UniredModel.AtributoImprimir">
+        <MappingFragment StoreEntitySet="AtributoImprimir">
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="IdEmpresaRubro" ColumnName="IdEmpresaRubro" />
+          <ScalarProperty Name="Largo" ColumnName="Largo" />
+          <ScalarProperty Name="TipoMetadato" ColumnName="TipoMetadato" />
+          <ScalarProperty Name="CodigoAtributo" ColumnName="CodigoAtributo" />
+          <ScalarProperty Name="NombreAtributo" ColumnName="NombreAtributo" />
+          <ScalarProperty Name="IdAtributoImprimir" ColumnName="IdAtributoImprimir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AtributoInformar">
+      <EntityTypeMapping TypeName="UniredModel.AtributoInformar">
+        <MappingFragment StoreEntitySet="AtributoInformar">
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="posicion" ColumnName="posicion" />
+          <ScalarProperty Name="IdEmpresaRubro" ColumnName="IdEmpresaRubro" />
+          <ScalarProperty Name="Largo" ColumnName="Largo" />
+          <ScalarProperty Name="TipoMetadato" ColumnName="TipoMetadato" />
+          <ScalarProperty Name="CodigoAtributo" ColumnName="CodigoAtributo" />
+          <ScalarProperty Name="NombreAtributo" ColumnName="NombreAtributo" />
+          <ScalarProperty Name="IdAtributoInformar" ColumnName="IdAtributoInformar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AtributoNoLlave">
+      <EntityTypeMapping TypeName="UniredModel.AtributoNoLlave">
+        <MappingFragment StoreEntitySet="AtributoNoLlave">
+          <ScalarProperty Name="AtributoXML" ColumnName="AtributoXML" />
+          <ScalarProperty Name="IdDetalleCuenta" ColumnName="IdDetalleCuenta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CampoOrdenConsulta">
+      <EntityTypeMapping TypeName="UniredModel.CampoOrdenConsulta">
+        <MappingFragment StoreEntitySet="CampoOrdenConsulta">
+          <ScalarProperty Name="OrdenConsulta" ColumnName="OrdenConsulta" />
+          <ScalarProperty Name="ValorCampo" ColumnName="ValorCampo" />
+          <ScalarProperty Name="NombreCampo" ColumnName="NombreCampo" />
+          <ScalarProperty Name="IdDetalleCuenta" ColumnName="IdDetalleCuenta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Canal">
+      <EntityTypeMapping TypeName="UniredModel.Canal">
+        <MappingFragment StoreEntitySet="Canal">
+          <ScalarProperty Name="IdSucursal" ColumnName="IdSucursal" />
+          <ScalarProperty Name="TerminalXCash" ColumnName="TerminalXCash" />
+          <ScalarProperty Name="CanalXCash" ColumnName="CanalXCash" />
+          <ScalarProperty Name="IdExterno" ColumnName="IdExterno" />
+          <ScalarProperty Name="NombreCanal" ColumnName="NombreCanal" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="IdCanal" ColumnName="IdCanal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cliente">
+      <EntityTypeMapping TypeName="UniredModel.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="UrlImagenPerfil" ColumnName="UrlImagenPerfil" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="RecibeCartola" ColumnName="RecibeCartola" />
+          <ScalarProperty Name="RecibePromocion" ColumnName="RecibePromocion" />
+          <ScalarProperty Name="IdGrupoEtario" ColumnName="IdGrupoEtario" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="EmailAlternativo" ColumnName="EmailAlternativo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Dv" ColumnName="Dv" />
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="IdTermino" ColumnName="IdTermino" />
+          <ScalarProperty Name="IdDireccion" ColumnName="IdDireccion" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClienteExpress">
+      <EntityTypeMapping TypeName="UniredModel.ClienteExpress">
+        <MappingFragment StoreEntitySet="ClienteExpress">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Dv" ColumnName="Dv" />
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CodigoEmpresaImprimir">
+      <EntityTypeMapping TypeName="UniredModel.CodigoEmpresaImprimir">
+        <MappingFragment StoreEntitySet="CodigoEmpresaImprimir">
+          <ScalarProperty Name="IdAtributoImprimir" ColumnName="IdAtributoImprimir" />
+          <ScalarProperty Name="IdCuenta" ColumnName="IdCuenta" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="IDCodigoEmpresaImprimir" ColumnName="IDCodigoEmpresaImprimir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CodigoEmpresaInformar">
+      <EntityTypeMapping TypeName="UniredModel.CodigoEmpresaInformar">
+        <MappingFragment StoreEntitySet="CodigoEmpresaInformar">
+          <ScalarProperty Name="IdAtributoInformar" ColumnName="IdAtributoInformar" />
+          <ScalarProperty Name="IdDetalleCuenta" ColumnName="IdDetalleCuenta" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="IDCodigoEmpresaInformar" ColumnName="IDCodigoEmpresaInformar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comuna">
+      <EntityTypeMapping TypeName="UniredModel.Comuna">
+        <MappingFragment StoreEntitySet="Comuna">
+          <ScalarProperty Name="NombreComuna" ColumnName="NombreComuna" />
+          <ScalarProperty Name="IdProvincia" ColumnName="IdProvincia" />
+          <ScalarProperty Name="IdComuna" ColumnName="IdComuna" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConfigMantenedorPopUp">
+      <EntityTypeMapping TypeName="UniredModel.ConfigMantenedorPopUp">
+        <MappingFragment StoreEntitySet="ConfigMantenedorPopUp">
+          <ScalarProperty Name="TiempoRotacion" ColumnName="TiempoRotacion" />
+          <ScalarProperty Name="Habilitado" ColumnName="Habilitado" />
+          <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+          <ScalarProperty Name="IdTipoAmbiente" ColumnName="IdTipoAmbiente" />
+          <ScalarProperty Name="IdConfig" ColumnName="IdConfig" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Configuracion">
+      <EntityTypeMapping TypeName="UniredModel.Configuracion">
+        <MappingFragment StoreEntitySet="Configuracion">
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Encriptado" ColumnName="Encriptado" />
+          <ScalarProperty Name="ValorConfiguracion" ColumnName="ValorConfiguracion" />
+          <ScalarProperty Name="NombreConfiguracion" ColumnName="NombreConfiguracion" />
+          <ScalarProperty Name="IdConfiguracion" ColumnName="IdConfiguracion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConfiguracionCanal">
+      <EntityTypeMapping TypeName="UniredModel.ConfiguracionCanal">
+        <MappingFragment StoreEntitySet="ConfiguracionCanal">
+          <ScalarProperty Name="segundosRedirección" ColumnName="segundosRedirección" />
+          <ScalarProperty Name="UrlFracaso" ColumnName="UrlFracaso" />
+          <ScalarProperty Name="UrlExito" ColumnName="UrlExito" />
+          <ScalarProperty Name="CuentasMaximas" ColumnName="CuentasMaximas" />
+          <ScalarProperty Name="LLaveEncriptación" ColumnName="LLaveEncriptación" />
+          <ScalarProperty Name="IdCanal" ColumnName="IdCanal" />
+          <ScalarProperty Name="IdConfiguracionCanal" ColumnName="IdConfiguracionCanal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConfiguracionProcesoConsulta">
+      <EntityTypeMapping TypeName="UniredModel.ConfiguracionProcesoConsulta">
+        <MappingFragment StoreEntitySet="ConfiguracionProcesoConsulta">
+          <ScalarProperty Name="CargaFinalizada" ColumnName="CargaFinalizada" />
+          <ScalarProperty Name="TipoConsultaActiva" ColumnName="TipoConsultaActiva" />
+          <ScalarProperty Name="notificaErrores" ColumnName="notificaErrores" />
+          <ScalarProperty Name="observacionProceso" ColumnName="observacionProceso" />
+          <ScalarProperty Name="fechaEnvioReporte" ColumnName="fechaEnvioReporte" />
+          <ScalarProperty Name="fechaFinFiltro" ColumnName="fechaFinFiltro" />
+          <ScalarProperty Name="FechaInicioFiltro" ColumnName="FechaInicioFiltro" />
+          <ScalarProperty Name="permiteProceso" ColumnName="permiteProceso" />
+          <ScalarProperty Name="reporteEnviado" ColumnName="reporteEnviado" />
+          <ScalarProperty Name="permiteSinFecha" ColumnName="permiteSinFecha" />
+          <ScalarProperty Name="FrecuenciaEjecucion" ColumnName="FrecuenciaEjecucion" />
+          <ScalarProperty Name="consultasSimultaneas" ColumnName="consultasSimultaneas" />
+          <ScalarProperty Name="correoReporte" ColumnName="correoReporte" />
+          <ScalarProperty Name="maximoConsulta" ColumnName="maximoConsulta" />
+          <ScalarProperty Name="keyProcesoConsulta" ColumnName="keyProcesoConsulta" />
+          <ScalarProperty Name="idProcesoConsulta" ColumnName="idProcesoConsulta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConfigVisualMantenedorPopUp">
+      <EntityTypeMapping TypeName="UniredModel.ConfigVisualMantenedorPopUp">
+        <MappingFragment StoreEntitySet="ConfigVisualMantenedorPopUp">
+          <ScalarProperty Name="IdConfig" ColumnName="IdConfig" />
+          <ScalarProperty Name="TargetPag" ColumnName="TargetPag" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="NumeroImagen" ColumnName="NumeroImagen" />
+          <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+          <ScalarProperty Name="NombreImagen" ColumnName="NombreImagen" />
+          <ScalarProperty Name="IdConfigVisual" ColumnName="IdConfigVisual" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConsultaBoleta">
+      <EntityTypeMapping TypeName="UniredModel.ConsultaBoleta">
+        <MappingFragment StoreEntitySet="ConsultaBoleta">
+          <ScalarProperty Name="Desplegada" ColumnName="Desplegada" />
+          <ScalarProperty Name="IdCanal" ColumnName="IdCanal" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="FechaConsulta" ColumnName="FechaConsulta" />
+          <ScalarProperty Name="ConsultaNotificado" ColumnName="ConsultaNotificado" />
+          <ScalarProperty Name="MontoTotalConsulta" ColumnName="MontoTotalConsulta" />
+          <ScalarProperty Name="IdTipoCliente" ColumnName="IdTipoCliente" />
+          <ScalarProperty Name="IdEstadoBoleta" ColumnName="IdEstadoBoleta" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="IdConsultaBoleta" ColumnName="IdConsultaBoleta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacto">
+      <EntityTypeMapping TypeName="UniredModel.Contacto">
+        <MappingFragment StoreEntitySet="Contacto">
+          <ScalarProperty Name="Mensaje" ColumnName="Mensaje" />
+          <ScalarProperty Name="Asunto" ColumnName="Asunto" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="NombreContacto" ColumnName="NombreContacto" />
+          <ScalarProperty Name="IdContacto" ColumnName="IdContacto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cuenta">
+      <EntityTypeMapping TypeName="UniredModel.Cuenta">
+        <MappingFragment StoreEntitySet="Cuenta">
+          <ScalarProperty Name="CuentaPadre" ColumnName="CuentaPadre" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="FechaRespuestaConsulta" ColumnName="FechaRespuestaConsulta" />
+          <ScalarProperty Name="MontoCuenta" ColumnName="MontoCuenta" />
+          <ScalarProperty Name="IdCuenta" ColumnName="IdCuenta" />
+          <ScalarProperty Name="IdCuentaCliente" ColumnName="IdCuentaCliente" />
+          <ScalarProperty Name="IdConsultaBoleta" ColumnName="IdConsultaBoleta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CuentaCliente">
+      <EntityTypeMapping TypeName="UniredModel.CuentaCliente">
+        <MappingFragment StoreEntitySet="CuentaCliente">
+          <ScalarProperty Name="MontoUltimoPago" ColumnName="MontoUltimoPago" />
+          <ScalarProperty Name="UltimaFechaPago" ColumnName="UltimaFechaPago" />
+          <ScalarProperty Name="CuentaClientePadre" ColumnName="CuentaClientePadre" />
+          <ScalarProperty Name="CuentaEliminada" ColumnName="CuentaEliminada" />
+          <ScalarProperty Name="IgnoraCambio" ColumnName="IgnoraCambio" />
+          <ScalarProperty Name="CuentaValida" ColumnName="CuentaValida" />
+          <ScalarProperty Name="CuentaHabilitada" ColumnName="CuentaHabilitada" />
+          <ScalarProperty Name="clienteEliminado" ColumnName="clienteEliminado" />
+          <ScalarProperty Name="ClienteRegistrado" ColumnName="ClienteRegistrado" />
+          <ScalarProperty Name="NombreCuentaCliente" ColumnName="NombreCuentaCliente" />
+          <ScalarProperty Name="FechaInscripcion" ColumnName="FechaInscripcion" />
+          <ScalarProperty Name="IdGrupo" ColumnName="IdGrupo" />
+          <ScalarProperty Name="IdEmpresaRubro" ColumnName="IdEmpresaRubro" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="IdCuentaCliente" ColumnName="IdCuentaCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CuentaClienteExpress">
+      <EntityTypeMapping TypeName="UniredModel.CuentaClienteExpress">
+        <MappingFragment StoreEntitySet="CuentaClienteExpress">
+          <ScalarProperty Name="FechaInscripcion" ColumnName="FechaInscripcion" />
+          <ScalarProperty Name="IdEmpresaRubro" ColumnName="IdEmpresaRubro" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="IdCuentaCliente" ColumnName="IdCuentaCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CuentaConsultada">
+      <EntityTypeMapping TypeName="UniredModel.CuentaConsultada">
+        <MappingFragment StoreEntitySet="CuentaConsultada">
+          <ScalarProperty Name="observacionConsutla" ColumnName="observacionConsutla" />
+          <ScalarProperty Name="codigoRespuesta" ColumnName="codigoRespuesta" />
+          <ScalarProperty Name="FechaRespuestaConsulta" ColumnName="FechaRespuestaConsulta" />
+          <ScalarProperty Name="FechaInicioConsulta" ColumnName="FechaInicioConsulta" />
+          <ScalarProperty Name="idEstadoConsulta" ColumnName="idEstadoConsulta" />
+          <ScalarProperty Name="idCuentaRua" ColumnName="idCuentaRua" />
+          <ScalarProperty Name="numeroCuota" ColumnName="numeroCuota" />
+          <ScalarProperty Name="CampoAgrupado" ColumnName="CampoAgrupado" />
+          <ScalarProperty Name="pagoAgrupado" ColumnName="pagoAgrupado" />
+          <ScalarProperty Name="rua" ColumnName="rua" />
+          <ScalarProperty Name="idcliente" ColumnName="idcliente" />
+          <ScalarProperty Name="montoAdeudado" ColumnName="montoAdeudado" />
+          <ScalarProperty Name="fechaVencimiento" ColumnName="fechaVencimiento" />
+          <ScalarProperty Name="idCuentaCliente" ColumnName="idCuentaCliente" />
+          <ScalarProperty Name="idConfiguracion" ColumnName="idConfiguracion" />
+          <ScalarProperty Name="idCuentaConsultada" ColumnName="idCuentaConsultada" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CuentaProcesoConsulta">
+      <EntityTypeMapping TypeName="UniredModel.CuentaProcesoConsulta">
+        <MappingFragment StoreEntitySet="CuentaProcesoConsulta">
+          <ScalarProperty Name="IdEstadoConsulta" ColumnName="IdEstadoConsulta" />
+          <ScalarProperty Name="TipoConsulta" ColumnName="TipoConsulta" />
+          <ScalarProperty Name="EsRua" ColumnName="EsRua" />
+          <ScalarProperty Name="CampoAfectado" ColumnName="CampoAfectado" />
+          <ScalarProperty Name="MapaFechaVencimiento" ColumnName="MapaFechaVencimiento" />
+          <ScalarProperty Name="Identificador" ColumnName="Identificador" />
+          <ScalarProperty Name="TipoMetaDato" ColumnName="TipoMetaDato" />
+          <ScalarProperty Name="NombreIdentificador" ColumnName="NombreIdentificador" />
+          <ScalarProperty Name="CodigoInstrumento" ColumnName="CodigoInstrumento" />
+          <ScalarProperty Name="IdCuentaCliente" ColumnName="IdCuentaCliente" />
+          <ScalarProperty Name="IdProcesoConsulta" ColumnName="IdProcesoConsulta" />
+          <ScalarProperty Name="IdCuentaProcesoConsulta" ColumnName="IdCuentaProcesoConsulta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CuerpoMail">
+      <EntityTypeMapping TypeName="UniredModel.CuerpoMail">
+        <MappingFragment StoreEntitySet="CuerpoMail">
+          <ScalarProperty Name="CuerpoHtmlMail" ColumnName="CuerpoHtmlMail" />
+          <ScalarProperty Name="Correlativo" ColumnName="Correlativo" />
+          <ScalarProperty Name="IdTipoMail" ColumnName="IdTipoMail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleCuenta">
+      <EntityTypeMapping TypeName="UniredModel.DetalleCuenta">
+        <MappingFragment StoreEntitySet="DetalleCuenta">
+          <ScalarProperty Name="FechaFinValidacion" ColumnName="FechaFinValidacion" />
+          <ScalarProperty Name="FechaInicioValidacion" ColumnName="FechaInicioValidacion" />
+          <ScalarProperty Name="NumeroCuota" ColumnName="NumeroCuota" />
+          <ScalarProperty Name="NumeroDocumento" ColumnName="NumeroDocumento" />
+          <ScalarProperty Name="MontoCuenta" ColumnName="MontoCuenta" />
+          <ScalarProperty Name="FechaVctoCuenta" ColumnName="FechaVctoCuenta" />
+          <ScalarProperty Name="IdCuenta" ColumnName="IdCuenta" />
+          <ScalarProperty Name="IdDetalleCuenta" ColumnName="IdDetalleCuenta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleResumenPago">
+      <EntityTypeMapping TypeName="UniredModel.DetalleResumenPago">
+        <MappingFragment StoreEntitySet="DetalleResumenPago">
+          <ScalarProperty Name="TbkCodRespuesta" ColumnName="TbkCodRespuesta" />
+          <ScalarProperty Name="TbkMontoCuota" ColumnName="TbkMontoCuota" />
+          <ScalarProperty Name="Identificador" ColumnName="Identificador" />
+          <ScalarProperty Name="NombreEmpresaRubro" ColumnName="NombreEmpresaRubro" />
+          <ScalarProperty Name="IdEmpresaRubro" ColumnName="IdEmpresaRubro" />
+          <ScalarProperty Name="FechaInsercion" ColumnName="FechaInsercion" />
+          <ScalarProperty Name="NombreCuentaCliente" ColumnName="NombreCuentaCliente" />
+          <ScalarProperty Name="IdCuentaCliente" ColumnName="IdCuentaCliente" />
+          <ScalarProperty Name="TbkCodAutorizacion" ColumnName="TbkCodAutorizacion" />
+          <ScalarProperty Name="Numtarjeta" ColumnName="Numtarjeta" />
+          <ScalarProperty Name="NumCuotas" ColumnName="NumCuotas" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="DescripcionEstadoPago" ColumnName="DescripcionEstadoPago" />
+          <ScalarProperty Name="IdEstadoPago" ColumnName="IdEstadoPago" />
+          <ScalarProperty Name="OrdenTienda" ColumnName="OrdenTienda" />
+          <ScalarProperty Name="IdCuenta" ColumnName="IdCuenta" />
+          <ScalarProperty Name="IdDetalleCuenta" ColumnName="IdDetalleCuenta" />
+          <ScalarProperty Name="IdPagoDetalle" ColumnName="IdPagoDetalle" />
+          <ScalarProperty Name="IdPago" ColumnName="IdPago" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Direccion">
+      <EntityTypeMapping TypeName="UniredModel.Direccion">
+        <MappingFragment StoreEntitySet="Direccion">
+          <ScalarProperty Name="DescDireccion" ColumnName="DescDireccion" />
+          <ScalarProperty Name="IdDireccion" ColumnName="IdDireccion" />
+          <ScalarProperty Name="IdComuna" ColumnName="IdComuna" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empresa">
+      <EntityTypeMapping TypeName="UniredModel.Empresa">
+        <MappingFragment StoreEntitySet="Empresa">
+          <ScalarProperty Name="NombreEmpresa" ColumnName="NombreEmpresa" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="CodEmpresa" ColumnName="CodEmpresa" />
+          <ScalarProperty Name="IdEmpresa" ColumnName="IdEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmpresaRubro">
+      <EntityTypeMapping TypeName="UniredModel.EmpresaRubro">
+        <MappingFragment StoreEntitySet="EmpresaRubro">
+          <ScalarProperty Name="AceptaDeudaCero" ColumnName="AceptaDeudaCero" />
+          <ScalarProperty Name="TipoConsulta" ColumnName="TipoConsulta" />
+          <ScalarProperty Name="IdTipoAbono" ColumnName="IdTipoAbono" />
+          <ScalarProperty Name="nombreBoton" ColumnName="nombreBoton" />
+          <ScalarProperty Name="valida" ColumnName="valida" />
+          <ScalarProperty Name="CodigoTransbank" ColumnName="CodigoTransbank" />
+          <ScalarProperty Name="MapaFechaVencimiento" ColumnName="MapaFechaVencimiento" />
+          <ScalarProperty Name="CodigoInstrumento" ColumnName="CodigoInstrumento" />
+          <ScalarProperty Name="UrlLogoServicio" ColumnName="UrlLogoServicio" />
+          <ScalarProperty Name="AceptaAbono" ColumnName="AceptaAbono" />
+          <ScalarProperty Name="CarteraDesconocida" ColumnName="CarteraDesconocida" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="NombreServicio" ColumnName="NombreServicio" />
+          <ScalarProperty Name="IdRubro" ColumnName="IdRubro" />
+          <ScalarProperty Name="IdEmpresa" ColumnName="IdEmpresa" />
+          <ScalarProperty Name="IdEmpresaRubro" ColumnName="IdEmpresaRubro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstadoBoleta">
+      <EntityTypeMapping TypeName="UniredModel.EstadoBoleta">
+        <MappingFragment StoreEntitySet="EstadoBoleta">
+          <ScalarProperty Name="DescEstadoBoleta" ColumnName="DescEstadoBoleta" />
+          <ScalarProperty Name="IdEstadoBoleta" ColumnName="IdEstadoBoleta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstadoGeneral">
+      <EntityTypeMapping TypeName="UniredModel.EstadoGeneral">
+        <MappingFragment StoreEntitySet="EstadoGeneral">
+          <ScalarProperty Name="DescEstadoGeneral" ColumnName="DescEstadoGeneral" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstadoImagen">
+      <EntityTypeMapping TypeName="UniredModel.EstadoImagen">
+        <MappingFragment StoreEntitySet="EstadoImagen">
+          <ScalarProperty Name="DescEstadoImagen" ColumnName="DescEstadoImagen" />
+          <ScalarProperty Name="IdEstadoImagen" ColumnName="IdEstadoImagen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstadoMail">
+      <EntityTypeMapping TypeName="UniredModel.EstadoMail">
+        <MappingFragment StoreEntitySet="EstadoMail">
+          <ScalarProperty Name="DescEstadoMail" ColumnName="DescEstadoMail" />
+          <ScalarProperty Name="IdEstadoMail" ColumnName="IdEstadoMail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstadoNotificacion">
+      <EntityTypeMapping TypeName="UniredModel.EstadoNotificacion">
+        <MappingFragment StoreEntitySet="EstadoNotificacion">
+          <ScalarProperty Name="DescEstadoNotif" ColumnName="DescEstadoNotif" />
+          <ScalarProperty Name="IdEstadoNotificacion" ColumnName="IdEstadoNotificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstadoPago">
+      <EntityTypeMapping TypeName="UniredModel.EstadoPago">
+        <MappingFragment StoreEntitySet="EstadoPago">
+          <ScalarProperty Name="DescEstadoPago" ColumnName="DescEstadoPago" />
+          <ScalarProperty Name="IdEstadoPago" ColumnName="IdEstadoPago" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Feriado">
+      <EntityTypeMapping TypeName="UniredModel.Feriado">
+        <MappingFragment StoreEntitySet="Feriado">
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="IdFeriado" ColumnName="IdFeriado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormatoFechaEmpresaRubro">
+      <EntityTypeMapping TypeName="UniredModel.FormatoFechaEmpresaRubro">
+        <MappingFragment StoreEntitySet="FormatoFechaEmpresaRubro">
+          <ScalarProperty Name="formatofecha" ColumnName="formatofecha" />
+          <ScalarProperty Name="idEmpresaRubro" ColumnName="idEmpresaRubro" />
+          <ScalarProperty Name="idFormatoFechaEmpresaRubro" ColumnName="idFormatoFechaEmpresaRubro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grupo">
+      <EntityTypeMapping TypeName="UniredModel.Grupo">
+        <MappingFragment StoreEntitySet="Grupo">
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="NombreGrupo" ColumnName="NombreGrupo" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="IdGrupo" ColumnName="IdGrupo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GrupoEtario">
+      <EntityTypeMapping TypeName="UniredModel.GrupoEtario">
+        <MappingFragment StoreEntitySet="GrupoEtario">
+          <ScalarProperty Name="DescGrupoEtario" ColumnName="DescGrupoEtario" />
+          <ScalarProperty Name="IdGrupoEtario" ColumnName="IdGrupoEtario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Identificador">
+      <EntityTypeMapping TypeName="UniredModel.Identificador">
+        <MappingFragment StoreEntitySet="Identificador">
+          <ScalarProperty Name="IdentificadorHabilitado" ColumnName="IdentificadorHabilitado" />
+          <ScalarProperty Name="IdTipoMetaDato" ColumnName="IdTipoMetaDato" />
+          <ScalarProperty Name="UrlImagenIdentificador" ColumnName="UrlImagenIdentificador" />
+          <ScalarProperty Name="LargoIdentificador" ColumnName="LargoIdentificador" />
+          <ScalarProperty Name="EjemploIdentificador" ColumnName="EjemploIdentificador" />
+          <ScalarProperty Name="NombreIdentificador" ColumnName="NombreIdentificador" />
+          <ScalarProperty Name="DescIdentificador" ColumnName="DescIdentificador" />
+          <ScalarProperty Name="IdEmpresaRubro" ColumnName="IdEmpresaRubro" />
+          <ScalarProperty Name="IdIdentificador" ColumnName="IdIdentificador" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdentificadorCtaCli">
+      <EntityTypeMapping TypeName="UniredModel.IdentificadorCtaCli">
+        <MappingFragment StoreEntitySet="IdentificadorCtaCli">
+          <ScalarProperty Name="idTipoMetadato" ColumnName="idTipoMetadato" />
+          <ScalarProperty Name="Identificador" ColumnName="Identificador" />
+          <ScalarProperty Name="IdIdentificador" ColumnName="IdIdentificador" />
+          <ScalarProperty Name="IdCuentaCliente" ColumnName="IdCuentaCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdentificadorCtaCliExpress">
+      <EntityTypeMapping TypeName="UniredModel.IdentificadorCtaCliExpress">
+        <MappingFragment StoreEntitySet="IdentificadorCtaCliExpress">
+          <ScalarProperty Name="Identificador" ColumnName="Identificador" />
+          <ScalarProperty Name="IdIdentificador" ColumnName="IdIdentificador" />
+          <ScalarProperty Name="IdCuentaCliente" ColumnName="IdCuentaCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdentificadorPublicidad">
+      <EntityTypeMapping TypeName="UniredModel.IdentificadorPublicidad">
+        <MappingFragment StoreEntitySet="IdentificadorPublicidad">
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="IdPublicidad" ColumnName="IdPublicidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImagenEstilo">
+      <EntityTypeMapping TypeName="UniredModel.ImagenEstilo">
+        <MappingFragment StoreEntitySet="ImagenEstilo">
+          <ScalarProperty Name="UrlImagen" ColumnName="UrlImagen" />
+          <ScalarProperty Name="IdEstadoImagen" ColumnName="IdEstadoImagen" />
+          <ScalarProperty Name="IdImagen" ColumnName="IdImagen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IntentoCliente">
+      <EntityTypeMapping TypeName="UniredModel.IntentoCliente">
+        <MappingFragment StoreEntitySet="IntentoCliente">
+          <ScalarProperty Name="FechaIntento" ColumnName="FechaIntento" />
+          <ScalarProperty Name="IpIntento" ColumnName="IpIntento" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="IdIntento" ColumnName="IdIntento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IntentoPago">
+      <EntityTypeMapping TypeName="UniredModel.IntentoPago">
+        <MappingFragment StoreEntitySet="IntentoPago">
+          <ScalarProperty Name="IdtipoMedioPago" ColumnName="IdtipoMedioPago" />
+          <ScalarProperty Name="FechaRespuestaMP" ColumnName="FechaRespuestaMP" />
+          <ScalarProperty Name="IdPago" ColumnName="IdPago" />
+          <ScalarProperty Name="FechaIntentoPago" ColumnName="FechaIntentoPago" />
+          <ScalarProperty Name="IdMedioPago" ColumnName="IdMedioPago" />
+          <ScalarProperty Name="IdEstadoPago" ColumnName="IdEstadoPago" />
+          <ScalarProperty Name="IdIntentoPago" ColumnName="IdIntentoPago" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IntentoUsuario">
+      <EntityTypeMapping TypeName="UniredModel.IntentoUsuario">
+        <MappingFragment StoreEntitySet="IntentoUsuario">
+          <ScalarProperty Name="FechaIntento" ColumnName="FechaIntento" />
+          <ScalarProperty Name="PasswordIntento" ColumnName="PasswordIntento" />
+          <ScalarProperty Name="UsuarioIntento" ColumnName="UsuarioIntento" />
+          <ScalarProperty Name="EmailUsuario" ColumnName="EmailUsuario" />
+          <ScalarProperty Name="IpIntentoUsuario" ColumnName="IpIntentoUsuario" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdIntentoUsuario" ColumnName="IdIntentoUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MantenedorImagenes">
+      <EntityTypeMapping TypeName="UniredModel.MantenedorImagenes">
+        <MappingFragment StoreEntitySet="MantenedorImagenes">
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="binario" ColumnName="binario" />
+          <ScalarProperty Name="TARGET" ColumnName="TARGET" />
+          <ScalarProperty Name="Activa" ColumnName="Activa" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="Orden" ColumnName="Orden" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="RutaImagen" ColumnName="RutaImagen" />
+          <ScalarProperty Name="IdPublicidad" ColumnName="IdPublicidad" />
+          <ScalarProperty Name="idMantenedorImagenes" ColumnName="idMantenedorImagenes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedioPago">
+      <EntityTypeMapping TypeName="UniredModel.MedioPago">
+        <MappingFragment StoreEntitySet="MedioPago">
+          <ScalarProperty Name="Id_tipoMedioPago" ColumnName="Id_tipoMedioPago" />
+          <ScalarProperty Name="NombreMedioPago" ColumnName="NombreMedioPago" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="IdMedioPago" ColumnName="IdMedioPago" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MultiIndustria">
+      <EntityTypeMapping TypeName="UniredModel.MultiIndustria">
+        <MappingFragment StoreEntitySet="MultiIndustria">
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="FechaUltimaModificacion" ColumnName="FechaUltimaModificacion" />
+          <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+          <ScalarProperty Name="idRubro" ColumnName="idRubro" />
+          <ScalarProperty Name="idEmpresaRubro" ColumnName="idEmpresaRubro" />
+          <ScalarProperty Name="idMultiIndustria" ColumnName="idMultiIndustria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notificacion">
+      <EntityTypeMapping TypeName="UniredModel.Notificacion">
+        <MappingFragment StoreEntitySet="Notificacion">
+          <ScalarProperty Name="Habilitado" ColumnName="Habilitado" />
+          <ScalarProperty Name="NumIntento" ColumnName="NumIntento" />
+          <ScalarProperty Name="IdEstadoNotificacion" ColumnName="IdEstadoNotificacion" />
+          <ScalarProperty Name="FechaNotificacion" ColumnName="FechaNotificacion" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="IdPagoDetalle" ColumnName="IdPagoDetalle" />
+          <ScalarProperty Name="IdNotificacion" ColumnName="IdNotificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pago">
+      <EntityTypeMapping TypeName="UniredModel.Pago">
+        <MappingFragment StoreEntitySet="Pago">
+          <ScalarProperty Name="IdTipoMP" ColumnName="IdTipoMP" />
+          <ScalarProperty Name="TbkToken" ColumnName="TbkToken" />
+          <ScalarProperty Name="FechaRegistroNotificacion" ColumnName="FechaRegistroNotificacion" />
+          <ScalarProperty Name="FechaPago" ColumnName="FechaPago" />
+          <ScalarProperty Name="IdEstadoPago" ColumnName="IdEstadoPago" />
+          <ScalarProperty Name="Cub" ColumnName="Cub" />
+          <ScalarProperty Name="TicketXCash" ColumnName="TicketXCash" />
+          <ScalarProperty Name="FolioXCash" ColumnName="FolioXCash" />
+          <ScalarProperty Name="FechaContable" ColumnName="FechaContable" />
+          <ScalarProperty Name="CodigoTbk" ColumnName="CodigoTbk" />
+          <ScalarProperty Name="IdConsultaBoleta" ColumnName="IdConsultaBoleta" />
+          <ScalarProperty Name="IdPago" ColumnName="IdPago" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PagoDetalleBoleta">
+      <EntityTypeMapping TypeName="UniredModel.PagoDetalleBoleta">
+        <MappingFragment StoreEntitySet="PagoDetalleBoleta">
+          <ScalarProperty Name="Notificado" ColumnName="Notificado" />
+          <ScalarProperty Name="TipoPago" ColumnName="TipoPago" />
+          <ScalarProperty Name="TbkMontoTienda" ColumnName="TbkMontoTienda" />
+          <ScalarProperty Name="TbkCodRespuesta" ColumnName="TbkCodRespuesta" />
+          <ScalarProperty Name="TbkMontoCuota" ColumnName="TbkMontoCuota" />
+          <ScalarProperty Name="IdIntentoPago" ColumnName="IdIntentoPago" />
+          <ScalarProperty Name="IdEstadoPago" ColumnName="IdEstadoPago" />
+          <ScalarProperty Name="MontoPagado" ColumnName="MontoPagado" />
+          <ScalarProperty Name="TbkIdTrx" ColumnName="TbkIdTrx" />
+          <ScalarProperty Name="TbkNumTarjeta" ColumnName="TbkNumTarjeta" />
+          <ScalarProperty Name="TbkCodAutoriza" ColumnName="TbkCodAutoriza" />
+          <ScalarProperty Name="TbkNumCuota" ColumnName="TbkNumCuota" />
+          <ScalarProperty Name="TbkTipoPago" ColumnName="TbkTipoPago" />
+          <ScalarProperty Name="IdTurno" ColumnName="IdTurno" />
+          <ScalarProperty Name="IdPago" ColumnName="IdPago" />
+          <ScalarProperty Name="IdDetalleCuenta" ColumnName="IdDetalleCuenta" />
+          <ScalarProperty Name="IdPagoDetalle" ColumnName="IdPagoDetalle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParametrosConsulta">
+      <EntityTypeMapping TypeName="UniredModel.ParametrosConsulta">
+        <MappingFragment StoreEntitySet="ParametrosConsulta">
+          <ScalarProperty Name="FechaNotificacion" ColumnName="FechaNotificacion" />
+          <ScalarProperty Name="Notificado" ColumnName="Notificado" />
+          <ScalarProperty Name="Procesado" ColumnName="Procesado" />
+          <ScalarProperty Name="Pagado" ColumnName="Pagado" />
+          <ScalarProperty Name="FechaPago" ColumnName="FechaPago" />
+          <ScalarProperty Name="FechaDespliegue" ColumnName="FechaDespliegue" />
+          <ScalarProperty Name="IdTicketEncriptado" ColumnName="IdTicketEncriptado" />
+          <ScalarProperty Name="IdTransaccionExterna" ColumnName="IdTransaccionExterna" />
+          <ScalarProperty Name="UrlFracaso" ColumnName="UrlFracaso" />
+          <ScalarProperty Name="UrlExito" ColumnName="UrlExito" />
+          <ScalarProperty Name="IdConsultaBoleta" ColumnName="IdConsultaBoleta" />
+          <ScalarProperty Name="IdParametrosConsulta" ColumnName="IdParametrosConsulta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PortalDisponible">
+      <EntityTypeMapping TypeName="UniredModel.PortalDisponible">
+        <MappingFragment StoreEntitySet="PortalDisponible">
+          <ScalarProperty Name="Disponible" ColumnName="Disponible" />
+          <ScalarProperty Name="FechaFin" ColumnName="FechaFin" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="IdPortalDisponible" ColumnName="IdPortalDisponible" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profiles">
+      <EntityTypeMapping TypeName="UniredModel.Profiles">
+        <MappingFragment StoreEntitySet="Profiles">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Promociones">
+      <EntityTypeMapping TypeName="UniredModel.Promociones">
+        <MappingFragment StoreEntitySet="Promociones">
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="Promocion" ColumnName="Promocion" />
+          <ScalarProperty Name="NombrePromocion" ColumnName="NombrePromocion" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="NombreLogo" ColumnName="NombreLogo" />
+          <ScalarProperty Name="Bases" ColumnName="Bases" />
+          <ScalarProperty Name="NombreBases" ColumnName="NombreBases" />
+          <ScalarProperty Name="TextoBases" ColumnName="TextoBases" />
+          <ScalarProperty Name="PermiteBases" ColumnName="PermiteBases" />
+          <ScalarProperty Name="PermiteLink" ColumnName="PermiteLink" />
+          <ScalarProperty Name="NombreLink" ColumnName="NombreLink" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Contenido" ColumnName="Contenido" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="IdPromocion" ColumnName="IdPromocion" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provincia">
+      <EntityTypeMapping TypeName="UniredModel.Provincia">
+        <MappingFragment StoreEntitySet="Provincia">
+          <ScalarProperty Name="NombreProvincia" ColumnName="NombreProvincia" />
+          <ScalarProperty Name="IdRegion" ColumnName="IdRegion" />
+          <ScalarProperty Name="IdProvincia" ColumnName="IdProvincia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prueba_HTML_CORREO">
+      <EntityTypeMapping TypeName="UniredModel.prueba_HTML_CORREO">
+        <MappingFragment StoreEntitySet="prueba_HTML_CORREO">
+          <ScalarProperty Name="texto" ColumnName="texto" />
+          <ScalarProperty Name="IDLINEA" ColumnName="IDLINEA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prueba_insercion2">
+      <EntityTypeMapping TypeName="UniredModel.prueba_insercion2">
+        <MappingFragment StoreEntitySet="prueba_insercion2">
+          <ScalarProperty Name="texto" ColumnName="texto" />
+          <ScalarProperty Name="IDLINEA" ColumnName="IDLINEA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Region">
+      <EntityTypeMapping TypeName="UniredModel.Region">
+        <MappingFragment StoreEntitySet="Region">
+          <ScalarProperty Name="NombreRegion" ColumnName="NombreRegion" />
+          <ScalarProperty Name="IdRegion" ColumnName="IdRegion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReglaPresentacion">
+      <EntityTypeMapping TypeName="UniredModel.ReglaPresentacion">
+        <MappingFragment StoreEntitySet="ReglaPresentacion">
+          <ScalarProperty Name="NombreCampoAfectado" ColumnName="NombreCampoAfectado" />
+          <ScalarProperty Name="CampoAfectado" ColumnName="CampoAfectado" />
+          <ScalarProperty Name="IdTipoCartera" ColumnName="IdTipoCartera" />
+          <ScalarProperty Name="IdEmpresaRubro" ColumnName="IdEmpresaRubro" />
+          <ScalarProperty Name="IdRegla" ColumnName="IdRegla" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RestriccionEPSCanal">
+      <EntityTypeMapping TypeName="UniredModel.RestriccionEPSCanal">
+        <MappingFragment StoreEntitySet="RestriccionEPSCanal">
+          <ScalarProperty Name="IdEmpresaRubro" ColumnName="IdEmpresaRubro" />
+          <ScalarProperty Name="IdCanal" ColumnName="IdCanal" />
+          <ScalarProperty Name="IdRestriccion" ColumnName="IdRestriccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResumenPago">
+      <EntityTypeMapping TypeName="UniredModel.ResumenPago">
+        <MappingFragment StoreEntitySet="ResumenPago">
+          <ScalarProperty Name="Turno" ColumnName="Turno" />
+          <ScalarProperty Name="Cub" ColumnName="Cub" />
+          <ScalarProperty Name="DescripcionEstadoPago" ColumnName="DescripcionEstadoPago" />
+          <ScalarProperty Name="EstadoPago" ColumnName="EstadoPago" />
+          <ScalarProperty Name="idConsultaBoleta" ColumnName="idConsultaBoleta" />
+          <ScalarProperty Name="MontoPago" ColumnName="MontoPago" />
+          <ScalarProperty Name="NombreCliente" ColumnName="NombreCliente" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Registrado" ColumnName="Registrado" />
+          <ScalarProperty Name="dv" ColumnName="dv" />
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="FechaEnvioMail" ColumnName="FechaEnvioMail" />
+          <ScalarProperty Name="MailEnviado" ColumnName="MailEnviado" />
+          <ScalarProperty Name="Web" ColumnName="Web" />
+          <ScalarProperty Name="Canal" ColumnName="Canal" />
+          <ScalarProperty Name="DescripcionMedioPago" ColumnName="DescripcionMedioPago" />
+          <ScalarProperty Name="MedioPago" ColumnName="MedioPago" />
+          <ScalarProperty Name="Ticket" ColumnName="Ticket" />
+          <ScalarProperty Name="Folio" ColumnName="Folio" />
+          <ScalarProperty Name="FechaContable" ColumnName="FechaContable" />
+          <ScalarProperty Name="FechaPago" ColumnName="FechaPago" />
+          <ScalarProperty Name="FechaInserción" ColumnName="FechaInserción" />
+          <ScalarProperty Name="IdPago" ColumnName="IdPago" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="UniredModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rubro">
+      <EntityTypeMapping TypeName="UniredModel.Rubro">
+        <MappingFragment StoreEntitySet="Rubro">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NombreRubro" ColumnName="NombreRubro" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="IdRubro" ColumnName="IdRubro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiciosProceso">
+      <EntityTypeMapping TypeName="UniredModel.ServiciosProceso">
+        <MappingFragment StoreEntitySet="ServiciosProceso">
+          <ScalarProperty Name="idEmpresaRubro" ColumnName="idEmpresaRubro" />
+          <ScalarProperty Name="idConfiguracion" ColumnName="idConfiguracion" />
+          <ScalarProperty Name="idServiciosProceso" ColumnName="idServiciosProceso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sucursal">
+      <EntityTypeMapping TypeName="UniredModel.Sucursal">
+        <MappingFragment StoreEntitySet="Sucursal">
+          <ScalarProperty Name="IdZona" ColumnName="IdZona" />
+          <ScalarProperty Name="Sucursal1" ColumnName="Sucursal" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="DireccionSucursal" ColumnName="DireccionSucursal" />
+          <ScalarProperty Name="IdComuna" ColumnName="IdComuna" />
+          <ScalarProperty Name="IdSucursal" ColumnName="IdSucursal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="UniredModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TerminoCondicion">
+      <EntityTypeMapping TypeName="UniredModel.TerminoCondicion">
+        <MappingFragment StoreEntitySet="TerminoCondicion">
+          <ScalarProperty Name="FechaIngresoTermino" ColumnName="FechaIngresoTermino" />
+          <ScalarProperty Name="UrlTerminoCondicion" ColumnName="UrlTerminoCondicion" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="IdTermino" ColumnName="IdTermino" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_MedioPago">
+      <EntityTypeMapping TypeName="UniredModel.Tipo_MedioPago">
+        <MappingFragment StoreEntitySet="Tipo_MedioPago">
+          <ScalarProperty Name="UrlHubPago" ColumnName="UrlHubPago" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Id_tipoMedioPago" ColumnName="Id_tipoMedioPago" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoAbono">
+      <EntityTypeMapping TypeName="UniredModel.TipoAbono">
+        <MappingFragment StoreEntitySet="TipoAbono">
+          <ScalarProperty Name="NombreTipoAbono" ColumnName="NombreTipoAbono" />
+          <ScalarProperty Name="IdTipoAbono" ColumnName="IdTipoAbono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoCartera">
+      <EntityTypeMapping TypeName="UniredModel.TipoCartera">
+        <MappingFragment StoreEntitySet="TipoCartera">
+          <ScalarProperty Name="DescTipoCartera" ColumnName="DescTipoCartera" />
+          <ScalarProperty Name="IdTipoCartera" ColumnName="IdTipoCartera" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoCliente">
+      <EntityTypeMapping TypeName="UniredModel.TipoCliente">
+        <MappingFragment StoreEntitySet="TipoCliente">
+          <ScalarProperty Name="TipoCliente1" ColumnName="TipoCliente" />
+          <ScalarProperty Name="IdTipoCliente" ColumnName="IdTipoCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoMail">
+      <EntityTypeMapping TypeName="UniredModel.TipoMail">
+        <MappingFragment StoreEntitySet="TipoMail">
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="DescTipoMail" ColumnName="DescTipoMail" />
+          <ScalarProperty Name="IdTipoMail" ColumnName="IdTipoMail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoMetaDato">
+      <EntityTypeMapping TypeName="UniredModel.TipoMetaDato">
+        <MappingFragment StoreEntitySet="TipoMetaDato">
+          <ScalarProperty Name="ProcValidacion" ColumnName="ProcValidacion" />
+          <ScalarProperty Name="TipoMetaDato1" ColumnName="TipoMetaDato" />
+          <ScalarProperty Name="IdTipoMetaDato" ColumnName="IdTipoMetaDato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Turno">
+      <EntityTypeMapping TypeName="UniredModel.Turno">
+        <MappingFragment StoreEntitySet="Turno">
+          <ScalarProperty Name="IdCanal" ColumnName="IdCanal" />
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="FechaCierreTurno" ColumnName="FechaCierreTurno" />
+          <ScalarProperty Name="IdTurno" ColumnName="IdTurno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="URLPermitidaCanal">
+      <EntityTypeMapping TypeName="UniredModel.URLPermitidaCanal">
+        <MappingFragment StoreEntitySet="URLPermitidaCanal">
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="IdCanal" ColumnName="IdCanal" />
+          <ScalarProperty Name="idUrlCanal" ColumnName="idUrlCanal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="UniredModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="FailedPasswordAttempCount" ColumnName="FailedPasswordAttempCount" />
+          <ScalarProperty Name="LastPasswordDate" ColumnName="LastPasswordDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="LastActivity" ColumnName="LastActivity" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="UniredModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="EmailUsuario" ColumnName="EmailUsuario" />
+          <ScalarProperty Name="PasswordUsuario" ColumnName="PasswordUsuario" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="DvUsuario" ColumnName="DvUsuario" />
+          <ScalarProperty Name="RutUsuario" ColumnName="RutUsuario" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zona">
+      <EntityTypeMapping TypeName="UniredModel.Zona">
+        <MappingFragment StoreEntitySet="Zona">
+          <ScalarProperty Name="DescZona" ColumnName="DescZona" />
+          <ScalarProperty Name="IdZona" ColumnName="IdZona" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="CanalMedioPago" TypeName="UniredModel.CanalMedioPago" StoreEntitySet="CanalMedioPago">
+      <EndProperty Name="MedioPago">
+        <ScalarProperty Name="IdMedioPago" ColumnName="IdMedioPago" />
+      </EndProperty>
+      <EndProperty Name="Canal">
+        <ScalarProperty Name="IdCanal" ColumnName="IdCanal" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="EmpresaRubroMP" TypeName="UniredModel.EmpresaRubroMP" StoreEntitySet="EmpresaRubroMP">
+      <EndProperty Name="MedioPago">
+        <ScalarProperty Name="IdMedioPago" ColumnName="IdMedioPago" />
+      </EndProperty>
+      <EndProperty Name="EmpresaRubro">
+        <ScalarProperty Name="IdEmpresaRubro" ColumnName="IdEmpresaRubro" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="GrupoImagenEstilo" TypeName="UniredModel.GrupoImagenEstilo" StoreEntitySet="GrupoImagenEstilo">
+      <EndProperty Name="Grupo">
+        <ScalarProperty Name="IdGrupo" ColumnName="IdGrupo" />
+      </EndProperty>
+      <EndProperty Name="ImagenEstilo">
+        <ScalarProperty Name="IdImagen" ColumnName="IdImagen" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="RolInProfile" TypeName="UniredModel.RolInProfile" StoreEntitySet="RolInProfile">
+      <EndProperty Name="Roles">
+        <ScalarProperty Name="Id" ColumnName="RolId" />
+      </EndProperty>
+      <EndProperty Name="Profiles">
+        <ScalarProperty Name="Id" ColumnName="ProfileId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UsersInProfile" TypeName="UniredModel.UsersInProfile" StoreEntitySet="UsersInProfile">
+      <EndProperty Name="Users">
+        <ScalarProperty Name="UserName" ColumnName="UserName" />
+      </EndProperty>
+      <EndProperty Name="Profiles">
+        <ScalarProperty Name="Id" ColumnName="ProfileId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MailModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Mailing">
+    <Key>
+      <PropertyRef Name="id_mail" />
+      <PropertyRef Name="id_tipo_mail" />
+      <PropertyRef Name="mail_to" />
+      <PropertyRef Name="fecha_solicitud" />
+      <PropertyRef Name="id_estado_mail" />
+    </Key>
+    <Property Name="id_mail" Type="Int32" Nullable="false" />
+    <Property Name="id_tipo_mail" Type="Int32" Nullable="false" />
+    <Property Name="mail_to" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fecha_solicitud" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="id_agente_mail" Type="Int32" />
+    <Property Name="fecha_envio" Type="DateTime" Precision="3" />
+    <Property Name="id_estado_mail" Type="Int16" Nullable="false" />
+    <Property Name="mail_llave_externa" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="retorno_server_mail" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="MailEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Mailing" EntityType="Self.Mailing" />
+    <FunctionImport Name="proc_mail_leer">
+      <Parameter Name="psAgenteMail" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="Mailing_3Columnas" EntityType="MailModel.Mailing_3Columnas" />
+    <FunctionImport Name="proc_mail_leer1" ReturnType="Collection(MailModel.proc_mail_leer1_Result)">
+      <Parameter Name="psAgenteMail" Mode="In" Type="String" />
+      <Parameter Name="psIdMail" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MarcaRespuestaEnvio">
+      <Parameter Name="idmailing" Mode="In" Type="Int32" />
+      <Parameter Name="retorno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_confirmar">
+      <Parameter Name="psAgenteMail" Mode="In" Type="String" />
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+      <Parameter Name="piRetServerMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer_encabezado">
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MarcaEnProceso">
+      <Parameter Name="idmailing" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_MarcaEnProceso">
+      <Parameter Name="idmailing" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_MarcaRespuestaEnvio">
+      <Parameter Name="idmailing" Mode="In" Type="Int32" />
+      <Parameter Name="retorno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_ResetMail">
+      <Parameter Name="idmailing" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="Mailing_3Columnas">
+    <Key>
+      <PropertyRef Name="idMailing3" />
+    </Key>
+    <Property Name="idMailing3" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="columna1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="columna2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="columna3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <ComplexType Name="proc_mail_leer1_Result">
+    <Property Type="String" Name="cl1" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="cl2" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="cl3" Nullable="true" />
+  </ComplexType>
+</Schema>

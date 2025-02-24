@@ -1,0 +1,2604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UniredModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="UniredModelStoreContainer">
+    <EntitySet Name="AbonoDinamico" EntityType="UniredModel.Store.AbonoDinamico" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Applications" EntityType="UniredModel.Store.Applications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AtributoImprimir" EntityType="UniredModel.Store.AtributoImprimir" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AtributoInformar" EntityType="UniredModel.Store.AtributoInformar" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AtributoNoLlave" EntityType="UniredModel.Store.AtributoNoLlave" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CampoOrdenConsulta" EntityType="UniredModel.Store.CampoOrdenConsulta" store:Type="Tables" store:Schema="dbo" store:Name="CampoOrdenConsulta">
+      <DefiningQuery>SELECT 
+      [CampoOrdenConsulta].[IdDetalleCuenta] AS [IdDetalleCuenta], 
+      [CampoOrdenConsulta].[NombreCampo] AS [NombreCampo], 
+      [CampoOrdenConsulta].[ValorCampo] AS [ValorCampo], 
+      [CampoOrdenConsulta].[OrdenConsulta] AS [OrdenConsulta]
+      FROM [dbo].[CampoOrdenConsulta] AS [CampoOrdenConsulta]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Canal" EntityType="UniredModel.Store.Canal" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CanalMedioPago" EntityType="UniredModel.Store.CanalMedioPago" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cliente" EntityType="UniredModel.Store.Cliente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ClienteExpress" EntityType="UniredModel.Store.ClienteExpress" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CodigoEmpresaImprimir" EntityType="UniredModel.Store.CodigoEmpresaImprimir" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CodigoEmpresaInformar" EntityType="UniredModel.Store.CodigoEmpresaInformar" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Comuna" EntityType="UniredModel.Store.Comuna" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ConfigMantenedorPopUp" EntityType="UniredModel.Store.ConfigMantenedorPopUp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Configuracion" EntityType="UniredModel.Store.Configuracion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ConfiguracionCanal" EntityType="UniredModel.Store.ConfiguracionCanal" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ConfiguracionProcesoConsulta" EntityType="UniredModel.Store.ConfiguracionProcesoConsulta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ConfigVisualMantenedorPopUp" EntityType="UniredModel.Store.ConfigVisualMantenedorPopUp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ConsultaBoleta" EntityType="UniredModel.Store.ConsultaBoleta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Contacto" EntityType="UniredModel.Store.Contacto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cuenta" EntityType="UniredModel.Store.Cuenta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CuentaCliente" EntityType="UniredModel.Store.CuentaCliente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CuentaClienteExpress" EntityType="UniredModel.Store.CuentaClienteExpress" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CuentaConsultada" EntityType="UniredModel.Store.CuentaConsultada" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CuentaProcesoConsulta" EntityType="UniredModel.Store.CuentaProcesoConsulta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CuerpoMail" EntityType="UniredModel.Store.CuerpoMail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DetalleCuenta" EntityType="UniredModel.Store.DetalleCuenta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DetalleResumenPago" EntityType="UniredModel.Store.DetalleResumenPago" store:Type="Tables" store:Schema="dbo" store:Name="DetalleResumenPago">
+      <DefiningQuery>SELECT 
+      [DetalleResumenPago].[IdPago] AS [IdPago], 
+      [DetalleResumenPago].[IdPagoDetalle] AS [IdPagoDetalle], 
+      [DetalleResumenPago].[IdDetalleCuenta] AS [IdDetalleCuenta], 
+      [DetalleResumenPago].[IdCuenta] AS [IdCuenta], 
+      [DetalleResumenPago].[OrdenTienda] AS [OrdenTienda], 
+      [DetalleResumenPago].[IdEstadoPago] AS [IdEstadoPago], 
+      [DetalleResumenPago].[DescripcionEstadoPago] AS [DescripcionEstadoPago], 
+      [DetalleResumenPago].[Monto] AS [Monto], 
+      [DetalleResumenPago].[NumCuotas] AS [NumCuotas], 
+      [DetalleResumenPago].[Numtarjeta] AS [Numtarjeta], 
+      [DetalleResumenPago].[TbkCodAutorizacion] AS [TbkCodAutorizacion], 
+      [DetalleResumenPago].[IdCuentaCliente] AS [IdCuentaCliente], 
+      [DetalleResumenPago].[NombreCuentaCliente] AS [NombreCuentaCliente], 
+      [DetalleResumenPago].[FechaInsercion] AS [FechaInsercion], 
+      [DetalleResumenPago].[IdEmpresaRubro] AS [IdEmpresaRubro], 
+      [DetalleResumenPago].[NombreEmpresaRubro] AS [NombreEmpresaRubro], 
+      [DetalleResumenPago].[Identificador] AS [Identificador], 
+      [DetalleResumenPago].[TbkMontoCuota] AS [TbkMontoCuota], 
+      [DetalleResumenPago].[TbkCodRespuesta] AS [TbkCodRespuesta]
+      FROM [dbo].[DetalleResumenPago] AS [DetalleResumenPago]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Direccion" EntityType="UniredModel.Store.Direccion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Empresa" EntityType="UniredModel.Store.Empresa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmpresaRubro" EntityType="UniredModel.Store.EmpresaRubro" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmpresaRubroMP" EntityType="UniredModel.Store.EmpresaRubroMP" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EstadoBoleta" EntityType="UniredModel.Store.EstadoBoleta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EstadoGeneral" EntityType="UniredModel.Store.EstadoGeneral" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EstadoImagen" EntityType="UniredModel.Store.EstadoImagen" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EstadoMail" EntityType="UniredModel.Store.EstadoMail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EstadoNotificacion" EntityType="UniredModel.Store.EstadoNotificacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EstadoPago" EntityType="UniredModel.Store.EstadoPago" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Feriado" EntityType="UniredModel.Store.Feriado" store:Type="Tables" store:Schema="dbo" store:Name="Feriado">
+      <DefiningQuery>SELECT 
+      [Feriado].[IdFeriado] AS [IdFeriado], 
+      [Feriado].[Fecha] AS [Fecha], 
+      [Feriado].[Descripcion] AS [Descripcion]
+      FROM [dbo].[Feriado] AS [Feriado]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="FormatoFechaEmpresaRubro" EntityType="UniredModel.Store.FormatoFechaEmpresaRubro" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Grupo" EntityType="UniredModel.Store.Grupo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GrupoEtario" EntityType="UniredModel.Store.GrupoEtario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GrupoImagenEstilo" EntityType="UniredModel.Store.GrupoImagenEstilo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Identificador" EntityType="UniredModel.Store.Identificador" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="IdentificadorCtaCli" EntityType="UniredModel.Store.IdentificadorCtaCli" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="IdentificadorCtaCliExpress" EntityType="UniredModel.Store.IdentificadorCtaCliExpress" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="IdentificadorPublicidad" EntityType="UniredModel.Store.IdentificadorPublicidad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ImagenesCorreo" EntityType="UniredModel.Store.ImagenesCorreo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ImagenEstilo" EntityType="UniredModel.Store.ImagenEstilo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="IntentoCliente" EntityType="UniredModel.Store.IntentoCliente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="IntentoPago" EntityType="UniredModel.Store.IntentoPago" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="IntentoUsuario" EntityType="UniredModel.Store.IntentoUsuario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MantenedorImagenes" EntityType="UniredModel.Store.MantenedorImagenes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MedioPago" EntityType="UniredModel.Store.MedioPago" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MultiIndustria" EntityType="UniredModel.Store.MultiIndustria" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Notificacion" EntityType="UniredModel.Store.Notificacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Pago" EntityType="UniredModel.Store.Pago" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PagoDetalleBoleta" EntityType="UniredModel.Store.PagoDetalleBoleta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ParametrosConsulta" EntityType="UniredModel.Store.ParametrosConsulta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PortalDisponible" EntityType="UniredModel.Store.PortalDisponible" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Profiles" EntityType="UniredModel.Store.Profiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Promociones" EntityType="UniredModel.Store.Promociones" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Provincia" EntityType="UniredModel.Store.Provincia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="prueba_HTML_CORREO" EntityType="UniredModel.Store.prueba_HTML_CORREO" store:Type="Tables" store:Schema="dbo" store:Name="prueba_HTML_CORREO">
+      <DefiningQuery>SELECT 
+      [prueba_HTML_CORREO].[IDLINEA] AS [IDLINEA], 
+      [prueba_HTML_CORREO].[texto] AS [texto]
+      FROM [dbo].[prueba_HTML_CORREO] AS [prueba_HTML_CORREO]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="prueba_insercion2" EntityType="UniredModel.Store.prueba_insercion2" store:Type="Tables" store:Schema="dbo" store:Name="prueba_insercion2">
+      <DefiningQuery>SELECT 
+      [prueba_insercion2].[IDLINEA] AS [IDLINEA], 
+      [prueba_insercion2].[texto] AS [texto]
+      FROM [dbo].[prueba_insercion2] AS [prueba_insercion2]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Region" EntityType="UniredModel.Store.Region" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ReglaPresentacion" EntityType="UniredModel.Store.ReglaPresentacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RestriccionEPSCanal" EntityType="UniredModel.Store.RestriccionEPSCanal" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ResumenPago" EntityType="UniredModel.Store.ResumenPago" store:Type="Tables" store:Schema="dbo" store:Name="ResumenPago">
+      <DefiningQuery>SELECT 
+      [ResumenPago].[IdPago] AS [IdPago], 
+      [ResumenPago].[FechaInserción] AS [FechaInserción], 
+      [ResumenPago].[FechaPago] AS [FechaPago], 
+      [ResumenPago].[FechaContable] AS [FechaContable], 
+      [ResumenPago].[Folio] AS [Folio], 
+      [ResumenPago].[Ticket] AS [Ticket], 
+      [ResumenPago].[MedioPago] AS [MedioPago], 
+      [ResumenPago].[DescripcionMedioPago] AS [DescripcionMedioPago], 
+      [ResumenPago].[Canal] AS [Canal], 
+      [ResumenPago].[Web] AS [Web], 
+      [ResumenPago].[MailEnviado] AS [MailEnviado], 
+      [ResumenPago].[FechaEnvioMail] AS [FechaEnvioMail], 
+      [ResumenPago].[IdCliente] AS [IdCliente], 
+      [ResumenPago].[Rut] AS [Rut], 
+      [ResumenPago].[dv] AS [dv], 
+      [ResumenPago].[Registrado] AS [Registrado], 
+      [ResumenPago].[Email] AS [Email], 
+      [ResumenPago].[NombreCliente] AS [NombreCliente], 
+      [ResumenPago].[MontoPago] AS [MontoPago], 
+      [ResumenPago].[idConsultaBoleta] AS [idConsultaBoleta], 
+      [ResumenPago].[EstadoPago] AS [EstadoPago], 
+      [ResumenPago].[DescripcionEstadoPago] AS [DescripcionEstadoPago], 
+      [ResumenPago].[Cub] AS [Cub], 
+      [ResumenPago].[Turno] AS [Turno]
+      FROM [dbo].[ResumenPago] AS [ResumenPago]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Roles" EntityType="UniredModel.Store.Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RolInProfile" EntityType="UniredModel.Store.RolInProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rubro" EntityType="UniredModel.Store.Rubro" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ServiciosProceso" EntityType="UniredModel.Store.ServiciosProceso" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sucursal" EntityType="UniredModel.Store.Sucursal" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="UniredModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TerminoCondicion" EntityType="UniredModel.Store.TerminoCondicion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tipo_MedioPago" EntityType="UniredModel.Store.Tipo_MedioPago" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TipoAbono" EntityType="UniredModel.Store.TipoAbono" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TipoCartera" EntityType="UniredModel.Store.TipoCartera" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TipoCliente" EntityType="UniredModel.Store.TipoCliente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TipoMail" EntityType="UniredModel.Store.TipoMail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TipoMetaDato" EntityType="UniredModel.Store.TipoMetaDato" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Turno" EntityType="UniredModel.Store.Turno" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="URLPermitidaCanal" EntityType="UniredModel.Store.URLPermitidaCanal" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="UniredModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UsersInProfile" EntityType="UniredModel.Store.UsersInProfile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Usuario" EntityType="UniredModel.Store.Usuario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Zona" EntityType="UniredModel.Store.Zona" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AbonoDinamico_Empresa" Association="UniredModel.Store.FK_AbonoDinamico_Empresa">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="AbonoDinamico" EntitySet="AbonoDinamico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Atributo" Association="UniredModel.Store.FK_Atributo">
+      <End Role="DetalleCuenta" EntitySet="DetalleCuenta" />
+      <End Role="AtributoNoLlave" EntitySet="AtributoNoLlave" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CampoOrden" Association="UniredModel.Store.FK_CampoOrden">
+      <End Role="DetalleCuenta" EntitySet="DetalleCuenta" />
+      <End Role="CampoOrdenConsulta" EntitySet="CampoOrdenConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CANAL" Association="UniredModel.Store.FK_CANAL">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="Canal" EntitySet="Canal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CANAL_MEDIO_PAGO1" Association="UniredModel.Store.FK_CANAL_MEDIO_PAGO1">
+      <End Role="Canal" EntitySet="Canal" />
+      <End Role="CanalMedioPago" EntitySet="CanalMedioPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CANAL_MEDIO_PAGO2" Association="UniredModel.Store.FK_CANAL_MEDIO_PAGO2">
+      <End Role="MedioPago" EntitySet="MedioPago" />
+      <End Role="CanalMedioPago" EntitySet="CanalMedioPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTE2" Association="UniredModel.Store.FK_CLIENTE2">
+      <End Role="Direccion" EntitySet="Direccion" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTE3" Association="UniredModel.Store.FK_CLIENTE3">
+      <End Role="TerminoCondicion" EntitySet="TerminoCondicion" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTE4" Association="UniredModel.Store.FK_CLIENTE4">
+      <End Role="GrupoEtario" EntitySet="GrupoEtario" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CodigoEmpresaImprimir" Association="UniredModel.Store.FK_CodigoEmpresaImprimir">
+      <End Role="AtributoImprimir" EntitySet="AtributoImprimir" />
+      <End Role="CodigoEmpresaImprimir" EntitySet="CodigoEmpresaImprimir" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CodigoEmpresaImprimir_DetalleCuenta" Association="UniredModel.Store.FK_CodigoEmpresaImprimir_DetalleCuenta">
+      <End Role="DetalleCuenta" EntitySet="DetalleCuenta" />
+      <End Role="CodigoEmpresaImprimir" EntitySet="CodigoEmpresaImprimir" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CodigoEmpresaInformar" Association="UniredModel.Store.FK_CodigoEmpresaInformar">
+      <End Role="AtributoInformar" EntitySet="AtributoInformar" />
+      <End Role="CodigoEmpresaInformar" EntitySet="CodigoEmpresaInformar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CodigoEmpresaInformar_Detalle" Association="UniredModel.Store.FK_CodigoEmpresaInformar_Detalle">
+      <End Role="DetalleCuenta" EntitySet="DetalleCuenta" />
+      <End Role="CodigoEmpresaInformar" EntitySet="CodigoEmpresaInformar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COMUNA" Association="UniredModel.Store.FK_COMUNA">
+      <End Role="Provincia" EntitySet="Provincia" />
+      <End Role="Comuna" EntitySet="Comuna" />
+    </AssociationSet>
+    <AssociationSet Name="fk_ConfigMantendorPopUp" Association="UniredModel.Store.fk_ConfigMantendorPopUp">
+      <End Role="ConfigMantenedorPopUp" EntitySet="ConfigMantenedorPopUp" />
+      <End Role="ConfigVisualMantenedorPopUp" EntitySet="ConfigVisualMantenedorPopUp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONFIGURACION_PROCESO" Association="UniredModel.Store.FK_CONFIGURACION_PROCESO">
+      <End Role="ConfiguracionProcesoConsulta" EntitySet="ConfiguracionProcesoConsulta" />
+      <End Role="ServiciosProceso" EntitySet="ServiciosProceso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONFIGURACION_PROCESO_CUENTAC" Association="UniredModel.Store.FK_CONFIGURACION_PROCESO_CUENTAC">
+      <End Role="ConfiguracionProcesoConsulta" EntitySet="ConfiguracionProcesoConsulta" />
+      <End Role="CuentaConsultada" EntitySet="CuentaConsultada" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONSULTA_BOLETA2" Association="UniredModel.Store.FK_CONSULTA_BOLETA2">
+      <End Role="EstadoBoleta" EntitySet="EstadoBoleta" />
+      <End Role="ConsultaBoleta" EntitySet="ConsultaBoleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONSULTA_BOLETA3" Association="UniredModel.Store.FK_CONSULTA_BOLETA3">
+      <End Role="TipoCliente" EntitySet="TipoCliente" />
+      <End Role="ConsultaBoleta" EntitySet="ConsultaBoleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CUENTA" Association="UniredModel.Store.FK_CUENTA">
+      <End Role="ConsultaBoleta" EntitySet="ConsultaBoleta" />
+      <End Role="Cuenta" EntitySet="Cuenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CUENTA_CLIENTE" Association="UniredModel.Store.FK_CUENTA_CLIENTE">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="CuentaCliente" EntitySet="CuentaCliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CUENTA_CLIENTE2" Association="UniredModel.Store.FK_CUENTA_CLIENTE2">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="CuentaCliente" EntitySet="CuentaCliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CUENTA_CLIENTE3" Association="UniredModel.Store.FK_CUENTA_CLIENTE3">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="CuentaCliente" EntitySet="CuentaCliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CuentaProcesoConsulta" Association="UniredModel.Store.FK_CuentaProcesoConsulta">
+      <End Role="ConfiguracionProcesoConsulta" EntitySet="ConfiguracionProcesoConsulta" />
+      <End Role="CuentaProcesoConsulta" EntitySet="CuentaProcesoConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CuentaProcesoConsulta_CuentaCliente" Association="UniredModel.Store.FK_CuentaProcesoConsulta_CuentaCliente">
+      <End Role="CuentaCliente" EntitySet="CuentaCliente" />
+      <End Role="CuentaProcesoConsulta" EntitySet="CuentaProcesoConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CuerpoMail" Association="UniredModel.Store.FK_CuerpoMail">
+      <End Role="TipoMail" EntitySet="TipoMail" />
+      <End Role="CuerpoMail" EntitySet="CuerpoMail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DETALLE_CUENTA" Association="UniredModel.Store.FK_DETALLE_CUENTA">
+      <End Role="Cuenta" EntitySet="Cuenta" />
+      <End Role="DetalleCuenta" EntitySet="DetalleCuenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DIRECCION" Association="UniredModel.Store.FK_DIRECCION">
+      <End Role="Comuna" EntitySet="Comuna" />
+      <End Role="Direccion" EntitySet="Direccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPRESA" Association="UniredModel.Store.FK_EMPRESA">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="Empresa" EntitySet="Empresa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPRESA_RUBRO" Association="UniredModel.Store.FK_EMPRESA_RUBRO">
+      <End Role="Empresa" EntitySet="Empresa" />
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPRESA_RUBRO_MP" Association="UniredModel.Store.FK_EMPRESA_RUBRO_MP">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="EmpresaRubroMP" EntitySet="EmpresaRubroMP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPRESA_RUBRO_MP2" Association="UniredModel.Store.FK_EMPRESA_RUBRO_MP2">
+      <End Role="MedioPago" EntitySet="MedioPago" />
+      <End Role="EmpresaRubroMP" EntitySet="EmpresaRubroMP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPRESA_RUBRO2" Association="UniredModel.Store.FK_EMPRESA_RUBRO2">
+      <End Role="Rubro" EntitySet="Rubro" />
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPRESA_RUBRO4" Association="UniredModel.Store.FK_EMPRESA_RUBRO4">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ESTADO_GENERAL" Association="UniredModel.Store.FK_ESTADO_GENERAL">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="Turno" EntitySet="Turno" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GRUPO_IMAGEN_ESTILO1" Association="UniredModel.Store.FK_GRUPO_IMAGEN_ESTILO1">
+      <End Role="ImagenEstilo" EntitySet="ImagenEstilo" />
+      <End Role="GrupoImagenEstilo" EntitySet="GrupoImagenEstilo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GRUPO_IMAGEN_ESTILO2" Association="UniredModel.Store.FK_GRUPO_IMAGEN_ESTILO2">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="GrupoImagenEstilo" EntitySet="GrupoImagenEstilo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GRUPO2" Association="UniredModel.Store.FK_GRUPO2">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="Grupo" EntitySet="Grupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GRUPO3" Association="UniredModel.Store.FK_GRUPO3">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Grupo" EntitySet="Grupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdAtributoImprimir" Association="UniredModel.Store.FK_IdAtributoImprimir">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="AtributoImprimir" EntitySet="AtributoImprimir" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdAtributoInformar" Association="UniredModel.Store.FK_IdAtributoInformar">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="AtributoInformar" EntitySet="AtributoInformar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdCanal" Association="UniredModel.Store.FK_IdCanal">
+      <End Role="Canal" EntitySet="Canal" />
+      <End Role="ConfiguracionCanal" EntitySet="ConfiguracionCanal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDENTIFI_REFERENCE_CUENTACL" Association="UniredModel.Store.FK_IDENTIFI_REFERENCE_CUENTACL">
+      <End Role="CuentaCliente" EntitySet="CuentaCliente" />
+      <End Role="IdentificadorCtaCli" EntitySet="IdentificadorCtaCli" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDENTIFI_REFERENCE_IDENTIFI" Association="UniredModel.Store.FK_IDENTIFI_REFERENCE_IDENTIFI">
+      <End Role="Identificador" EntitySet="Identificador" />
+      <End Role="IdentificadorCtaCli" EntitySet="IdentificadorCtaCli" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDENTIFICADOR" Association="UniredModel.Store.FK_IDENTIFICADOR">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="Identificador" EntitySet="Identificador" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDENTIFICADOR2" Association="UniredModel.Store.FK_IDENTIFICADOR2">
+      <End Role="TipoMetaDato" EntitySet="TipoMetaDato" />
+      <End Role="Identificador" EntitySet="Identificador" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdentificadorCtaCliExpress" Association="UniredModel.Store.FK_IdentificadorCtaCliExpress">
+      <End Role="CuentaClienteExpress" EntitySet="CuentaClienteExpress" />
+      <End Role="IdentificadorCtaCliExpress" EntitySet="IdentificadorCtaCliExpress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdParametrosConsulta" Association="UniredModel.Store.FK_IdParametrosConsulta">
+      <End Role="ConsultaBoleta" EntitySet="ConsultaBoleta" />
+      <End Role="ParametrosConsulta" EntitySet="ParametrosConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdPublicidad" Association="UniredModel.Store.FK_IdPublicidad">
+      <End Role="IdentificadorPublicidad" EntitySet="IdentificadorPublicidad" />
+      <End Role="MantenedorImagenes" EntitySet="MantenedorImagenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdTipoAbono" Association="UniredModel.Store.FK_IdTipoAbono">
+      <End Role="TipoAbono" EntitySet="TipoAbono" />
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdUrlCanak" Association="UniredModel.Store.FK_IdUrlCanak">
+      <End Role="Canal" EntitySet="Canal" />
+      <End Role="URLPermitidaCanal" EntitySet="URLPermitidaCanal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IMAGEN_ESTILO" Association="UniredModel.Store.FK_IMAGEN_ESTILO">
+      <End Role="EstadoImagen" EntitySet="EstadoImagen" />
+      <End Role="ImagenEstilo" EntitySet="ImagenEstilo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INTENTO_CLIENTE" Association="UniredModel.Store.FK_INTENTO_CLIENTE">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="IntentoCliente" EntitySet="IntentoCliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INTENTO_PAGO1" Association="UniredModel.Store.FK_INTENTO_PAGO1">
+      <End Role="EstadoPago" EntitySet="EstadoPago" />
+      <End Role="IntentoPago" EntitySet="IntentoPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INTENTO_PAGO2" Association="UniredModel.Store.FK_INTENTO_PAGO2">
+      <End Role="MedioPago" EntitySet="MedioPago" />
+      <End Role="IntentoPago" EntitySet="IntentoPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INTENTO_PAGO3" Association="UniredModel.Store.FK_INTENTO_PAGO3">
+      <End Role="Pago" EntitySet="Pago" />
+      <End Role="IntentoPago" EntitySet="IntentoPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INTENTO_USUARIO" Association="UniredModel.Store.FK_INTENTO_USUARIO">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="IntentoUsuario" EntitySet="IntentoUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MEDIO_PAGO" Association="UniredModel.Store.FK_MEDIO_PAGO">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="MedioPago" EntitySet="MedioPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MedioPago_Tipo_MedioPago" Association="UniredModel.Store.FK_MedioPago_Tipo_MedioPago">
+      <End Role="Tipo_MedioPago" EntitySet="Tipo_MedioPago" />
+      <End Role="MedioPago" EntitySet="MedioPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notificacion" Association="UniredModel.Store.FK_Notificacion">
+      <End Role="EstadoNotificacion" EntitySet="EstadoNotificacion" />
+      <End Role="Notificacion" EntitySet="Notificacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notificacion2" Association="UniredModel.Store.FK_Notificacion2">
+      <End Role="PagoDetalleBoleta" EntitySet="PagoDetalleBoleta" />
+      <End Role="Notificacion" EntitySet="Notificacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAGO_1" Association="UniredModel.Store.FK_PAGO_1">
+      <End Role="EstadoPago" EntitySet="EstadoPago" />
+      <End Role="Pago" EntitySet="Pago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAGO_DETALLE_BOLETA1" Association="UniredModel.Store.FK_PAGO_DETALLE_BOLETA1">
+      <End Role="Pago" EntitySet="Pago" />
+      <End Role="PagoDetalleBoleta" EntitySet="PagoDetalleBoleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAGO_DETALLE_BOLETA2" Association="UniredModel.Store.FK_PAGO_DETALLE_BOLETA2">
+      <End Role="DetalleCuenta" EntitySet="DetalleCuenta" />
+      <End Role="PagoDetalleBoleta" EntitySet="PagoDetalleBoleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAGO_DETALLE_BOLETA3" Association="UniredModel.Store.FK_PAGO_DETALLE_BOLETA3">
+      <End Role="Turno" EntitySet="Turno" />
+      <End Role="PagoDetalleBoleta" EntitySet="PagoDetalleBoleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAGO_DETALLE_BOLETA4" Association="UniredModel.Store.FK_PAGO_DETALLE_BOLETA4">
+      <End Role="EstadoPago" EntitySet="EstadoPago" />
+      <End Role="PagoDetalleBoleta" EntitySet="PagoDetalleBoleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAGO1" Association="UniredModel.Store.FK_PAGO1">
+      <End Role="ConsultaBoleta" EntitySet="ConsultaBoleta" />
+      <End Role="Pago" EntitySet="Pago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Profiles_Applications" Association="UniredModel.Store.FK_Profiles_Applications">
+      <End Role="Applications" EntitySet="Applications" />
+      <End Role="Profiles" EntitySet="Profiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PROVINCIA" Association="UniredModel.Store.FK_PROVINCIA">
+      <End Role="Region" EntitySet="Region" />
+      <End Role="Provincia" EntitySet="Provincia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGLA" Association="UniredModel.Store.FK_REGLA">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="ReglaPresentacion" EntitySet="ReglaPresentacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGLA2" Association="UniredModel.Store.FK_REGLA2">
+      <End Role="TipoCartera" EntitySet="TipoCartera" />
+      <End Role="ReglaPresentacion" EntitySet="ReglaPresentacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RestriccionEPSCanal_Canal" Association="UniredModel.Store.FK_RestriccionEPSCanal_Canal">
+      <End Role="Canal" EntitySet="Canal" />
+      <End Role="RestriccionEPSCanal" EntitySet="RestriccionEPSCanal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RestriccionEPSCanal_EmpresaRubro" Association="UniredModel.Store.FK_RestriccionEPSCanal_EmpresaRubro">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="RestriccionEPSCanal" EntitySet="RestriccionEPSCanal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Roles_Applications" Association="UniredModel.Store.FK_Roles_Applications">
+      <End Role="Applications" EntitySet="Applications" />
+      <End Role="Roles" EntitySet="Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolInProfile_Profiles" Association="UniredModel.Store.FK_RolInProfile_Profiles">
+      <End Role="Profiles" EntitySet="Profiles" />
+      <End Role="RolInProfile" EntitySet="RolInProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolInProfile_Roles" Association="UniredModel.Store.FK_RolInProfile_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="RolInProfile" EntitySet="RolInProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RUBRO" Association="UniredModel.Store.FK_RUBRO">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="Rubro" EntitySet="Rubro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUCURSAL" Association="UniredModel.Store.FK_SUCURSAL">
+      <End Role="Comuna" EntitySet="Comuna" />
+      <End Role="Sucursal" EntitySet="Sucursal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUCURSAL2" Association="UniredModel.Store.FK_SUCURSAL2">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="Sucursal" EntitySet="Sucursal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TERMINO_CONDICION" Association="UniredModel.Store.FK_TERMINO_CONDICION">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="TerminoCondicion" EntitySet="TerminoCondicion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TIPOMAIL" Association="UniredModel.Store.FK_TIPOMAIL">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="TipoMail" EntitySet="TipoMail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsersInProfile_Profiles" Association="UniredModel.Store.FK_UsersInProfile_Profiles">
+      <End Role="Profiles" EntitySet="Profiles" />
+      <End Role="UsersInProfile" EntitySet="UsersInProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsersInProfile_Users" Association="UniredModel.Store.FK_UsersInProfile_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UsersInProfile" EntitySet="UsersInProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ZONA" Association="UniredModel.Store.FK_ZONA">
+      <End Role="Zona" EntitySet="Zona" />
+      <End Role="Sucursal" EntitySet="Sucursal" />
+    </AssociationSet>
+    <AssociationSet Name="IdentificadorCtaCliExpress2" Association="UniredModel.Store.IdentificadorCtaCliExpress2">
+      <End Role="Identificador" EntitySet="Identificador" />
+      <End Role="IdentificadorCtaCliExpress" EntitySet="IdentificadorCtaCliExpress" />
+    </AssociationSet>
+    <AssociationSet Name="PK_CtaCliExpress2" Association="UniredModel.Store.PK_CtaCliExpress2">
+      <End Role="ClienteExpress" EntitySet="ClienteExpress" />
+      <End Role="CuentaClienteExpress" EntitySet="CuentaClienteExpress" />
+    </AssociationSet>
+    <AssociationSet Name="PK_CtaCliExpress3" Association="UniredModel.Store.PK_CtaCliExpress3">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="CuentaClienteExpress" EntitySet="CuentaClienteExpress" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AbonoDinamico">
+    <Key>
+      <PropertyRef Name="IdAbonoDinamico" />
+    </Key>
+    <Property Name="IdAbonoDinamico" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreAtributo" Type="varchar" MaxLength="250" />
+    <Property Name="CodigoAtributo" Type="varchar" MaxLength="250" />
+    <Property Name="TipoMetadato" Type="varchar" MaxLength="250" />
+    <Property Name="Largo" Type="int" />
+    <Property Name="IdEmpresaRubro" Type="int" Nullable="false" />
+    <Property Name="estado" Type="bit" />
+  </EntityType>
+  <EntityType Name="Applications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="256" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Status" Type="varchar" Nullable="false" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="AtributoImprimir">
+    <Key>
+      <PropertyRef Name="IdAtributoImprimir" />
+    </Key>
+    <Property Name="IdAtributoImprimir" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreAtributo" Type="varchar" MaxLength="250" />
+    <Property Name="CodigoAtributo" Type="varchar" MaxLength="250" />
+    <Property Name="TipoMetadato" Type="varchar" MaxLength="250" />
+    <Property Name="Largo" Type="int" />
+    <Property Name="IdEmpresaRubro" Type="int" Nullable="false" />
+    <Property Name="estado" Type="bit" />
+  </EntityType>
+  <EntityType Name="AtributoInformar">
+    <Key>
+      <PropertyRef Name="IdAtributoInformar" />
+    </Key>
+    <Property Name="IdAtributoInformar" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreAtributo" Type="varchar" MaxLength="250" />
+    <Property Name="CodigoAtributo" Type="varchar" MaxLength="250" />
+    <Property Name="TipoMetadato" Type="varchar" MaxLength="250" />
+    <Property Name="Largo" Type="int" />
+    <Property Name="IdEmpresaRubro" Type="int" Nullable="false" />
+    <Property Name="posicion" Type="int" />
+    <Property Name="estado" Type="bit" />
+    <Property Name="FechaModificacion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AtributoNoLlave">
+    <Key>
+      <PropertyRef Name="IdDetalleCuenta" />
+    </Key>
+    <Property Name="IdDetalleCuenta" Type="bigint" Nullable="false" />
+    <Property Name="AtributoXML" Type="varchar(max)" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Unired.dbo.CampoOrdenConsulta' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="CampoOrdenConsulta">
+    <Key>
+      <PropertyRef Name="IdDetalleCuenta" />
+      <PropertyRef Name="OrdenConsulta" />
+    </Key>
+    <Property Name="IdDetalleCuenta" Type="bigint" Nullable="false" />
+    <Property Name="NombreCampo" Type="varchar" MaxLength="50" />
+    <Property Name="ValorCampo" Type="varchar" MaxLength="100" />
+    <Property Name="OrdenConsulta" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Canal">
+    <Key>
+      <PropertyRef Name="IdCanal" />
+    </Key>
+    <Property Name="IdCanal" Type="int" Nullable="false" />
+    <Property Name="IdEstado" Type="int" Nullable="false" />
+    <Property Name="NombreCanal" Type="varchar" MaxLength="30" />
+    <Property Name="IdExterno" Type="varchar" MaxLength="50" />
+    <Property Name="CanalXCash" Type="varchar" MaxLength="6" />
+    <Property Name="TerminalXCash" Type="varchar" MaxLength="6" />
+    <Property Name="IdSucursal" Type="int" />
+  </EntityType>
+  <EntityType Name="CanalMedioPago">
+    <Key>
+      <PropertyRef Name="IdCanal" />
+      <PropertyRef Name="IdMedioPago" />
+    </Key>
+    <Property Name="IdCanal" Type="int" Nullable="false" />
+    <Property Name="IdMedioPago" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Name="IdCliente" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdDireccion" Type="int" />
+    <Property Name="IdTermino" Type="int" Nullable="false" />
+    <Property Name="Rut" Type="int" Nullable="false" />
+    <Property Name="Dv" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Apellido" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="EmailAlternativo" Type="varchar" MaxLength="60" />
+    <Property Name="Telefono" Type="varchar" MaxLength="15" />
+    <Property Name="Celular" Type="varchar" MaxLength="15" />
+    <Property Name="IdGrupoEtario" Type="int" />
+    <Property Name="RecibePromocion" Type="bit" />
+    <Property Name="RecibeCartola" Type="bit" />
+    <Property Name="Sexo" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="UrlImagenPerfil" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="ClienteExpress">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Name="IdCliente" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Rut" Type="int" />
+    <Property Name="Dv" Type="varchar" MaxLength="1" />
+    <Property Name="FechaCreacion" Type="datetime" />
+    <Property Name="Email" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="CodigoEmpresaImprimir">
+    <Key>
+      <PropertyRef Name="IDCodigoEmpresaImprimir" />
+    </Key>
+    <Property Name="IDCodigoEmpresaImprimir" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Valor" Type="varchar" MaxLength="250" />
+    <Property Name="IdCuenta" Type="bigint" Nullable="false" />
+    <Property Name="IdAtributoImprimir" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CodigoEmpresaInformar">
+    <Key>
+      <PropertyRef Name="IDCodigoEmpresaInformar" />
+    </Key>
+    <Property Name="IDCodigoEmpresaInformar" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Valor" Type="varchar" MaxLength="250" />
+    <Property Name="IdDetalleCuenta" Type="bigint" Nullable="false" />
+    <Property Name="IdAtributoInformar" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Comuna">
+    <Key>
+      <PropertyRef Name="IdComuna" />
+    </Key>
+    <Property Name="IdComuna" Type="int" Nullable="false" />
+    <Property Name="IdProvincia" Type="int" Nullable="false" />
+    <Property Name="NombreComuna" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ConfigMantenedorPopUp">
+    <Key>
+      <PropertyRef Name="IdConfig" />
+    </Key>
+    <Property Name="IdConfig" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdTipoAmbiente" Type="int" Nullable="false" />
+    <Property Name="Periodo" Type="bigint" Nullable="false" />
+    <Property Name="Habilitado" Type="bit" Nullable="false" />
+    <Property Name="TiempoRotacion" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Configuracion">
+    <Key>
+      <PropertyRef Name="NombreConfiguracion" />
+    </Key>
+    <Property Name="IdConfiguracion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreConfiguracion" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="ValorConfiguracion" Type="varchar" MaxLength="200" />
+    <Property Name="Encriptado" Type="bit" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="150" />
+    <Property Name="Tipo" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ConfiguracionCanal">
+    <Key>
+      <PropertyRef Name="IdConfiguracionCanal" />
+    </Key>
+    <Property Name="IdConfiguracionCanal" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdCanal" Type="int" Nullable="false" />
+    <Property Name="LLaveEncriptación" Type="varchar" MaxLength="250" />
+    <Property Name="CuentasMaximas" Type="int" Nullable="false" />
+    <Property Name="UrlExito" Type="varchar" Nullable="false" MaxLength="4000" />
+    <Property Name="UrlFracaso" Type="varchar" Nullable="false" MaxLength="4000" />
+    <Property Name="segundosRedirección" Type="int" />
+  </EntityType>
+  <EntityType Name="ConfiguracionProcesoConsulta">
+    <Key>
+      <PropertyRef Name="idProcesoConsulta" />
+    </Key>
+    <Property Name="idProcesoConsulta" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="keyProcesoConsulta" Type="varchar" MaxLength="250" />
+    <Property Name="maximoConsulta" Type="int" />
+    <Property Name="correoReporte" Type="varchar" MaxLength="250" />
+    <Property Name="consultasSimultaneas" Type="int" />
+    <Property Name="FrecuenciaEjecucion" Type="int" />
+    <Property Name="permiteSinFecha" Type="bit" />
+    <Property Name="reporteEnviado" Type="bit" />
+    <Property Name="permiteProceso" Type="bit" />
+    <Property Name="FechaInicioFiltro" Type="datetime" />
+    <Property Name="fechaFinFiltro" Type="datetime" />
+    <Property Name="fechaEnvioReporte" Type="datetime" />
+    <Property Name="observacionProceso" Type="varchar" MaxLength="250" />
+    <Property Name="notificaErrores" Type="bit" />
+    <Property Name="TipoConsultaActiva" Type="int" Nullable="false" />
+    <Property Name="CargaFinalizada" Type="bit" />
+  </EntityType>
+  <EntityType Name="ConfigVisualMantenedorPopUp">
+    <Key>
+      <PropertyRef Name="IdConfigVisual" />
+    </Key>
+    <Property Name="IdConfigVisual" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreImagen" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Imagen" Type="image" />
+    <Property Name="NumeroImagen" Type="bigint" />
+    <Property Name="Url" Type="varchar" MaxLength="255" />
+    <Property Name="TargetPag" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="IdConfig" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ConsultaBoleta">
+    <Key>
+      <PropertyRef Name="IdConsultaBoleta" />
+    </Key>
+    <Property Name="IdConsultaBoleta" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdCliente" Type="bigint" Nullable="false" />
+    <Property Name="IdEstadoBoleta" Type="int" Nullable="false" />
+    <Property Name="IdTipoCliente" Type="int" Nullable="false" />
+    <Property Name="MontoTotalConsulta" Type="int" Nullable="false" />
+    <Property Name="ConsultaNotificado" Type="bit" />
+    <Property Name="FechaConsulta" Type="datetime" />
+    <Property Name="mobile" Type="bit" />
+    <Property Name="IdCanal" Type="int" Nullable="false" />
+    <Property Name="Desplegada" Type="bit" />
+  </EntityType>
+  <EntityType Name="Contacto">
+    <Key>
+      <PropertyRef Name="IdContacto" />
+    </Key>
+    <Property Name="IdContacto" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreContacto" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="Telefono" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="Asunto" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="Mensaje" Type="varchar" Nullable="false" MaxLength="3000" />
+  </EntityType>
+  <EntityType Name="Cuenta">
+    <Key>
+      <PropertyRef Name="IdCuenta" />
+    </Key>
+    <Property Name="IdConsultaBoleta" Type="bigint" Nullable="false" />
+    <Property Name="IdCuentaCliente" Type="int" Nullable="false" />
+    <Property Name="IdCuenta" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MontoCuenta" Type="bigint" />
+    <Property Name="FechaRespuestaConsulta" Type="datetime" />
+    <Property Name="codigo" Type="int" />
+    <Property Name="descripcion" Type="varchar(max)" />
+    <Property Name="CuentaPadre" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CuentaCliente">
+    <Key>
+      <PropertyRef Name="IdCuentaCliente" />
+    </Key>
+    <Property Name="IdCuentaCliente" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdCliente" Type="bigint" Nullable="false" />
+    <Property Name="IdEmpresaRubro" Type="int" Nullable="false" />
+    <Property Name="IdGrupo" Type="int" Nullable="false" />
+    <Property Name="FechaInscripcion" Type="datetime" />
+    <Property Name="NombreCuentaCliente" Type="varchar" MaxLength="150" />
+    <Property Name="ClienteRegistrado" Type="bit" />
+    <Property Name="clienteEliminado" Type="bit" />
+    <Property Name="CuentaHabilitada" Type="bit" />
+    <Property Name="CuentaValida" Type="bit" />
+    <Property Name="IgnoraCambio" Type="bit" />
+    <Property Name="CuentaEliminada" Type="bit" />
+    <Property Name="CuentaClientePadre" Type="int" />
+    <Property Name="UltimaFechaPago" Type="datetime" />
+    <Property Name="MontoUltimoPago" Type="int" />
+  </EntityType>
+  <EntityType Name="CuentaClienteExpress">
+    <Key>
+      <PropertyRef Name="IdCuentaCliente" />
+    </Key>
+    <Property Name="IdCuentaCliente" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdCliente" Type="bigint" />
+    <Property Name="IdEmpresaRubro" Type="int" />
+    <Property Name="FechaInscripcion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CuentaConsultada">
+    <Key>
+      <PropertyRef Name="idCuentaConsultada" />
+    </Key>
+    <Property Name="idCuentaConsultada" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idConfiguracion" Type="bigint" />
+    <Property Name="idCuentaCliente" Type="bigint" Nullable="false" />
+    <Property Name="fechaVencimiento" Type="datetime" />
+    <Property Name="montoAdeudado" Type="int" />
+    <Property Name="idcliente" Type="bigint" />
+    <Property Name="rua" Type="bit" />
+    <Property Name="pagoAgrupado" Type="bit" />
+    <Property Name="CampoAgrupado" Type="varchar" MaxLength="250" />
+    <Property Name="numeroCuota" Type="int" />
+    <Property Name="idCuentaRua" Type="int" />
+    <Property Name="idEstadoConsulta" Type="int" />
+    <Property Name="FechaInicioConsulta" Type="datetime" />
+    <Property Name="FechaRespuestaConsulta" Type="datetime" />
+    <Property Name="codigoRespuesta" Type="varchar" MaxLength="10" />
+    <Property Name="observacionConsutla" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="CuentaProcesoConsulta">
+    <Key>
+      <PropertyRef Name="IdCuentaProcesoConsulta" />
+    </Key>
+    <Property Name="IdCuentaProcesoConsulta" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdProcesoConsulta" Type="bigint" Nullable="false" />
+    <Property Name="IdCuentaCliente" Type="int" Nullable="false" />
+    <Property Name="CodigoInstrumento" Type="varchar" MaxLength="50" />
+    <Property Name="NombreIdentificador" Type="varchar" MaxLength="50" />
+    <Property Name="TipoMetaDato" Type="varchar" MaxLength="50" />
+    <Property Name="Identificador" Type="varchar" MaxLength="50" />
+    <Property Name="MapaFechaVencimiento" Type="varchar" MaxLength="50" />
+    <Property Name="CampoAfectado" Type="varchar" MaxLength="50" />
+    <Property Name="EsRua" Type="bit" />
+    <Property Name="TipoConsulta" Type="int" />
+    <Property Name="IdEstadoConsulta" Type="int" />
+  </EntityType>
+  <EntityType Name="CuerpoMail">
+    <Key>
+      <PropertyRef Name="IdTipoMail" />
+      <PropertyRef Name="Correlativo" />
+    </Key>
+    <Property Name="IdTipoMail" Type="int" Nullable="false" />
+    <Property Name="Correlativo" Type="int" Nullable="false" />
+    <Property Name="CuerpoHtmlMail" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="DetalleCuenta">
+    <Key>
+      <PropertyRef Name="IdDetalleCuenta" />
+    </Key>
+    <Property Name="IdDetalleCuenta" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdCuenta" Type="bigint" Nullable="false" />
+    <Property Name="FechaVctoCuenta" Type="varchar" MaxLength="30" />
+    <Property Name="MontoCuenta" Type="bigint" Nullable="false" />
+    <Property Name="NumeroDocumento" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="NumeroCuota" Type="int" />
+    <Property Name="FechaInicioValidacion" Type="datetime" />
+    <Property Name="FechaFinValidacion" Type="datetime" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Unired.dbo.DetalleResumenPago' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="DetalleResumenPago">
+    <Key>
+      <PropertyRef Name="IdPago" />
+      <PropertyRef Name="IdPagoDetalle" />
+      <PropertyRef Name="IdDetalleCuenta" />
+      <PropertyRef Name="IdCuenta" />
+      <PropertyRef Name="OrdenTienda" />
+      <PropertyRef Name="IdEstadoPago" />
+      <PropertyRef Name="DescripcionEstadoPago" />
+      <PropertyRef Name="Monto" />
+      <PropertyRef Name="IdCuentaCliente" />
+      <PropertyRef Name="FechaInsercion" />
+      <PropertyRef Name="IdEmpresaRubro" />
+      <PropertyRef Name="NombreEmpresaRubro" />
+      <PropertyRef Name="Identificador" />
+    </Key>
+    <Property Name="IdPago" Type="bigint" Nullable="false" />
+    <Property Name="IdPagoDetalle" Type="bigint" Nullable="false" />
+    <Property Name="IdDetalleCuenta" Type="bigint" Nullable="false" />
+    <Property Name="IdCuenta" Type="bigint" Nullable="false" />
+    <Property Name="OrdenTienda" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="IdEstadoPago" Type="int" Nullable="false" />
+    <Property Name="DescripcionEstadoPago" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Monto" Type="int" Nullable="false" />
+    <Property Name="NumCuotas" Type="int" />
+    <Property Name="Numtarjeta" Type="int" />
+    <Property Name="TbkCodAutorizacion" Type="varchar" MaxLength="100" />
+    <Property Name="IdCuentaCliente" Type="bigint" Nullable="false" />
+    <Property Name="NombreCuentaCliente" Type="varchar" MaxLength="200" />
+    <Property Name="FechaInsercion" Type="date" Nullable="false" />
+    <Property Name="IdEmpresaRubro" Type="int" Nullable="false" />
+    <Property Name="NombreEmpresaRubro" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Identificador" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="TbkMontoCuota" Type="bigint" />
+    <Property Name="TbkCodRespuesta" Type="int" />
+  </EntityType>
+  <EntityType Name="Direccion">
+    <Key>
+      <PropertyRef Name="IdDireccion" />
+    </Key>
+    <Property Name="IdComuna" Type="int" />
+    <Property Name="IdDireccion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DescDireccion" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Empresa">
+    <Key>
+      <PropertyRef Name="IdEmpresa" />
+    </Key>
+    <Property Name="IdEmpresa" Type="int" Nullable="false" />
+    <Property Name="CodEmpresa" Type="varchar" MaxLength="150" />
+    <Property Name="IdEstado" Type="int" Nullable="false" />
+    <Property Name="NombreEmpresa" Type="varchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="EmpresaRubro">
+    <Key>
+      <PropertyRef Name="IdEmpresaRubro" />
+    </Key>
+    <Property Name="IdEmpresaRubro" Type="int" Nullable="false" />
+    <Property Name="IdEmpresa" Type="int" Nullable="false" />
+    <Property Name="IdRubro" Type="int" Nullable="false" />
+    <Property Name="NombreServicio" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="IdEstado" Type="int" Nullable="false" />
+    <Property Name="CarteraDesconocida" Type="bit" Nullable="false" />
+    <Property Name="AceptaAbono" Type="bit" Nullable="false" />
+    <Property Name="UrlLogoServicio" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="CodigoInstrumento" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="MapaFechaVencimiento" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CodigoTransbank" Type="varchar" MaxLength="20" />
+    <Property Name="valida" Type="bit" />
+    <Property Name="nombreBoton" Type="varchar" MaxLength="200" />
+    <Property Name="IdTipoAbono" Type="int" Nullable="false" />
+    <Property Name="TipoConsulta" Type="int" Nullable="false" />
+    <Property Name="AceptaDeudaCero" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EmpresaRubroMP">
+    <Key>
+      <PropertyRef Name="IdEmpresaRubro" />
+      <PropertyRef Name="IdMedioPago" />
+    </Key>
+    <Property Name="IdEmpresaRubro" Type="int" Nullable="false" />
+    <Property Name="IdMedioPago" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EstadoBoleta">
+    <Key>
+      <PropertyRef Name="IdEstadoBoleta" />
+    </Key>
+    <Property Name="IdEstadoBoleta" Type="int" Nullable="false" />
+    <Property Name="DescEstadoBoleta" Type="varchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="EstadoGeneral">
+    <Key>
+      <PropertyRef Name="IdEstado" />
+    </Key>
+    <Property Name="IdEstado" Type="int" Nullable="false" />
+    <Property Name="DescEstadoGeneral" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="EstadoImagen">
+    <Key>
+      <PropertyRef Name="IdEstadoImagen" />
+    </Key>
+    <Property Name="IdEstadoImagen" Type="int" Nullable="false" />
+    <Property Name="DescEstadoImagen" Type="char" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="EstadoMail">
+    <Key>
+      <PropertyRef Name="IdEstadoMail" />
+    </Key>
+    <Property Name="IdEstadoMail" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DescEstadoMail" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="EstadoNotificacion">
+    <Key>
+      <PropertyRef Name="IdEstadoNotificacion" />
+    </Key>
+    <Property Name="IdEstadoNotificacion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DescEstadoNotif" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EstadoPago">
+    <Key>
+      <PropertyRef Name="IdEstadoPago" />
+    </Key>
+    <Property Name="IdEstadoPago" Type="int" Nullable="false" />
+    <Property Name="DescEstadoPago" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Unired.dbo.Feriado' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="Feriado">
+    <Key>
+      <PropertyRef Name="IdFeriado" />
+    </Key>
+    <Property Name="IdFeriado" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha" Type="datetime" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="FormatoFechaEmpresaRubro">
+    <Key>
+      <PropertyRef Name="idFormatoFechaEmpresaRubro" />
+    </Key>
+    <Property Name="idFormatoFechaEmpresaRubro" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idEmpresaRubro" Type="bigint" />
+    <Property Name="formatofecha" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="IdGrupo" />
+    </Key>
+    <Property Name="IdGrupo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEstado" Type="int" Nullable="false" />
+    <Property Name="NombreGrupo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="IdCliente" Type="bigint" />
+  </EntityType>
+  <EntityType Name="GrupoEtario">
+    <Key>
+      <PropertyRef Name="IdGrupoEtario" />
+    </Key>
+    <Property Name="IdGrupoEtario" Type="int" Nullable="false" />
+    <Property Name="DescGrupoEtario" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="GrupoImagenEstilo">
+    <Key>
+      <PropertyRef Name="IdImagen" />
+      <PropertyRef Name="IdGrupo" />
+    </Key>
+    <Property Name="IdImagen" Type="int" Nullable="false" />
+    <Property Name="IdGrupo" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Identificador">
+    <Key>
+      <PropertyRef Name="IdIdentificador" />
+    </Key>
+    <Property Name="IdIdentificador" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEmpresaRubro" Type="int" Nullable="false" />
+    <Property Name="DescIdentificador" Type="varchar" MaxLength="100" />
+    <Property Name="NombreIdentificador" Type="varchar" MaxLength="50" />
+    <Property Name="EjemploIdentificador" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="LargoIdentificador" Type="smallint" Nullable="false" />
+    <Property Name="UrlImagenIdentificador" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="IdTipoMetaDato" Type="int" Nullable="false" />
+    <Property Name="IdentificadorHabilitado" Type="bit" />
+  </EntityType>
+  <EntityType Name="IdentificadorCtaCli">
+    <Key>
+      <PropertyRef Name="IdCuentaCliente" />
+      <PropertyRef Name="IdIdentificador" />
+    </Key>
+    <Property Name="IdCuentaCliente" Type="int" Nullable="false" />
+    <Property Name="IdIdentificador" Type="int" Nullable="false" />
+    <Property Name="Identificador" Type="varchar" MaxLength="50" />
+    <Property Name="idTipoMetadato" Type="int" />
+  </EntityType>
+  <EntityType Name="IdentificadorCtaCliExpress">
+    <Key>
+      <PropertyRef Name="IdCuentaCliente" />
+      <PropertyRef Name="IdIdentificador" />
+    </Key>
+    <Property Name="IdCuentaCliente" Type="int" Nullable="false" />
+    <Property Name="IdIdentificador" Type="int" Nullable="false" />
+    <Property Name="Identificador" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="IdentificadorPublicidad">
+    <Key>
+      <PropertyRef Name="IdPublicidad" />
+    </Key>
+    <Property Name="IdPublicidad" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ImagenesCorreo">
+    <Key>
+      <PropertyRef Name="IdImagenesCorreo" />
+    </Key>
+    <Property Name="IdImagenesCorreo" Type="int" Nullable="false" />
+    <Property Name="NombreImagen" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Link" Type="varchar" MaxLength="255" />
+    <Property Name="binario" Type="image" Nullable="false" />
+    <Property Name="Posicion" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ImagenEstilo">
+    <Key>
+      <PropertyRef Name="IdImagen" />
+    </Key>
+    <Property Name="IdImagen" Type="int" Nullable="false" />
+    <Property Name="IdEstadoImagen" Type="int" Nullable="false" />
+    <Property Name="UrlImagen" Type="varchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="IntentoCliente">
+    <Key>
+      <PropertyRef Name="IdIntento" />
+    </Key>
+    <Property Name="IdIntento" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdCliente" Type="bigint" Nullable="false" />
+    <Property Name="IpIntento" Type="varchar" MaxLength="150" />
+    <Property Name="FechaIntento" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IntentoPago">
+    <Key>
+      <PropertyRef Name="IdIntentoPago" />
+    </Key>
+    <Property Name="IdIntentoPago" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEstadoPago" Type="int" Nullable="false" />
+    <Property Name="IdMedioPago" Type="int" Nullable="false" />
+    <Property Name="FechaIntentoPago" Type="datetime" />
+    <Property Name="IdPago" Type="bigint" />
+    <Property Name="FechaRespuestaMP" Type="datetime" />
+    <Property Name="IdtipoMedioPago" Type="int" />
+  </EntityType>
+  <EntityType Name="IntentoUsuario">
+    <Key>
+      <PropertyRef Name="IdIntentoUsuario" />
+    </Key>
+    <Property Name="IdIntentoUsuario" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdUsuario" Type="int" Nullable="false" />
+    <Property Name="IpIntentoUsuario" Type="varchar" MaxLength="150" />
+    <Property Name="EmailUsuario" Type="varchar" MaxLength="60" />
+    <Property Name="UsuarioIntento" Type="varchar" MaxLength="50" />
+    <Property Name="PasswordIntento" Type="varchar" MaxLength="50" />
+    <Property Name="FechaIntento" Type="datetime" />
+  </EntityType>
+  <EntityType Name="MantenedorImagenes">
+    <Key>
+      <PropertyRef Name="idMantenedorImagenes" />
+    </Key>
+    <Property Name="idMantenedorImagenes" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdPublicidad" Type="int" />
+    <Property Name="RutaImagen" Type="varchar" MaxLength="255" />
+    <Property Name="Link" Type="varchar" MaxLength="255" />
+    <Property Name="Orden" Type="int" />
+    <Property Name="FechaCreacion" Type="datetime" />
+    <Property Name="Activa" Type="int" />
+    <Property Name="TARGET" Type="varchar" MaxLength="255" />
+    <Property Name="binario" Type="image" />
+    <Property Name="Titulo" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MedioPago">
+    <Key>
+      <PropertyRef Name="IdMedioPago" />
+    </Key>
+    <Property Name="IdMedioPago" Type="int" Nullable="false" />
+    <Property Name="IdEstado" Type="int" />
+    <Property Name="NombreMedioPago" Type="varchar" MaxLength="50" />
+    <Property Name="Id_tipoMedioPago" Type="int" />
+  </EntityType>
+  <EntityType Name="MultiIndustria">
+    <Key>
+      <PropertyRef Name="idMultiIndustria" />
+    </Key>
+    <Property Name="idMultiIndustria" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idEmpresaRubro" Type="bigint" Nullable="false" />
+    <Property Name="idRubro" Type="bigint" Nullable="false" />
+    <Property Name="FechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="FechaUltimaModificacion" Type="datetime" />
+    <Property Name="estado" Type="bit" />
+  </EntityType>
+  <EntityType Name="Notificacion">
+    <Key>
+      <PropertyRef Name="IdNotificacion" />
+    </Key>
+    <Property Name="IdNotificacion" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdPagoDetalle" Type="bigint" />
+    <Property Name="FechaIngreso" Type="datetime" />
+    <Property Name="FechaNotificacion" Type="datetime" />
+    <Property Name="IdEstadoNotificacion" Type="int" Nullable="false" />
+    <Property Name="NumIntento" Type="int" />
+    <Property Name="Habilitado" Type="bit" />
+  </EntityType>
+  <EntityType Name="Pago">
+    <Key>
+      <PropertyRef Name="IdPago" />
+    </Key>
+    <Property Name="IdPago" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdConsultaBoleta" Type="bigint" Nullable="false" />
+    <Property Name="CodigoTbk" Type="bigint" />
+    <Property Name="FechaContable" Type="datetime" />
+    <Property Name="FolioXCash" Type="int" />
+    <Property Name="TicketXCash" Type="varchar" MaxLength="40" />
+    <Property Name="Cub" Type="varchar" MaxLength="50" />
+    <Property Name="IdEstadoPago" Type="int" Nullable="false" />
+    <Property Name="FechaPago" Type="datetime" />
+    <Property Name="FechaRegistroNotificacion" Type="datetime" />
+    <Property Name="TbkToken" Type="varchar" MaxLength="64" />
+    <Property Name="IdTipoMP" Type="int" />
+  </EntityType>
+  <EntityType Name="PagoDetalleBoleta">
+    <Key>
+      <PropertyRef Name="IdPagoDetalle" />
+    </Key>
+    <Property Name="IdPagoDetalle" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdDetalleCuenta" Type="bigint" Nullable="false" />
+    <Property Name="IdPago" Type="bigint" Nullable="false" />
+    <Property Name="IdTurno" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="TbkTipoPago" Type="varchar" MaxLength="2" />
+    <Property Name="TbkNumCuota" Type="int" />
+    <Property Name="TbkCodAutoriza" Type="varchar" MaxLength="20" />
+    <Property Name="TbkNumTarjeta" Type="int" />
+    <Property Name="TbkIdTrx" Type="varchar" MaxLength="26" />
+    <Property Name="MontoPagado" Type="bigint" />
+    <Property Name="IdEstadoPago" Type="int" Nullable="false" />
+    <Property Name="IdIntentoPago" Type="bigint" />
+    <Property Name="TbkMontoCuota" Type="bigint" />
+    <Property Name="TbkCodRespuesta" Type="int" />
+    <Property Name="TbkMontoTienda" Type="varchar" MaxLength="26" />
+    <Property Name="TipoPago" Type="varchar" MaxLength="2" />
+    <Property Name="Notificado" Type="int" />
+  </EntityType>
+  <EntityType Name="ParametrosConsulta">
+    <Key>
+      <PropertyRef Name="IdParametrosConsulta" />
+    </Key>
+    <Property Name="IdParametrosConsulta" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdConsultaBoleta" Type="bigint" Nullable="false" />
+    <Property Name="UrlExito" Type="varchar" Nullable="false" MaxLength="4000" />
+    <Property Name="UrlFracaso" Type="varchar" Nullable="false" MaxLength="4000" />
+    <Property Name="IdTransaccionExterna" Type="varchar" MaxLength="20" />
+    <Property Name="IdTicketEncriptado" Type="varchar" MaxLength="4000" />
+    <Property Name="FechaDespliegue" Type="datetime" />
+    <Property Name="FechaPago" Type="datetime" />
+    <Property Name="Pagado" Type="bit" />
+    <Property Name="Procesado" Type="bit" />
+    <Property Name="Notificado" Type="bit" />
+    <Property Name="FechaNotificacion" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PortalDisponible">
+    <Key>
+      <PropertyRef Name="IdPortalDisponible" />
+    </Key>
+    <Property Name="IdPortalDisponible" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FechaInicio" Type="datetime" />
+    <Property Name="FechaFin" Type="datetime" />
+    <Property Name="Disponible" Type="bit" />
+  </EntityType>
+  <EntityType Name="Profiles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="256" />
+    <Property Name="Description" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Promociones">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdPromocion" Type="int" Nullable="false" />
+    <Property Name="Titulo" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Contenido" Type="varchar" Nullable="false" MaxLength="4000" />
+    <Property Name="Link" Type="varchar" MaxLength="255" />
+    <Property Name="NombreLink" Type="varchar" MaxLength="255" />
+    <Property Name="PermiteLink" Type="bit" />
+    <Property Name="PermiteBases" Type="bit" />
+    <Property Name="TextoBases" Type="varchar" MaxLength="255" />
+    <Property Name="NombreBases" Type="varchar" MaxLength="255" />
+    <Property Name="Bases" Type="image" />
+    <Property Name="NombreLogo" Type="varchar" MaxLength="255" />
+    <Property Name="Logo" Type="image" />
+    <Property Name="NombrePromocion" Type="varchar" MaxLength="255" />
+    <Property Name="Promocion" Type="image" />
+    <Property Name="Activo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Provincia">
+    <Key>
+      <PropertyRef Name="IdProvincia" />
+    </Key>
+    <Property Name="IdProvincia" Type="int" Nullable="false" />
+    <Property Name="IdRegion" Type="int" Nullable="false" />
+    <Property Name="NombreProvincia" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Unired.dbo.prueba_HTML_CORREO' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="prueba_HTML_CORREO">
+    <Key>
+      <PropertyRef Name="IDLINEA" />
+    </Key>
+    <Property Name="IDLINEA" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="texto" Type="varchar(max)" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Unired.dbo.prueba_insercion2' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="prueba_insercion2">
+    <Key>
+      <PropertyRef Name="IDLINEA" />
+    </Key>
+    <Property Name="IDLINEA" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="texto" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="IdRegion" />
+    </Key>
+    <Property Name="IdRegion" Type="int" Nullable="false" />
+    <Property Name="NombreRegion" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ReglaPresentacion">
+    <Key>
+      <PropertyRef Name="IdRegla" />
+      <PropertyRef Name="IdEmpresaRubro" />
+      <PropertyRef Name="IdTipoCartera" />
+    </Key>
+    <Property Name="IdRegla" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEmpresaRubro" Type="int" Nullable="false" />
+    <Property Name="IdTipoCartera" Type="int" Nullable="false" />
+    <Property Name="CampoAfectado" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="NombreCampoAfectado" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="RestriccionEPSCanal">
+    <Key>
+      <PropertyRef Name="IdRestriccion" />
+    </Key>
+    <Property Name="IdRestriccion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdCanal" Type="int" Nullable="false" />
+    <Property Name="IdEmpresaRubro" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Unired.dbo.ResumenPago' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="ResumenPago">
+    <Key>
+      <PropertyRef Name="IdPago" />
+      <PropertyRef Name="FechaInserción" />
+      <PropertyRef Name="FechaPago" />
+      <PropertyRef Name="FechaContable" />
+      <PropertyRef Name="Canal" />
+      <PropertyRef Name="Web" />
+      <PropertyRef Name="IdCliente" />
+      <PropertyRef Name="Rut" />
+      <PropertyRef Name="dv" />
+      <PropertyRef Name="Registrado" />
+      <PropertyRef Name="MontoPago" />
+      <PropertyRef Name="Cub" />
+    </Key>
+    <Property Name="IdPago" Type="bigint" Nullable="false" />
+    <Property Name="FechaInserción" Type="datetime" Nullable="false" />
+    <Property Name="FechaPago" Type="datetime" Nullable="false" />
+    <Property Name="FechaContable" Type="datetime" Nullable="false" />
+    <Property Name="Folio" Type="bigint" />
+    <Property Name="Ticket" Type="varchar" MaxLength="50" />
+    <Property Name="MedioPago" Type="nchar" MaxLength="10" />
+    <Property Name="DescripcionMedioPago" Type="nchar" MaxLength="100" />
+    <Property Name="Canal" Type="int" Nullable="false" />
+    <Property Name="Web" Type="bit" Nullable="false" />
+    <Property Name="MailEnviado" Type="bit" />
+    <Property Name="FechaEnvioMail" Type="date" />
+    <Property Name="IdCliente" Type="bigint" Nullable="false" />
+    <Property Name="Rut" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="dv" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="Registrado" Type="bit" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="NombreCliente" Type="varchar" MaxLength="100" />
+    <Property Name="MontoPago" Type="int" Nullable="false" />
+    <Property Name="idConsultaBoleta" Type="bigint" />
+    <Property Name="EstadoPago" Type="int" />
+    <Property Name="DescripcionEstadoPago" Type="varchar" MaxLength="100" />
+    <Property Name="Cub" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Turno" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="256" />
+    <Property Name="Description" Type="varchar(max)" Nullable="false" />
+    <Property Name="Status" Type="varchar" Nullable="false" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="RolInProfile">
+    <Key>
+      <PropertyRef Name="RolId" />
+      <PropertyRef Name="ProfileId" />
+    </Key>
+    <Property Name="RolId" Type="int" Nullable="false" />
+    <Property Name="ProfileId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rubro">
+    <Key>
+      <PropertyRef Name="IdRubro" />
+    </Key>
+    <Property Name="IdRubro" Type="int" Nullable="false" />
+    <Property Name="IdEstado" Type="int" Nullable="false" />
+    <Property Name="NombreRubro" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Codigo" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="ServiciosProceso">
+    <Key>
+      <PropertyRef Name="idServiciosProceso" />
+    </Key>
+    <Property Name="idServiciosProceso" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idConfiguracion" Type="bigint" />
+    <Property Name="idEmpresaRubro" Type="int" />
+  </EntityType>
+  <EntityType Name="Sucursal">
+    <Key>
+      <PropertyRef Name="DireccionSucursal" />
+    </Key>
+    <Property Name="IdSucursal" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdComuna" Type="int" Nullable="false" />
+    <Property Name="DireccionSucursal" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="IdEstado" Type="int" Nullable="false" />
+    <Property Name="Sucursal" Type="varchar" MaxLength="150" />
+    <Property Name="IdZona" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TerminoCondicion">
+    <Key>
+      <PropertyRef Name="IdTermino" />
+    </Key>
+    <Property Name="IdTermino" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdEstado" Type="int" />
+    <Property Name="UrlTerminoCondicion" Type="varchar" MaxLength="1000" />
+    <Property Name="FechaIngresoTermino" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Tipo_MedioPago">
+    <Key>
+      <PropertyRef Name="Id_tipoMedioPago" />
+    </Key>
+    <Property Name="Id_tipoMedioPago" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="varchar" MaxLength="255" />
+    <Property Name="Estado" Type="bit" />
+    <Property Name="UrlHubPago" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="TipoAbono">
+    <Key>
+      <PropertyRef Name="IdTipoAbono" />
+    </Key>
+    <Property Name="IdTipoAbono" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreTipoAbono" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="TipoCartera">
+    <Key>
+      <PropertyRef Name="IdTipoCartera" />
+    </Key>
+    <Property Name="IdTipoCartera" Type="int" Nullable="false" />
+    <Property Name="DescTipoCartera" Type="varchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="TipoCliente">
+    <Key>
+      <PropertyRef Name="IdTipoCliente" />
+    </Key>
+    <Property Name="IdTipoCliente" Type="int" Nullable="false" />
+    <Property Name="TipoCliente" Type="varchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="TipoMail">
+    <Key>
+      <PropertyRef Name="IdTipoMail" />
+    </Key>
+    <Property Name="IdTipoMail" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DescTipoMail" Type="varchar" MaxLength="100" />
+    <Property Name="IdEstado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TipoMetaDato">
+    <Key>
+      <PropertyRef Name="IdTipoMetaDato" />
+    </Key>
+    <Property Name="IdTipoMetaDato" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TipoMetaDato" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProcValidacion" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Turno">
+    <Key>
+      <PropertyRef Name="IdTurno" />
+    </Key>
+    <Property Name="IdTurno" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="FechaCierreTurno" Type="datetime" Nullable="false" />
+    <Property Name="IdEstado" Type="int" Nullable="false" />
+    <Property Name="IdCanal" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="URLPermitidaCanal">
+    <Key>
+      <PropertyRef Name="idUrlCanal" />
+    </Key>
+    <Property Name="idUrlCanal" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IdCanal" Type="int" Nullable="false" />
+    <Property Name="url" Type="varchar" Nullable="false" MaxLength="4000" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Password" Type="varchar" MaxLength="150" />
+    <Property Name="DateCreated" Type="datetime" Nullable="false" />
+    <Property Name="LastActivity" Type="datetime" Nullable="false" />
+    <Property Name="LastLoginDate" Type="datetime" />
+    <Property Name="Status" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="LastPasswordDate" Type="datetime" />
+    <Property Name="FailedPasswordAttempCount" Type="int" />
+    <Property Name="Comment" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="UsersInProfile">
+    <Key>
+      <PropertyRef Name="ProfileId" />
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="ProfileId" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RutUsuario" Type="int" Nullable="false" />
+    <Property Name="DvUsuario" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="NombreUsuario" Type="varchar" MaxLength="80" />
+    <Property Name="PasswordUsuario" Type="varchar" MaxLength="30" />
+    <Property Name="EmailUsuario" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="Zona">
+    <Key>
+      <PropertyRef Name="IdZona" />
+    </Key>
+    <Property Name="IdZona" Type="int" Nullable="false" />
+    <Property Name="DescZona" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_AbonoDinamico_Empresa">
+    <End Role="EmpresaRubro" Type="UniredModel.Store.EmpresaRubro" Multiplicity="1" />
+    <End Role="AbonoDinamico" Type="UniredModel.Store.AbonoDinamico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="AbonoDinamico">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Atributo">
+    <End Role="DetalleCuenta" Type="UniredModel.Store.DetalleCuenta" Multiplicity="1" />
+    <End Role="AtributoNoLlave" Type="UniredModel.Store.AtributoNoLlave" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleCuenta">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Principal>
+      <Dependent Role="AtributoNoLlave">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CampoOrden">
+    <End Role="DetalleCuenta" Type="UniredModel.Store.DetalleCuenta" Multiplicity="1" />
+    <End Role="CampoOrdenConsulta" Type="UniredModel.Store.CampoOrdenConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleCuenta">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Principal>
+      <Dependent Role="CampoOrdenConsulta">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CANAL">
+    <End Role="EstadoGeneral" Type="UniredModel.Store.EstadoGeneral" Multiplicity="1" />
+    <End Role="Canal" Type="UniredModel.Store.Canal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="Canal">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CANAL_MEDIO_PAGO1">
+    <End Role="Canal" Type="UniredModel.Store.Canal" Multiplicity="1" />
+    <End Role="CanalMedioPago" Type="UniredModel.Store.CanalMedioPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Canal">
+        <PropertyRef Name="IdCanal" />
+      </Principal>
+      <Dependent Role="CanalMedioPago">
+        <PropertyRef Name="IdCanal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CANAL_MEDIO_PAGO2">
+    <End Role="MedioPago" Type="UniredModel.Store.MedioPago" Multiplicity="1" />
+    <End Role="CanalMedioPago" Type="UniredModel.Store.CanalMedioPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MedioPago">
+        <PropertyRef Name="IdMedioPago" />
+      </Principal>
+      <Dependent Role="CanalMedioPago">
+        <PropertyRef Name="IdMedioPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTE2">
+    <End Role="Direccion" Type="UniredModel.Store.Direccion" Multiplicity="0..1" />
+    <End Role="Cliente" Type="UniredModel.Store.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Direccion">
+        <PropertyRef Name="IdDireccion" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdDireccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTE3">
+    <End Role="TerminoCondicion" Type="UniredModel.Store.TerminoCondicion" Multiplicity="1" />
+    <End Role="Cliente" Type="UniredModel.Store.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TerminoCondicion">
+        <PropertyRef Name="IdTermino" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdTermino" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTE4">
+    <End Role="GrupoEtario" Type="UniredModel.Store.GrupoEtario" Multiplicity="0..1" />
+    <End Role="Cliente" Type="UniredModel.Store.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GrupoEtario">
+        <PropertyRef Name="IdGrupoEtario" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdGrupoEtario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CodigoEmpresaImprimir">
+    <End Role="AtributoImprimir" Type="UniredModel.Store.AtributoImprimir" Multiplicity="1" />
+    <End Role="CodigoEmpresaImprimir" Type="UniredModel.Store.CodigoEmpresaImprimir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AtributoImprimir">
+        <PropertyRef Name="IdAtributoImprimir" />
+      </Principal>
+      <Dependent Role="CodigoEmpresaImprimir">
+        <PropertyRef Name="IdAtributoImprimir" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CodigoEmpresaImprimir_DetalleCuenta">
+    <End Role="DetalleCuenta" Type="UniredModel.Store.DetalleCuenta" Multiplicity="1" />
+    <End Role="CodigoEmpresaImprimir" Type="UniredModel.Store.CodigoEmpresaImprimir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleCuenta">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Principal>
+      <Dependent Role="CodigoEmpresaImprimir">
+        <PropertyRef Name="IdCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CodigoEmpresaInformar">
+    <End Role="AtributoInformar" Type="UniredModel.Store.AtributoInformar" Multiplicity="1" />
+    <End Role="CodigoEmpresaInformar" Type="UniredModel.Store.CodigoEmpresaInformar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AtributoInformar">
+        <PropertyRef Name="IdAtributoInformar" />
+      </Principal>
+      <Dependent Role="CodigoEmpresaInformar">
+        <PropertyRef Name="IdAtributoInformar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CodigoEmpresaInformar_Detalle">
+    <End Role="DetalleCuenta" Type="UniredModel.Store.DetalleCuenta" Multiplicity="1" />
+    <End Role="CodigoEmpresaInformar" Type="UniredModel.Store.CodigoEmpresaInformar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleCuenta">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Principal>
+      <Dependent Role="CodigoEmpresaInformar">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COMUNA">
+    <End Role="Provincia" Type="UniredModel.Store.Provincia" Multiplicity="1" />
+    <End Role="Comuna" Type="UniredModel.Store.Comuna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provincia">
+        <PropertyRef Name="IdProvincia" />
+      </Principal>
+      <Dependent Role="Comuna">
+        <PropertyRef Name="IdProvincia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_ConfigMantendorPopUp">
+    <End Role="ConfigMantenedorPopUp" Type="UniredModel.Store.ConfigMantenedorPopUp" Multiplicity="1" />
+    <End Role="ConfigVisualMantenedorPopUp" Type="UniredModel.Store.ConfigVisualMantenedorPopUp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConfigMantenedorPopUp">
+        <PropertyRef Name="IdConfig" />
+      </Principal>
+      <Dependent Role="ConfigVisualMantenedorPopUp">
+        <PropertyRef Name="IdConfig" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONFIGURACION_PROCESO">
+    <End Role="ConfiguracionProcesoConsulta" Type="UniredModel.Store.ConfiguracionProcesoConsulta" Multiplicity="0..1" />
+    <End Role="ServiciosProceso" Type="UniredModel.Store.ServiciosProceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConfiguracionProcesoConsulta">
+        <PropertyRef Name="idProcesoConsulta" />
+      </Principal>
+      <Dependent Role="ServiciosProceso">
+        <PropertyRef Name="idConfiguracion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONFIGURACION_PROCESO_CUENTAC">
+    <End Role="ConfiguracionProcesoConsulta" Type="UniredModel.Store.ConfiguracionProcesoConsulta" Multiplicity="0..1" />
+    <End Role="CuentaConsultada" Type="UniredModel.Store.CuentaConsultada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConfiguracionProcesoConsulta">
+        <PropertyRef Name="idProcesoConsulta" />
+      </Principal>
+      <Dependent Role="CuentaConsultada">
+        <PropertyRef Name="idConfiguracion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONSULTA_BOLETA2">
+    <End Role="EstadoBoleta" Type="UniredModel.Store.EstadoBoleta" Multiplicity="1" />
+    <End Role="ConsultaBoleta" Type="UniredModel.Store.ConsultaBoleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoBoleta">
+        <PropertyRef Name="IdEstadoBoleta" />
+      </Principal>
+      <Dependent Role="ConsultaBoleta">
+        <PropertyRef Name="IdEstadoBoleta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONSULTA_BOLETA3">
+    <End Role="TipoCliente" Type="UniredModel.Store.TipoCliente" Multiplicity="1" />
+    <End Role="ConsultaBoleta" Type="UniredModel.Store.ConsultaBoleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoCliente">
+        <PropertyRef Name="IdTipoCliente" />
+      </Principal>
+      <Dependent Role="ConsultaBoleta">
+        <PropertyRef Name="IdTipoCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CUENTA">
+    <End Role="ConsultaBoleta" Type="UniredModel.Store.ConsultaBoleta" Multiplicity="1" />
+    <End Role="Cuenta" Type="UniredModel.Store.Cuenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConsultaBoleta">
+        <PropertyRef Name="IdConsultaBoleta" />
+      </Principal>
+      <Dependent Role="Cuenta">
+        <PropertyRef Name="IdConsultaBoleta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CUENTA_CLIENTE">
+    <End Role="Cliente" Type="UniredModel.Store.Cliente" Multiplicity="1" />
+    <End Role="CuentaCliente" Type="UniredModel.Store.CuentaCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="CuentaCliente">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CUENTA_CLIENTE2">
+    <End Role="EmpresaRubro" Type="UniredModel.Store.EmpresaRubro" Multiplicity="1" />
+    <End Role="CuentaCliente" Type="UniredModel.Store.CuentaCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="CuentaCliente">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CUENTA_CLIENTE3">
+    <End Role="Grupo" Type="UniredModel.Store.Grupo" Multiplicity="1" />
+    <End Role="CuentaCliente" Type="UniredModel.Store.CuentaCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="IdGrupo" />
+      </Principal>
+      <Dependent Role="CuentaCliente">
+        <PropertyRef Name="IdGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CuentaProcesoConsulta">
+    <End Role="ConfiguracionProcesoConsulta" Type="UniredModel.Store.ConfiguracionProcesoConsulta" Multiplicity="1" />
+    <End Role="CuentaProcesoConsulta" Type="UniredModel.Store.CuentaProcesoConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConfiguracionProcesoConsulta">
+        <PropertyRef Name="idProcesoConsulta" />
+      </Principal>
+      <Dependent Role="CuentaProcesoConsulta">
+        <PropertyRef Name="IdProcesoConsulta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CuentaProcesoConsulta_CuentaCliente">
+    <End Role="CuentaCliente" Type="UniredModel.Store.CuentaCliente" Multiplicity="1" />
+    <End Role="CuentaProcesoConsulta" Type="UniredModel.Store.CuentaProcesoConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CuentaCliente">
+        <PropertyRef Name="IdCuentaCliente" />
+      </Principal>
+      <Dependent Role="CuentaProcesoConsulta">
+        <PropertyRef Name="IdCuentaCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CuerpoMail">
+    <End Role="TipoMail" Type="UniredModel.Store.TipoMail" Multiplicity="1" />
+    <End Role="CuerpoMail" Type="UniredModel.Store.CuerpoMail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoMail">
+        <PropertyRef Name="IdTipoMail" />
+      </Principal>
+      <Dependent Role="CuerpoMail">
+        <PropertyRef Name="IdTipoMail" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DETALLE_CUENTA">
+    <End Role="Cuenta" Type="UniredModel.Store.Cuenta" Multiplicity="1" />
+    <End Role="DetalleCuenta" Type="UniredModel.Store.DetalleCuenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cuenta">
+        <PropertyRef Name="IdCuenta" />
+      </Principal>
+      <Dependent Role="DetalleCuenta">
+        <PropertyRef Name="IdCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DIRECCION">
+    <End Role="Comuna" Type="UniredModel.Store.Comuna" Multiplicity="0..1" />
+    <End Role="Direccion" Type="UniredModel.Store.Direccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comuna">
+        <PropertyRef Name="IdComuna" />
+      </Principal>
+      <Dependent Role="Direccion">
+        <PropertyRef Name="IdComuna" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPRESA">
+    <End Role="EstadoGeneral" Type="UniredModel.Store.EstadoGeneral" Multiplicity="1" />
+    <End Role="Empresa" Type="UniredModel.Store.Empresa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="Empresa">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPRESA_RUBRO">
+    <End Role="Empresa" Type="UniredModel.Store.Empresa" Multiplicity="1" />
+    <End Role="EmpresaRubro" Type="UniredModel.Store.EmpresaRubro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="IdEmpresa" />
+      </Principal>
+      <Dependent Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPRESA_RUBRO_MP">
+    <End Role="EmpresaRubro" Type="UniredModel.Store.EmpresaRubro" Multiplicity="1" />
+    <End Role="EmpresaRubroMP" Type="UniredModel.Store.EmpresaRubroMP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="EmpresaRubroMP">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPRESA_RUBRO_MP2">
+    <End Role="MedioPago" Type="UniredModel.Store.MedioPago" Multiplicity="1" />
+    <End Role="EmpresaRubroMP" Type="UniredModel.Store.EmpresaRubroMP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MedioPago">
+        <PropertyRef Name="IdMedioPago" />
+      </Principal>
+      <Dependent Role="EmpresaRubroMP">
+        <PropertyRef Name="IdMedioPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPRESA_RUBRO2">
+    <End Role="Rubro" Type="UniredModel.Store.Rubro" Multiplicity="1" />
+    <End Role="EmpresaRubro" Type="UniredModel.Store.EmpresaRubro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rubro">
+        <PropertyRef Name="IdRubro" />
+      </Principal>
+      <Dependent Role="EmpresaRubro">
+        <PropertyRef Name="IdRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPRESA_RUBRO4">
+    <End Role="EstadoGeneral" Type="UniredModel.Store.EstadoGeneral" Multiplicity="1" />
+    <End Role="EmpresaRubro" Type="UniredModel.Store.EmpresaRubro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="EmpresaRubro">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ESTADO_GENERAL">
+    <End Role="EstadoGeneral" Type="UniredModel.Store.EstadoGeneral" Multiplicity="1" />
+    <End Role="Turno" Type="UniredModel.Store.Turno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="Turno">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GRUPO_IMAGEN_ESTILO1">
+    <End Role="ImagenEstilo" Type="UniredModel.Store.ImagenEstilo" Multiplicity="1" />
+    <End Role="GrupoImagenEstilo" Type="UniredModel.Store.GrupoImagenEstilo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ImagenEstilo">
+        <PropertyRef Name="IdImagen" />
+      </Principal>
+      <Dependent Role="GrupoImagenEstilo">
+        <PropertyRef Name="IdImagen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GRUPO_IMAGEN_ESTILO2">
+    <End Role="Grupo" Type="UniredModel.Store.Grupo" Multiplicity="1" />
+    <End Role="GrupoImagenEstilo" Type="UniredModel.Store.GrupoImagenEstilo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="IdGrupo" />
+      </Principal>
+      <Dependent Role="GrupoImagenEstilo">
+        <PropertyRef Name="IdGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GRUPO2">
+    <End Role="EstadoGeneral" Type="UniredModel.Store.EstadoGeneral" Multiplicity="1" />
+    <End Role="Grupo" Type="UniredModel.Store.Grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="Grupo">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GRUPO3">
+    <End Role="Cliente" Type="UniredModel.Store.Cliente" Multiplicity="0..1" />
+    <End Role="Grupo" Type="UniredModel.Store.Grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="Grupo">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdAtributoImprimir">
+    <End Role="EmpresaRubro" Type="UniredModel.Store.EmpresaRubro" Multiplicity="1" />
+    <End Role="AtributoImprimir" Type="UniredModel.Store.AtributoImprimir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="AtributoImprimir">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdAtributoInformar">
+    <End Role="EmpresaRubro" Type="UniredModel.Store.EmpresaRubro" Multiplicity="1" />
+    <End Role="AtributoInformar" Type="UniredModel.Store.AtributoInformar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="AtributoInformar">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdCanal">
+    <End Role="Canal" Type="UniredModel.Store.Canal" Multiplicity="1" />
+    <End Role="ConfiguracionCanal" Type="UniredModel.Store.ConfiguracionCanal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Canal">
+        <PropertyRef Name="IdCanal" />
+      </Principal>
+      <Dependent Role="ConfiguracionCanal">
+        <PropertyRef Name="IdCanal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDENTIFI_REFERENCE_CUENTACL">
+    <End Role="CuentaCliente" Type="UniredModel.Store.CuentaCliente" Multiplicity="1" />
+    <End Role="IdentificadorCtaCli" Type="UniredModel.Store.IdentificadorCtaCli" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CuentaCliente">
+        <PropertyRef Name="IdCuentaCliente" />
+      </Principal>
+      <Dependent Role="IdentificadorCtaCli">
+        <PropertyRef Name="IdCuentaCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDENTIFI_REFERENCE_IDENTIFI">
+    <End Role="Identificador" Type="UniredModel.Store.Identificador" Multiplicity="1" />
+    <End Role="IdentificadorCtaCli" Type="UniredModel.Store.IdentificadorCtaCli" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Identificador">
+        <PropertyRef Name="IdIdentificador" />
+      </Principal>
+      <Dependent Role="IdentificadorCtaCli">
+        <PropertyRef Name="IdIdentificador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDENTIFICADOR">
+    <End Role="EmpresaRubro" Type="UniredModel.Store.EmpresaRubro" Multiplicity="1" />
+    <End Role="Identificador" Type="UniredModel.Store.Identificador" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="Identificador">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDENTIFICADOR2">
+    <End Role="TipoMetaDato" Type="UniredModel.Store.TipoMetaDato" Multiplicity="1" />
+    <End Role="Identificador" Type="UniredModel.Store.Identificador" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoMetaDato">
+        <PropertyRef Name="IdTipoMetaDato" />
+      </Principal>
+      <Dependent Role="Identificador">
+        <PropertyRef Name="IdTipoMetaDato" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdentificadorCtaCliExpress">
+    <End Role="CuentaClienteExpress" Type="UniredModel.Store.CuentaClienteExpress" Multiplicity="1" />
+    <End Role="IdentificadorCtaCliExpress" Type="UniredModel.Store.IdentificadorCtaCliExpress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CuentaClienteExpress">
+        <PropertyRef Name="IdCuentaCliente" />
+      </Principal>
+      <Dependent Role="IdentificadorCtaCliExpress">
+        <PropertyRef Name="IdCuentaCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdParametrosConsulta">
+    <End Role="ConsultaBoleta" Type="UniredModel.Store.ConsultaBoleta" Multiplicity="1" />
+    <End Role="ParametrosConsulta" Type="UniredModel.Store.ParametrosConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConsultaBoleta">
+        <PropertyRef Name="IdConsultaBoleta" />
+      </Principal>
+      <Dependent Role="ParametrosConsulta">
+        <PropertyRef Name="IdConsultaBoleta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdPublicidad">
+    <End Role="IdentificadorPublicidad" Type="UniredModel.Store.IdentificadorPublicidad" Multiplicity="0..1" />
+    <End Role="MantenedorImagenes" Type="UniredModel.Store.MantenedorImagenes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="IdentificadorPublicidad">
+        <PropertyRef Name="IdPublicidad" />
+      </Principal>
+      <Dependent Role="MantenedorImagenes">
+        <PropertyRef Name="IdPublicidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdTipoAbono">
+    <End Role="TipoAbono" Type="UniredModel.Store.TipoAbono" Multiplicity="1" />
+    <End Role="EmpresaRubro" Type="UniredModel.Store.EmpresaRubro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoAbono">
+        <PropertyRef Name="IdTipoAbono" />
+      </Principal>
+      <Dependent Role="EmpresaRubro">
+        <PropertyRef Name="IdTipoAbono" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdUrlCanak">
+    <End Role="Canal" Type="UniredModel.Store.Canal" Multiplicity="1" />
+    <End Role="URLPermitidaCanal" Type="UniredModel.Store.URLPermitidaCanal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Canal">
+        <PropertyRef Name="IdCanal" />
+      </Principal>
+      <Dependent Role="URLPermitidaCanal">
+        <PropertyRef Name="IdCanal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IMAGEN_ESTILO">
+    <End Role="EstadoImagen" Type="UniredModel.Store.EstadoImagen" Multiplicity="1" />
+    <End Role="ImagenEstilo" Type="UniredModel.Store.ImagenEstilo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoImagen">
+        <PropertyRef Name="IdEstadoImagen" />
+      </Principal>
+      <Dependent Role="ImagenEstilo">
+        <PropertyRef Name="IdEstadoImagen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INTENTO_CLIENTE">
+    <End Role="Cliente" Type="UniredModel.Store.Cliente" Multiplicity="1" />
+    <End Role="IntentoCliente" Type="UniredModel.Store.IntentoCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="IntentoCliente">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INTENTO_PAGO1">
+    <End Role="EstadoPago" Type="UniredModel.Store.EstadoPago" Multiplicity="1" />
+    <End Role="IntentoPago" Type="UniredModel.Store.IntentoPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoPago">
+        <PropertyRef Name="IdEstadoPago" />
+      </Principal>
+      <Dependent Role="IntentoPago">
+        <PropertyRef Name="IdEstadoPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INTENTO_PAGO2">
+    <End Role="MedioPago" Type="UniredModel.Store.MedioPago" Multiplicity="1" />
+    <End Role="IntentoPago" Type="UniredModel.Store.IntentoPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MedioPago">
+        <PropertyRef Name="IdMedioPago" />
+      </Principal>
+      <Dependent Role="IntentoPago">
+        <PropertyRef Name="IdMedioPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INTENTO_PAGO3">
+    <End Role="Pago" Type="UniredModel.Store.Pago" Multiplicity="0..1" />
+    <End Role="IntentoPago" Type="UniredModel.Store.IntentoPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pago">
+        <PropertyRef Name="IdPago" />
+      </Principal>
+      <Dependent Role="IntentoPago">
+        <PropertyRef Name="IdPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INTENTO_USUARIO">
+    <End Role="Usuario" Type="UniredModel.Store.Usuario" Multiplicity="1" />
+    <End Role="IntentoUsuario" Type="UniredModel.Store.IntentoUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="IntentoUsuario">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MEDIO_PAGO">
+    <End Role="EstadoGeneral" Type="UniredModel.Store.EstadoGeneral" Multiplicity="0..1" />
+    <End Role="MedioPago" Type="UniredModel.Store.MedioPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="MedioPago">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MedioPago_Tipo_MedioPago">
+    <End Role="Tipo_MedioPago" Type="UniredModel.Store.Tipo_MedioPago" Multiplicity="0..1" />
+    <End Role="MedioPago" Type="UniredModel.Store.MedioPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo_MedioPago">
+        <PropertyRef Name="Id_tipoMedioPago" />
+      </Principal>
+      <Dependent Role="MedioPago">
+        <PropertyRef Name="Id_tipoMedioPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notificacion">
+    <End Role="EstadoNotificacion" Type="UniredModel.Store.EstadoNotificacion" Multiplicity="1" />
+    <End Role="Notificacion" Type="UniredModel.Store.Notificacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoNotificacion">
+        <PropertyRef Name="IdEstadoNotificacion" />
+      </Principal>
+      <Dependent Role="Notificacion">
+        <PropertyRef Name="IdEstadoNotificacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notificacion2">
+    <End Role="PagoDetalleBoleta" Type="UniredModel.Store.PagoDetalleBoleta" Multiplicity="0..1" />
+    <End Role="Notificacion" Type="UniredModel.Store.Notificacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PagoDetalleBoleta">
+        <PropertyRef Name="IdPagoDetalle" />
+      </Principal>
+      <Dependent Role="Notificacion">
+        <PropertyRef Name="IdPagoDetalle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAGO_1">
+    <End Role="EstadoPago" Type="UniredModel.Store.EstadoPago" Multiplicity="1" />
+    <End Role="Pago" Type="UniredModel.Store.Pago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoPago">
+        <PropertyRef Name="IdEstadoPago" />
+      </Principal>
+      <Dependent Role="Pago">
+        <PropertyRef Name="IdEstadoPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAGO_DETALLE_BOLETA1">
+    <End Role="Pago" Type="UniredModel.Store.Pago" Multiplicity="1" />
+    <End Role="PagoDetalleBoleta" Type="UniredModel.Store.PagoDetalleBoleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pago">
+        <PropertyRef Name="IdPago" />
+      </Principal>
+      <Dependent Role="PagoDetalleBoleta">
+        <PropertyRef Name="IdPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAGO_DETALLE_BOLETA2">
+    <End Role="DetalleCuenta" Type="UniredModel.Store.DetalleCuenta" Multiplicity="1" />
+    <End Role="PagoDetalleBoleta" Type="UniredModel.Store.PagoDetalleBoleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleCuenta">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Principal>
+      <Dependent Role="PagoDetalleBoleta">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAGO_DETALLE_BOLETA3">
+    <End Role="Turno" Type="UniredModel.Store.Turno" Multiplicity="1" />
+    <End Role="PagoDetalleBoleta" Type="UniredModel.Store.PagoDetalleBoleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turno">
+        <PropertyRef Name="IdTurno" />
+      </Principal>
+      <Dependent Role="PagoDetalleBoleta">
+        <PropertyRef Name="IdTurno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAGO_DETALLE_BOLETA4">
+    <End Role="EstadoPago" Type="UniredModel.Store.EstadoPago" Multiplicity="1" />
+    <End Role="PagoDetalleBoleta" Type="UniredModel.Store.PagoDetalleBoleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoPago">
+        <PropertyRef Name="IdEstadoPago" />
+      </Principal>
+      <Dependent Role="PagoDetalleBoleta">
+        <PropertyRef Name="IdEstadoPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAGO1">
+    <End Role="ConsultaBoleta" Type="UniredModel.Store.ConsultaBoleta" Multiplicity="1" />
+    <End Role="Pago" Type="UniredModel.Store.Pago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConsultaBoleta">
+        <PropertyRef Name="IdConsultaBoleta" />
+      </Principal>
+      <Dependent Role="Pago">
+        <PropertyRef Name="IdConsultaBoleta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Profiles_Applications">
+    <End Role="Applications" Type="UniredModel.Store.Applications" Multiplicity="1" />
+    <End Role="Profiles" Type="UniredModel.Store.Profiles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Applications">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Profiles">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PROVINCIA">
+    <End Role="Region" Type="UniredModel.Store.Region" Multiplicity="1" />
+    <End Role="Provincia" Type="UniredModel.Store.Provincia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Region">
+        <PropertyRef Name="IdRegion" />
+      </Principal>
+      <Dependent Role="Provincia">
+        <PropertyRef Name="IdRegion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGLA">
+    <End Role="EmpresaRubro" Type="UniredModel.Store.EmpresaRubro" Multiplicity="1" />
+    <End Role="ReglaPresentacion" Type="UniredModel.Store.ReglaPresentacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="ReglaPresentacion">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGLA2">
+    <End Role="TipoCartera" Type="UniredModel.Store.TipoCartera" Multiplicity="1" />
+    <End Role="ReglaPresentacion" Type="UniredModel.Store.ReglaPresentacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoCartera">
+        <PropertyRef Name="IdTipoCartera" />
+      </Principal>
+      <Dependent Role="ReglaPresentacion">
+        <PropertyRef Name="IdTipoCartera" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RestriccionEPSCanal_Canal">
+    <End Role="Canal" Type="UniredModel.Store.Canal" Multiplicity="1" />
+    <End Role="RestriccionEPSCanal" Type="UniredModel.Store.RestriccionEPSCanal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Canal">
+        <PropertyRef Name="IdCanal" />
+      </Principal>
+      <Dependent Role="RestriccionEPSCanal">
+        <PropertyRef Name="IdCanal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RestriccionEPSCanal_EmpresaRubro">
+    <End Role="EmpresaRubro" Type="UniredModel.Store.EmpresaRubro" Multiplicity="1" />
+    <End Role="RestriccionEPSCanal" Type="UniredModel.Store.RestriccionEPSCanal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="RestriccionEPSCanal">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Roles_Applications">
+    <End Role="Applications" Type="UniredModel.Store.Applications" Multiplicity="1" />
+    <End Role="Roles" Type="UniredModel.Store.Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Applications">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Roles">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolInProfile_Profiles">
+    <End Role="Profiles" Type="UniredModel.Store.Profiles" Multiplicity="1" />
+    <End Role="RolInProfile" Type="UniredModel.Store.RolInProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Profiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RolInProfile">
+        <PropertyRef Name="ProfileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolInProfile_Roles">
+    <End Role="Roles" Type="UniredModel.Store.Roles" Multiplicity="1" />
+    <End Role="RolInProfile" Type="UniredModel.Store.RolInProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RolInProfile">
+        <PropertyRef Name="RolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RUBRO">
+    <End Role="EstadoGeneral" Type="UniredModel.Store.EstadoGeneral" Multiplicity="1" />
+    <End Role="Rubro" Type="UniredModel.Store.Rubro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="Rubro">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUCURSAL">
+    <End Role="Comuna" Type="UniredModel.Store.Comuna" Multiplicity="1" />
+    <End Role="Sucursal" Type="UniredModel.Store.Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comuna">
+        <PropertyRef Name="IdComuna" />
+      </Principal>
+      <Dependent Role="Sucursal">
+        <PropertyRef Name="IdComuna" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUCURSAL2">
+    <End Role="EstadoGeneral" Type="UniredModel.Store.EstadoGeneral" Multiplicity="1" />
+    <End Role="Sucursal" Type="UniredModel.Store.Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="Sucursal">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TERMINO_CONDICION">
+    <End Role="EstadoGeneral" Type="UniredModel.Store.EstadoGeneral" Multiplicity="0..1" />
+    <End Role="TerminoCondicion" Type="UniredModel.Store.TerminoCondicion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="TerminoCondicion">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TIPOMAIL">
+    <End Role="EstadoGeneral" Type="UniredModel.Store.EstadoGeneral" Multiplicity="1" />
+    <End Role="TipoMail" Type="UniredModel.Store.TipoMail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="TipoMail">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsersInProfile_Profiles">
+    <End Role="Profiles" Type="UniredModel.Store.Profiles" Multiplicity="1" />
+    <End Role="UsersInProfile" Type="UniredModel.Store.UsersInProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Profiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UsersInProfile">
+        <PropertyRef Name="ProfileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsersInProfile_Users">
+    <End Role="Users" Type="UniredModel.Store.Users" Multiplicity="1" />
+    <End Role="UsersInProfile" Type="UniredModel.Store.UsersInProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="UsersInProfile">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ZONA">
+    <End Role="Zona" Type="UniredModel.Store.Zona" Multiplicity="0..1" />
+    <End Role="Sucursal" Type="UniredModel.Store.Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zona">
+        <PropertyRef Name="IdZona" />
+      </Principal>
+      <Dependent Role="Sucursal">
+        <PropertyRef Name="IdZona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="IdentificadorCtaCliExpress2">
+    <End Role="Identificador" Type="UniredModel.Store.Identificador" Multiplicity="1" />
+    <End Role="IdentificadorCtaCliExpress" Type="UniredModel.Store.IdentificadorCtaCliExpress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Identificador">
+        <PropertyRef Name="IdIdentificador" />
+      </Principal>
+      <Dependent Role="IdentificadorCtaCliExpress">
+        <PropertyRef Name="IdIdentificador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PK_CtaCliExpress2">
+    <End Role="ClienteExpress" Type="UniredModel.Store.ClienteExpress" Multiplicity="0..1" />
+    <End Role="CuentaClienteExpress" Type="UniredModel.Store.CuentaClienteExpress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClienteExpress">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="CuentaClienteExpress">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PK_CtaCliExpress3">
+    <End Role="EmpresaRubro" Type="UniredModel.Store.EmpresaRubro" Multiplicity="0..1" />
+    <End Role="CuentaClienteExpress" Type="UniredModel.Store.CuentaClienteExpress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="CuentaClienteExpress">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'Unired.dbo.prueba_insercion' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="prueba_insercion">
+        <Property Name="nlinea" Type="int" />
+        <Property Name="texto" Type="varchar(max)" />
+        <Property Name="tipo" Type="int" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'Unired.dbo.prueba_insercion1' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="prueba_insercion1">
+        <Property Name="texto" Type="varchar(max)" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'Unired.dbo.RendicionUnired' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="RendicionUnired">
+        <Property Name="Terminal" Type="varchar" MaxLength="15" />
+        <Property Name="IdPago" Type="bigint" />
+        <Property Name="FechaContable" Type="datetime" />
+        <Property Name="IdTurno" Type="varchar" MaxLength="20" />
+        <Property Name="TicketXCash" Type="varchar" MaxLength="40" />
+        <Property Name="FolioXCash" Type="int" />
+        <Property Name="MontoPagado" Type="bigint" />
+        <Property Name="TipoPago" Type="char" MaxLength="1" />
+        <Property Name="EstadoNotificacion" Type="char" MaxLength="1" />
+        <Property Name="TbkCodAutoriza" Type="varchar" MaxLength="20" />
+        <Property Name="Cub" Type="varchar" MaxLength="50" />
+        <Property Name="IdMedioPago" Type="int" />
+        <Property Name="IdConsultaBoleta" Type="bigint" />
+        <Property Name="IdCuenta" Type="bigint" />
+        <Property Name="FechaPago" Type="datetime" />
+        <Property Name="CodInstrumento" Type="varchar" MaxLength="50" />
+        <Property Name="CodComercio" Type="varchar" MaxLength="20" />
+        <Property Name="CodMedioPago" Type="nchar" MaxLength="50" />
+        <Property Name="TbkIdTrx" Type="varchar" MaxLength="26" />
+      </EntityType>-->
+</Schema>

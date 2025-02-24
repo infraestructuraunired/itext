@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UniredModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="UniredModelStoreContainer">
+    <EntitySet Name="Configuracion" EntityType="UniredModel.Store.Configuracion" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Configuracion">
+    <Key>
+      <PropertyRef Name="NombreConfiguracion" />
+    </Key>
+    <Property Name="IdConfiguracion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NombreConfiguracion" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="ValorConfiguracion" Type="varchar" MaxLength="200" />
+    <Property Name="Encriptado" Type="bit" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="150" />
+    <Property Name="Tipo" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <Function Name="P_Portal_ComprobanteResumenPDF" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Pi_IdPago" Type="bigint" Mode="In" />
+    <Parameter Name="Pi_IdCuenta" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="P_Portal_ComprobanteResumenPDFHistorico" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Pi_IdPago" Type="bigint" Mode="In" />
+    <Parameter Name="Pi_IdCuenta" Type="bigint" Mode="In" />
+  </Function>
+</Schema>

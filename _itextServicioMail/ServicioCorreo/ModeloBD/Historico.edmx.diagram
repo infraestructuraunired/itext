@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ee32e29358ed403c9f59ee6665482754" Name="Diagrama1" ZoomLevel="10">
+        <EntityTypeShape EntityType="Unired_HistoricaModel.AbonoDinamico" Width="1.5" PointX="10.153842804093772" PointY="20.654382745108745" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.AtributoImprimir" Width="1.5" PointX="2.2627153649286904" PointY="24.885193061495755" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.AtributoInformar" Width="1.5" PointX="5.6101567752706618" PointY="0.83243575730940134" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.AtributoNoLlave" Width="1.5" PointX="1.8399558504298126" PointY="23.328099157348323" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.CampoOrdenConsulta" Width="1.5" PointX="1.6076462350821337" PointY="5.1175981336820859" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Canal" Width="1.5" PointX="8.6814803521528283" PointY="29.324707432335572" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Cliente" Width="1.5" PointX="3.4343725086349863" PointY="4.780416505774677" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.ClienteExpress" Width="1.5" PointX="5.7603236053885531" PointY="10.626684596122562" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.CodigoEmpresaImprimir" Width="1.5" PointX="0.76558215951806963" PointY="7.5985293423750111" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.CodigoEmpresaInformar" Width="1.5" PointX="6.6443448954468334" PointY="15.889245293982906" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Comuna" Width="1.5" PointX="9.1918984135575119" PointY="19.51576510980528" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.ConfigMantenedorPopUp" Width="1.5" PointX="5.2689635834046475" PointY="15.117308400160312" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Configuracion" Width="1.5" PointX="11.065047494631749" PointY="14.949525333451817" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.ConfiguracionCanal" Width="1.5" PointX="9.3957290991189559" PointY="26.418665451192606" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.ConfiguracionProcesoConsulta" Width="1.5" PointX="0.019764896491432982" PointY="0.84813594857609642" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.ConfigVisualMantenedorPopUp" Width="1.5" PointX="11.867062618894066" PointY="8.3828416952783442" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.ConsultaBoleta" Width="1.5" PointX="7.7636355458589428" PointY="31.633037805386373" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Contacto" Width="1.5" PointX="4.1479439419451838" PointY="25.200050797872269" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Cuenta" Width="1.5" PointX="7.6924245672730844" PointY="21.327060679591753" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.CuentaCliente" Width="1.5" PointX="0.016981579371253764" PointY="21.957816640826788" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.CuentaClienteExpress" Width="1.5" PointX="3.1182324956721779" PointY="11.989258473734026" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.CuentaConsultada" Width="1.5" PointX="4.6915417670698565" PointY="24.886379730369143" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.CuentaProcesoConsulta" Width="1.5" PointX="11.00197969703096" PointY="7.7564569151757548" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.CuerpoMail" Width="1.5" PointX="8.1137087662302463" PointY="31.767931818854031" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.DetalleCuenta" Width="1.5" PointX="9.3186557783366446" PointY="18.623963573306781" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.DetalleResumenPago" Width="1.5" PointX="9.8931958460682985" PointY="16.448907189280217" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Direccion" Width="1.5" PointX="11.510290223877082" PointY="6.0717030642888057" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Empresa" Width="1.5" PointX="0.38431200961783163" PointY="7.561149034444778" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.EmpresaRubro" Width="1.5" PointX="2.4764299460111325" PointY="22.916599239649528" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.EstadoBoleta" Width="1.5" PointX="10.26689990342916" PointY="0.010892733936613767" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.EstadoGeneral" Width="1.5" PointX="2.9164343098720695" PointY="10.487883483286893" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.EstadoImagen" Width="1.5" PointX="8.7282722875141872" PointY="3.4389206783095938" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.EstadoMail" Width="1.5" PointX="2.0520366812367161" PointY="14.767772577129199" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.EstadoNotificacion" Width="1.5" PointX="3.2331297412668962" PointY="9.5252888843069261" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.EstadoPago" Width="1.5" PointX="9.6447122477203191" PointY="22.160812149830541" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Feriado" Width="1.5" PointX="8.2925821562728768" PointY="12.714491745789765" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.FormatoFechaEmpresaRubro" Width="1.5" PointX="2.8324669240193754" PointY="27.760436413698102" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Grupo" Width="1.5" PointX="2.8402344895714124" PointY="12.522470629086007" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.GrupoEtario" Width="1.5" PointX="2.6268701491071238" PointY="21.164189825376585" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Identificador" Width="1.5" PointX="6.6670109530291572" PointY="21.75033640384224" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.IdentificadorCtaCli" Width="1.5" PointX="9.492363233814185" PointY="25.287345778796517" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.IdentificadorCtaCliExpress" Width="1.5" PointX="0.58834376586058357" PointY="13.428742817337039" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.IdentificadorPublicidad" Width="1.5" PointX="2.4248551346477378" PointY="15.196593127770626" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.ImagenesCorreo" Width="1.5" PointX="3.6332754118522983" PointY="14.631325058001711" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.ImagenEstilo" Width="1.5" PointX="11.478077167402057" PointY="3.5000348107423793" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.IntentoCliente" Width="1.5" PointX="6.9735891031909683" PointY="29.596532939745362" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.IntentoPago" Width="1.5" PointX="9.7307478514177479" PointY="0.034391477720062937" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.IntentoUsuario" Width="1.5" PointX="5.3177469304379761" PointY="29.827403171838913" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.LinkAccesoPortal" Width="1.5" PointX="7.7676996401360725" PointY="9.0718573672100238" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Mailing" Width="1.5" PointX="7.2803557176517124" PointY="14.570839948286693" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.MantenedorImagenes" Width="1.5" PointX="11.675541601924014" PointY="12.111267825640397" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.MedioPago" Width="1.5" PointX="2.268262184349942" PointY="2.68893659240051" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.MultiIndustria" Width="1.5" PointX="10.691404183717168" PointY="13.667363843725697" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Notificacion" Width="1.5" PointX="3.3358732719607058" PointY="2.933670849974114" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Pago" Width="1.5" PointX="11.436654159536889" PointY="20.502361396561547" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.PagoDetalleBoleta" Width="1.5" PointX="0.20856073880966786" PointY="17.439623363986435" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.ParametrosConsulta" Width="1.5" PointX="1.9267137618394168" PointY="5.6280633386355188" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.PortalDisponible" Width="1.5" PointX="2.5117215414120451" PointY="14.489812380862334" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Profiles" Width="1.5" PointX="3.3446125403720015" PointY="9.84664994936746" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Promociones" Width="1.5" PointX="10.864740119718359" PointY="22.275504688860618" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Provincia" Width="1.5" PointX="1.9046393045711514" PointY="25.990354252043346" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Region" Width="1.5" PointX="4.09390616421304" PointY="22.219197849845141" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.ReglaPresentacion" Width="1.5" PointX="1.3367154529954843" PointY="24.517019476982309" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.RestriccionEPSCanal" Width="1.5" PointX="7.037186553253413" PointY="7.5188536529982715" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.ResumenPago" Width="1.5" PointX="5.0924167246988121" PointY="9.7465554670181849" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Roles" Width="1.5" PointX="8.92822684577118" PointY="29.933129697075639" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Rubro" Width="1.5" PointX="0.65621546686450738" PointY="3.2078559264577255" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.ServiciosProceso" Width="1.5" PointX="8.4808345495168282" PointY="13.201700797864097" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Sucursal" Width="1.5" PointX="7.214492482698752" PointY="30.879980116561047" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.TerminoCondicion" Width="1.5" PointX="6.3443743727842232" PointY="24.798916515334938" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Tipo_MedioPago" Width="1.5" PointX="2.3628491509532785" PointY="6.7550635816320144" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.TipoAbono" Width="1.5" PointX="6.0500927372137525" PointY="10.105844383177274" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.TipoCartera" Width="1.5" PointX="1.1039523152187245" PointY="1.1566142445228129" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.TipoCliente" Width="1.5" PointX="9.1719860905650936" PointY="20.320597598478475" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.TipoMail" Width="1.5" PointX="9.5011752627329784" PointY="31.690846100305603" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.TipoMetaDato" Width="1.5" PointX="7.8406636490675918" PointY="10.867215757662065" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Turno" Width="1.5" PointX="4.5372063929853992" PointY="29.138777224877281" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.URLPermitidaCanal" Width="1.5" PointX="3.5594256760363585" PointY="5.1444233530873538" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Users" Width="1.5" PointX="0.44781927040210889" PointY="15.829501308421373" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Usuario" Width="1.5" PointX="11.671635769154706" PointY="3.9933916795968041" />
+        <EntityTypeShape EntityType="Unired_HistoricaModel.Zona" Width="1.5" PointX="10.088074888143723" PointY="1.3768084055636116" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_AbonoDinamico_Empresa" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CodigoEmpresaImprimir" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_IdAtributoImprimir" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CodigoEmpresaInformar" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_IdAtributoInformar" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_Atributo" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CampoOrden" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CANAL" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_IdCanal" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_IdUrlCanak" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_RestriccionEPSCanal_Canal" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CLIENTE2" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CLIENTE3" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CLIENTE4" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CUENTA_CLIENTE" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_GRUPO3" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_INTENTO_CLIENTE" />
+        <AssociationConnector Association="Unired_HistoricaModel.PK_CtaCliExpress2" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CodigoEmpresaImprimir_DetalleCuenta" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CodigoEmpresaInformar_Detalle" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_COMUNA" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_DIRECCION" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_SUCURSAL" />
+        <AssociationConnector Association="Unired_HistoricaModel.fk_ConfigMantendorPopUp" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CONFIGURACION_PROCESO" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CONFIGURACION_PROCESO_CUENTAC" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CuentaProcesoConsulta" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CONSULTA_BOLETA2" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CONSULTA_BOLETA3" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CUENTA" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_IdParametrosConsulta" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_PAGO1" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_DETALLE_CUENTA" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CUENTA_CLIENTE2" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CUENTA_CLIENTE3" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CuentaProcesoConsulta_CuentaCliente" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_IDENTIFI_REFERENCE_CUENTACL" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_IdentificadorCtaCliExpress" />
+        <AssociationConnector Association="Unired_HistoricaModel.PK_CtaCliExpress3" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_CuerpoMail" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA2" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_EMPRESA" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_EMPRESA_RUBRO" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK__LinkAcces__IdEmp__7755B73D" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK__LinkAcces__IdEmp__7849DB76" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_EMPRESA_RUBRO2" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_EMPRESA_RUBRO4" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_IDENTIFICADOR" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_IdTipoAbono" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_REGLA" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_RestriccionEPSCanal_EmpresaRubro" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_ESTADO_GENERAL" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_GRUPO2" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_MEDIO_PAGO" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_RUBRO" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_SUCURSAL2" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_TERMINO_CONDICION" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_TIPOMAIL" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_IMAGEN_ESTILO" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_MAILING2" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_Notificacion" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_INTENTO_PAGO1" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_PAGO_1" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA4" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_IDENTIFI_REFERENCE_IDENTIFI" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_IDENTIFICADOR2" />
+        <AssociationConnector Association="Unired_HistoricaModel.IdentificadorCtaCliExpress2" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_IdPublicidad" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_INTENTO_PAGO2" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_INTENTO_PAGO3" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_INTENTO_USUARIO" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_MAILING" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_MedioPago_Tipo_MedioPago" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_Notificacion2" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA1" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA3" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_PROVINCIA" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_REGLA2" />
+        <AssociationConnector Association="Unired_HistoricaModel.FK_ZONA" />
+        <AssociationConnector Association="Unired_HistoricaModel.CanalMedioPago" />
+        <AssociationConnector Association="Unired_HistoricaModel.EmpresaRubroMP" />
+        <AssociationConnector Association="Unired_HistoricaModel.GrupoImagenEstilo" />
+        <AssociationConnector Association="Unired_HistoricaModel.RolInProfile" />
+        <AssociationConnector Association="Unired_HistoricaModel.UsersInProfile" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,100 @@
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\bin\Release\AplicacionTest.exe.config
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\bin\Release\AplicacionTest.exe
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\bin\Release\AplicacionTest.pdb
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.dll
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.SqlServer.dll
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\bin\Release\log4net.dll
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\bin\Release\ModeloBD.dll
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\bin\Release\ServicioMail.exe
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\bin\Release\ModeloBD.pdb
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\bin\Release\ServicioMail.pdb
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.xml
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.SqlServer.xml
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\bin\Release\log4net.xml
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\obj\Release\AplicacionTest.csprojResolveAssemblyReference.cache
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\obj\Release\AplicacionTest.exe
+C:\Anticipa\UNIRED\SVN Externo Servicio Correo\ServicioCorreo\AplicacionTest\obj\Release\AplicacionTest.pdb
+C:\Proyectos\Unired\SVN Interno\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\AplicacionTest.exe.config
+C:\Proyectos\Unired\SVN Interno\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\obj\Release\AplicacionTest.exe
+C:\Proyectos\Unired\SVN Interno\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\obj\Release\AplicacionTest.pdb
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\AplicacionTest.exe.config
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\obj\Release\AplicacionTest.exe
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\obj\Release\AplicacionTest.pdb
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\AplicacionTest.exe
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\AplicacionTest.pdb
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.SqlServer.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\log4net.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\ModeloBD.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\ServicioMail.exe
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\ModeloBD.pdb
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\ServicioMail.pdb
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.xml
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.SqlServer.xml
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\log4net.xml
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\obj\Release\AplicacionTest.csprojResolveAssemblyReference.cache
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\Newtonsoft.Json.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollo pago efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\Newtonsoft.Json.xml
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\AplicacionTest.exe.config
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\obj\Release\AplicacionTest.exe
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\obj\Release\AplicacionTest.pdb
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\AplicacionTest.exe
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\AplicacionTest.pdb
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.SqlServer.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\log4net.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\ModeloBD.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\ServicioMail.exe
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\Newtonsoft.Json.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\ModeloBD.pdb
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\ServicioMail.pdb
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.xml
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.SqlServer.xml
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\log4net.xml
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\Newtonsoft.Json.xml
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\obj\Release\AplicacionTest.csprojResolveAssemblyReference.cache
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\ephtmltopdf.dll
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\AplicacionTest.exe.config
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\AplicacionTest.exe
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\AplicacionTest.pdb
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.dll
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.SqlServer.dll
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\log4net.dll
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\ModeloBD.dll
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\ServicioMail.exe
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\ephtmltopdf.dll
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\Newtonsoft.Json.dll
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\ModeloBD.pdb
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\ServicioMail.pdb
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.xml
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\EntityFramework.SqlServer.xml
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\log4net.xml
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\Newtonsoft.Json.xml
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\obj\Release\AplicacionTest.csprojResolveAssemblyReference.cache
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\obj\Release\AplicacionTest.exe
+C:\RVENEGAS\Unired\SVN\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\obj\Release\AplicacionTest.pdb
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\AplicacionTest\bin\Release\itextsharp.xml
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\AplicacionTest\obj\Release\AplicacionTest.csprojResolveAssemblyReference.cache
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\AplicacionTest\obj\Release\AplicacionTest.exe
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\AplicacionTest\obj\Release\AplicacionTest.pdb
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\AplicacionTest.exe.config
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\AplicacionTest.exe
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\AplicacionTest.pdb
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\EntityFramework.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\EntityFramework.SqlServer.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\log4net.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\ModeloBD.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\ServicioMail.exe
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\Anticipa.Security.Cryptograpy.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\ephtmltopdf.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\Newtonsoft.Json.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\ModeloBD.pdb
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\ServicioMail.pdb
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\EntityFramework.xml
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\EntityFramework.SqlServer.xml
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\log4net.xml
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\Anticipa.Security.Cryptograpy.pdb
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\bin\Release\Newtonsoft.Json.xml
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\obj\Release\AplicacionTest.csprojResolveAssemblyReference.cache
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\obj\Release\AplicacionTest.exe
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\AplicacionTest\obj\Release\AplicacionTest.pdb

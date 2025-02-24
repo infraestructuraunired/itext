@@ -1,0 +1,26 @@
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ServicioCorreo\bin\Debug\ServicioMail.exe.config
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\ServicioMail.exe.config
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\ServicioMail.exe.manifest
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\ServicioMail.application
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\ServicioMail.exe
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\ServicioMail.pdb
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\Anticipa.Security.Cryptograpy.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\EntityFramework.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\EntityFramework.SqlServer.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\log4net.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\ModeloBD.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\Newtonsoft.Json.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\ephtmltopdf.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\Anticipa.Security.Cryptograpy.pdb
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\ModeloBD.pdb
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\EntityFramework.xml
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\EntityFramework.SqlServer.xml
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\bin\Debug\log4net.xml
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\obj\Debug\ServicioMail.csprojResolveAssemblyReference.cache
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\obj\Debug\ServicioMail.ProjectInstaller.resources
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\obj\Debug\ServicioMail.ServicioMail.resources
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\obj\Debug\ServicioMail.csproj.GenerateResource.Cache
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\obj\Debug\ServicioMail.exe.manifest
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\obj\Debug\ServicioMail.application
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\obj\Debug\ServicioMail.exe
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ServicioCorreo\obj\Debug\ServicioMail.pdb

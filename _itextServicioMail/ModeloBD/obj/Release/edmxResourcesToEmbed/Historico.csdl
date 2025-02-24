@@ -1,0 +1,2502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Unired_HistoricaModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Unired_HistoricaEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="AbonoDinamico" EntityType="Unired_HistoricaModel.AbonoDinamico" />
+    <EntitySet Name="AtributoImprimir" EntityType="Unired_HistoricaModel.AtributoImprimir" />
+    <EntitySet Name="AtributoInformar" EntityType="Unired_HistoricaModel.AtributoInformar" />
+    <EntitySet Name="AtributoNoLlave" EntityType="Unired_HistoricaModel.AtributoNoLlave" />
+    <EntitySet Name="CampoOrdenConsulta" EntityType="Unired_HistoricaModel.CampoOrdenConsulta" />
+    <EntitySet Name="Canal" EntityType="Unired_HistoricaModel.Canal" />
+    <EntitySet Name="Cliente" EntityType="Unired_HistoricaModel.Cliente" />
+    <EntitySet Name="ClienteExpress" EntityType="Unired_HistoricaModel.ClienteExpress" />
+    <EntitySet Name="CodigoEmpresaImprimir" EntityType="Unired_HistoricaModel.CodigoEmpresaImprimir" />
+    <EntitySet Name="CodigoEmpresaInformar" EntityType="Unired_HistoricaModel.CodigoEmpresaInformar" />
+    <EntitySet Name="Comuna" EntityType="Unired_HistoricaModel.Comuna" />
+    <EntitySet Name="ConfigMantenedorPopUp" EntityType="Unired_HistoricaModel.ConfigMantenedorPopUp" />
+    <EntitySet Name="Configuracion" EntityType="Unired_HistoricaModel.Configuracion" />
+    <EntitySet Name="ConfiguracionCanal" EntityType="Unired_HistoricaModel.ConfiguracionCanal" />
+    <EntitySet Name="ConfiguracionProcesoConsulta" EntityType="Unired_HistoricaModel.ConfiguracionProcesoConsulta" />
+    <EntitySet Name="ConfigVisualMantenedorPopUp" EntityType="Unired_HistoricaModel.ConfigVisualMantenedorPopUp" />
+    <EntitySet Name="ConsultaBoleta" EntityType="Unired_HistoricaModel.ConsultaBoleta" />
+    <EntitySet Name="Contacto" EntityType="Unired_HistoricaModel.Contacto" />
+    <EntitySet Name="Cuenta" EntityType="Unired_HistoricaModel.Cuenta" />
+    <EntitySet Name="CuentaCliente" EntityType="Unired_HistoricaModel.CuentaCliente" />
+    <EntitySet Name="CuentaClienteExpress" EntityType="Unired_HistoricaModel.CuentaClienteExpress" />
+    <EntitySet Name="CuentaConsultada" EntityType="Unired_HistoricaModel.CuentaConsultada" />
+    <EntitySet Name="CuentaProcesoConsulta" EntityType="Unired_HistoricaModel.CuentaProcesoConsulta" />
+    <EntitySet Name="CuerpoMail" EntityType="Unired_HistoricaModel.CuerpoMail" />
+    <EntitySet Name="DetalleCuenta" EntityType="Unired_HistoricaModel.DetalleCuenta" />
+    <EntitySet Name="DetalleResumenPago" EntityType="Unired_HistoricaModel.DetalleResumenPago" />
+    <EntitySet Name="Direccion" EntityType="Unired_HistoricaModel.Direccion" />
+    <EntitySet Name="Empresa" EntityType="Unired_HistoricaModel.Empresa" />
+    <EntitySet Name="EmpresaRubro" EntityType="Unired_HistoricaModel.EmpresaRubro" />
+    <EntitySet Name="EstadoBoleta" EntityType="Unired_HistoricaModel.EstadoBoleta" />
+    <EntitySet Name="EstadoGeneral" EntityType="Unired_HistoricaModel.EstadoGeneral" />
+    <EntitySet Name="EstadoImagen" EntityType="Unired_HistoricaModel.EstadoImagen" />
+    <EntitySet Name="EstadoMail" EntityType="Unired_HistoricaModel.EstadoMail" />
+    <EntitySet Name="EstadoNotificacion" EntityType="Unired_HistoricaModel.EstadoNotificacion" />
+    <EntitySet Name="EstadoPago" EntityType="Unired_HistoricaModel.EstadoPago" />
+    <EntitySet Name="Feriado" EntityType="Unired_HistoricaModel.Feriado" />
+    <EntitySet Name="FormatoFechaEmpresaRubro" EntityType="Unired_HistoricaModel.FormatoFechaEmpresaRubro" />
+    <EntitySet Name="Grupo" EntityType="Unired_HistoricaModel.Grupo" />
+    <EntitySet Name="GrupoEtario" EntityType="Unired_HistoricaModel.GrupoEtario" />
+    <EntitySet Name="Identificador" EntityType="Unired_HistoricaModel.Identificador" />
+    <EntitySet Name="IdentificadorCtaCli" EntityType="Unired_HistoricaModel.IdentificadorCtaCli" />
+    <EntitySet Name="IdentificadorCtaCliExpress" EntityType="Unired_HistoricaModel.IdentificadorCtaCliExpress" />
+    <EntitySet Name="IdentificadorPublicidad" EntityType="Unired_HistoricaModel.IdentificadorPublicidad" />
+    <EntitySet Name="ImagenesCorreo" EntityType="Unired_HistoricaModel.ImagenesCorreo" />
+    <EntitySet Name="ImagenEstilo" EntityType="Unired_HistoricaModel.ImagenEstilo" />
+    <EntitySet Name="IntentoCliente" EntityType="Unired_HistoricaModel.IntentoCliente" />
+    <EntitySet Name="IntentoPago" EntityType="Unired_HistoricaModel.IntentoPago" />
+    <EntitySet Name="IntentoUsuario" EntityType="Unired_HistoricaModel.IntentoUsuario" />
+    <EntitySet Name="LinkAccesoPortal" EntityType="Unired_HistoricaModel.LinkAccesoPortal" />
+    <EntitySet Name="Mailing" EntityType="Unired_HistoricaModel.Mailing" />
+    <EntitySet Name="MantenedorImagenes" EntityType="Unired_HistoricaModel.MantenedorImagenes" />
+    <EntitySet Name="MedioPago" EntityType="Unired_HistoricaModel.MedioPago" />
+    <EntitySet Name="MultiIndustria" EntityType="Unired_HistoricaModel.MultiIndustria" />
+    <EntitySet Name="Notificacion" EntityType="Unired_HistoricaModel.Notificacion" />
+    <EntitySet Name="Pago" EntityType="Unired_HistoricaModel.Pago" />
+    <EntitySet Name="PagoDetalleBoleta" EntityType="Unired_HistoricaModel.PagoDetalleBoleta" />
+    <EntitySet Name="ParametrosConsulta" EntityType="Unired_HistoricaModel.ParametrosConsulta" />
+    <EntitySet Name="PortalDisponible" EntityType="Unired_HistoricaModel.PortalDisponible" />
+    <EntitySet Name="Profiles" EntityType="Unired_HistoricaModel.Profiles" />
+    <EntitySet Name="Promociones" EntityType="Unired_HistoricaModel.Promociones" />
+    <EntitySet Name="Provincia" EntityType="Unired_HistoricaModel.Provincia" />
+    <EntitySet Name="Region" EntityType="Unired_HistoricaModel.Region" />
+    <EntitySet Name="ReglaPresentacion" EntityType="Unired_HistoricaModel.ReglaPresentacion" />
+    <EntitySet Name="RestriccionEPSCanal" EntityType="Unired_HistoricaModel.RestriccionEPSCanal" />
+    <EntitySet Name="ResumenPago" EntityType="Unired_HistoricaModel.ResumenPago" />
+    <EntitySet Name="Roles" EntityType="Unired_HistoricaModel.Roles" />
+    <EntitySet Name="Rubro" EntityType="Unired_HistoricaModel.Rubro" />
+    <EntitySet Name="ServiciosProceso" EntityType="Unired_HistoricaModel.ServiciosProceso" />
+    <EntitySet Name="Sucursal" EntityType="Unired_HistoricaModel.Sucursal" />
+    <EntitySet Name="TerminoCondicion" EntityType="Unired_HistoricaModel.TerminoCondicion" />
+    <EntitySet Name="Tipo_MedioPago" EntityType="Unired_HistoricaModel.Tipo_MedioPago" />
+    <EntitySet Name="TipoAbono" EntityType="Unired_HistoricaModel.TipoAbono" />
+    <EntitySet Name="TipoCartera" EntityType="Unired_HistoricaModel.TipoCartera" />
+    <EntitySet Name="TipoCliente" EntityType="Unired_HistoricaModel.TipoCliente" />
+    <EntitySet Name="TipoMail" EntityType="Unired_HistoricaModel.TipoMail" />
+    <EntitySet Name="TipoMetaDato" EntityType="Unired_HistoricaModel.TipoMetaDato" />
+    <EntitySet Name="Turno" EntityType="Unired_HistoricaModel.Turno" />
+    <EntitySet Name="URLPermitidaCanal" EntityType="Unired_HistoricaModel.URLPermitidaCanal" />
+    <EntitySet Name="Users" EntityType="Unired_HistoricaModel.Users" />
+    <EntitySet Name="Usuario" EntityType="Unired_HistoricaModel.Usuario" />
+    <EntitySet Name="Zona" EntityType="Unired_HistoricaModel.Zona" />
+    <AssociationSet Name="FK_AbonoDinamico_Empresa" Association="Unired_HistoricaModel.FK_AbonoDinamico_Empresa">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="AbonoDinamico" EntitySet="AbonoDinamico" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CodigoEmpresaImprimir" Association="Unired_HistoricaModel.FK_CodigoEmpresaImprimir">
+      <End Role="AtributoImprimir" EntitySet="AtributoImprimir" />
+      <End Role="CodigoEmpresaImprimir" EntitySet="CodigoEmpresaImprimir" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdAtributoImprimir" Association="Unired_HistoricaModel.FK_IdAtributoImprimir">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="AtributoImprimir" EntitySet="AtributoImprimir" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CodigoEmpresaInformar" Association="Unired_HistoricaModel.FK_CodigoEmpresaInformar">
+      <End Role="AtributoInformar" EntitySet="AtributoInformar" />
+      <End Role="CodigoEmpresaInformar" EntitySet="CodigoEmpresaInformar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdAtributoInformar" Association="Unired_HistoricaModel.FK_IdAtributoInformar">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="AtributoInformar" EntitySet="AtributoInformar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Atributo" Association="Unired_HistoricaModel.FK_Atributo">
+      <End Role="DetalleCuenta" EntitySet="DetalleCuenta" />
+      <End Role="AtributoNoLlave" EntitySet="AtributoNoLlave" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CampoOrden" Association="Unired_HistoricaModel.FK_CampoOrden">
+      <End Role="DetalleCuenta" EntitySet="DetalleCuenta" />
+      <End Role="CampoOrdenConsulta" EntitySet="CampoOrdenConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CANAL" Association="Unired_HistoricaModel.FK_CANAL">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="Canal" EntitySet="Canal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdCanal" Association="Unired_HistoricaModel.FK_IdCanal">
+      <End Role="Canal" EntitySet="Canal" />
+      <End Role="ConfiguracionCanal" EntitySet="ConfiguracionCanal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdUrlCanak" Association="Unired_HistoricaModel.FK_IdUrlCanak">
+      <End Role="Canal" EntitySet="Canal" />
+      <End Role="URLPermitidaCanal" EntitySet="URLPermitidaCanal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RestriccionEPSCanal_Canal" Association="Unired_HistoricaModel.FK_RestriccionEPSCanal_Canal">
+      <End Role="Canal" EntitySet="Canal" />
+      <End Role="RestriccionEPSCanal" EntitySet="RestriccionEPSCanal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTE2" Association="Unired_HistoricaModel.FK_CLIENTE2">
+      <End Role="Direccion" EntitySet="Direccion" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTE3" Association="Unired_HistoricaModel.FK_CLIENTE3">
+      <End Role="TerminoCondicion" EntitySet="TerminoCondicion" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CLIENTE4" Association="Unired_HistoricaModel.FK_CLIENTE4">
+      <End Role="GrupoEtario" EntitySet="GrupoEtario" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CUENTA_CLIENTE" Association="Unired_HistoricaModel.FK_CUENTA_CLIENTE">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="CuentaCliente" EntitySet="CuentaCliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GRUPO3" Association="Unired_HistoricaModel.FK_GRUPO3">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Grupo" EntitySet="Grupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INTENTO_CLIENTE" Association="Unired_HistoricaModel.FK_INTENTO_CLIENTE">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="IntentoCliente" EntitySet="IntentoCliente" />
+    </AssociationSet>
+    <AssociationSet Name="PK_CtaCliExpress2" Association="Unired_HistoricaModel.PK_CtaCliExpress2">
+      <End Role="ClienteExpress" EntitySet="ClienteExpress" />
+      <End Role="CuentaClienteExpress" EntitySet="CuentaClienteExpress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CodigoEmpresaImprimir_DetalleCuenta" Association="Unired_HistoricaModel.FK_CodigoEmpresaImprimir_DetalleCuenta">
+      <End Role="DetalleCuenta" EntitySet="DetalleCuenta" />
+      <End Role="CodigoEmpresaImprimir" EntitySet="CodigoEmpresaImprimir" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CodigoEmpresaInformar_Detalle" Association="Unired_HistoricaModel.FK_CodigoEmpresaInformar_Detalle">
+      <End Role="DetalleCuenta" EntitySet="DetalleCuenta" />
+      <End Role="CodigoEmpresaInformar" EntitySet="CodigoEmpresaInformar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_COMUNA" Association="Unired_HistoricaModel.FK_COMUNA">
+      <End Role="Provincia" EntitySet="Provincia" />
+      <End Role="Comuna" EntitySet="Comuna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DIRECCION" Association="Unired_HistoricaModel.FK_DIRECCION">
+      <End Role="Comuna" EntitySet="Comuna" />
+      <End Role="Direccion" EntitySet="Direccion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUCURSAL" Association="Unired_HistoricaModel.FK_SUCURSAL">
+      <End Role="Comuna" EntitySet="Comuna" />
+      <End Role="Sucursal" EntitySet="Sucursal" />
+    </AssociationSet>
+    <AssociationSet Name="fk_ConfigMantendorPopUp" Association="Unired_HistoricaModel.fk_ConfigMantendorPopUp">
+      <End Role="ConfigMantenedorPopUp" EntitySet="ConfigMantenedorPopUp" />
+      <End Role="ConfigVisualMantenedorPopUp" EntitySet="ConfigVisualMantenedorPopUp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONFIGURACION_PROCESO" Association="Unired_HistoricaModel.FK_CONFIGURACION_PROCESO">
+      <End Role="ConfiguracionProcesoConsulta" EntitySet="ConfiguracionProcesoConsulta" />
+      <End Role="ServiciosProceso" EntitySet="ServiciosProceso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONFIGURACION_PROCESO_CUENTAC" Association="Unired_HistoricaModel.FK_CONFIGURACION_PROCESO_CUENTAC">
+      <End Role="ConfiguracionProcesoConsulta" EntitySet="ConfiguracionProcesoConsulta" />
+      <End Role="CuentaConsultada" EntitySet="CuentaConsultada" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CuentaProcesoConsulta" Association="Unired_HistoricaModel.FK_CuentaProcesoConsulta">
+      <End Role="ConfiguracionProcesoConsulta" EntitySet="ConfiguracionProcesoConsulta" />
+      <End Role="CuentaProcesoConsulta" EntitySet="CuentaProcesoConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONSULTA_BOLETA2" Association="Unired_HistoricaModel.FK_CONSULTA_BOLETA2">
+      <End Role="EstadoBoleta" EntitySet="EstadoBoleta" />
+      <End Role="ConsultaBoleta" EntitySet="ConsultaBoleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CONSULTA_BOLETA3" Association="Unired_HistoricaModel.FK_CONSULTA_BOLETA3">
+      <End Role="TipoCliente" EntitySet="TipoCliente" />
+      <End Role="ConsultaBoleta" EntitySet="ConsultaBoleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CUENTA" Association="Unired_HistoricaModel.FK_CUENTA">
+      <End Role="ConsultaBoleta" EntitySet="ConsultaBoleta" />
+      <End Role="Cuenta" EntitySet="Cuenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdParametrosConsulta" Association="Unired_HistoricaModel.FK_IdParametrosConsulta">
+      <End Role="ConsultaBoleta" EntitySet="ConsultaBoleta" />
+      <End Role="ParametrosConsulta" EntitySet="ParametrosConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAGO1" Association="Unired_HistoricaModel.FK_PAGO1">
+      <End Role="ConsultaBoleta" EntitySet="ConsultaBoleta" />
+      <End Role="Pago" EntitySet="Pago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DETALLE_CUENTA" Association="Unired_HistoricaModel.FK_DETALLE_CUENTA">
+      <End Role="Cuenta" EntitySet="Cuenta" />
+      <End Role="DetalleCuenta" EntitySet="DetalleCuenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CUENTA_CLIENTE2" Association="Unired_HistoricaModel.FK_CUENTA_CLIENTE2">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="CuentaCliente" EntitySet="CuentaCliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CUENTA_CLIENTE3" Association="Unired_HistoricaModel.FK_CUENTA_CLIENTE3">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="CuentaCliente" EntitySet="CuentaCliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CuentaProcesoConsulta_CuentaCliente" Association="Unired_HistoricaModel.FK_CuentaProcesoConsulta_CuentaCliente">
+      <End Role="CuentaCliente" EntitySet="CuentaCliente" />
+      <End Role="CuentaProcesoConsulta" EntitySet="CuentaProcesoConsulta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDENTIFI_REFERENCE_CUENTACL" Association="Unired_HistoricaModel.FK_IDENTIFI_REFERENCE_CUENTACL">
+      <End Role="CuentaCliente" EntitySet="CuentaCliente" />
+      <End Role="IdentificadorCtaCli" EntitySet="IdentificadorCtaCli" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdentificadorCtaCliExpress" Association="Unired_HistoricaModel.FK_IdentificadorCtaCliExpress">
+      <End Role="CuentaClienteExpress" EntitySet="CuentaClienteExpress" />
+      <End Role="IdentificadorCtaCliExpress" EntitySet="IdentificadorCtaCliExpress" />
+    </AssociationSet>
+    <AssociationSet Name="PK_CtaCliExpress3" Association="Unired_HistoricaModel.PK_CtaCliExpress3">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="CuentaClienteExpress" EntitySet="CuentaClienteExpress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CuerpoMail" Association="Unired_HistoricaModel.FK_CuerpoMail">
+      <End Role="TipoMail" EntitySet="TipoMail" />
+      <End Role="CuerpoMail" EntitySet="CuerpoMail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAGO_DETALLE_BOLETA2" Association="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA2">
+      <End Role="DetalleCuenta" EntitySet="DetalleCuenta" />
+      <End Role="PagoDetalleBoleta" EntitySet="PagoDetalleBoleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPRESA" Association="Unired_HistoricaModel.FK_EMPRESA">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="Empresa" EntitySet="Empresa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPRESA_RUBRO" Association="Unired_HistoricaModel.FK_EMPRESA_RUBRO">
+      <End Role="Empresa" EntitySet="Empresa" />
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LinkAcces__IdEmp__7755B73D" Association="Unired_HistoricaModel.FK__LinkAcces__IdEmp__7755B73D">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="LinkAccesoPortal" EntitySet="LinkAccesoPortal" />
+    </AssociationSet>
+    <AssociationSet Name="FK__LinkAcces__IdEmp__7849DB76" Association="Unired_HistoricaModel.FK__LinkAcces__IdEmp__7849DB76">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="LinkAccesoPortal" EntitySet="LinkAccesoPortal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPRESA_RUBRO2" Association="Unired_HistoricaModel.FK_EMPRESA_RUBRO2">
+      <End Role="Rubro" EntitySet="Rubro" />
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EMPRESA_RUBRO4" Association="Unired_HistoricaModel.FK_EMPRESA_RUBRO4">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDENTIFICADOR" Association="Unired_HistoricaModel.FK_IDENTIFICADOR">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="Identificador" EntitySet="Identificador" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdTipoAbono" Association="Unired_HistoricaModel.FK_IdTipoAbono">
+      <End Role="TipoAbono" EntitySet="TipoAbono" />
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGLA" Association="Unired_HistoricaModel.FK_REGLA">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="ReglaPresentacion" EntitySet="ReglaPresentacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RestriccionEPSCanal_EmpresaRubro" Association="Unired_HistoricaModel.FK_RestriccionEPSCanal_EmpresaRubro">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="RestriccionEPSCanal" EntitySet="RestriccionEPSCanal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ESTADO_GENERAL" Association="Unired_HistoricaModel.FK_ESTADO_GENERAL">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="Turno" EntitySet="Turno" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GRUPO2" Association="Unired_HistoricaModel.FK_GRUPO2">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="Grupo" EntitySet="Grupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MEDIO_PAGO" Association="Unired_HistoricaModel.FK_MEDIO_PAGO">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="MedioPago" EntitySet="MedioPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RUBRO" Association="Unired_HistoricaModel.FK_RUBRO">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="Rubro" EntitySet="Rubro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SUCURSAL2" Association="Unired_HistoricaModel.FK_SUCURSAL2">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="Sucursal" EntitySet="Sucursal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TERMINO_CONDICION" Association="Unired_HistoricaModel.FK_TERMINO_CONDICION">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="TerminoCondicion" EntitySet="TerminoCondicion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TIPOMAIL" Association="Unired_HistoricaModel.FK_TIPOMAIL">
+      <End Role="EstadoGeneral" EntitySet="EstadoGeneral" />
+      <End Role="TipoMail" EntitySet="TipoMail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IMAGEN_ESTILO" Association="Unired_HistoricaModel.FK_IMAGEN_ESTILO">
+      <End Role="EstadoImagen" EntitySet="EstadoImagen" />
+      <End Role="ImagenEstilo" EntitySet="ImagenEstilo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MAILING2" Association="Unired_HistoricaModel.FK_MAILING2">
+      <End Role="EstadoMail" EntitySet="EstadoMail" />
+      <End Role="Mailing" EntitySet="Mailing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notificacion" Association="Unired_HistoricaModel.FK_Notificacion">
+      <End Role="EstadoNotificacion" EntitySet="EstadoNotificacion" />
+      <End Role="Notificacion" EntitySet="Notificacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INTENTO_PAGO1" Association="Unired_HistoricaModel.FK_INTENTO_PAGO1">
+      <End Role="EstadoPago" EntitySet="EstadoPago" />
+      <End Role="IntentoPago" EntitySet="IntentoPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAGO_1" Association="Unired_HistoricaModel.FK_PAGO_1">
+      <End Role="EstadoPago" EntitySet="EstadoPago" />
+      <End Role="Pago" EntitySet="Pago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAGO_DETALLE_BOLETA4" Association="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA4">
+      <End Role="EstadoPago" EntitySet="EstadoPago" />
+      <End Role="PagoDetalleBoleta" EntitySet="PagoDetalleBoleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDENTIFI_REFERENCE_IDENTIFI" Association="Unired_HistoricaModel.FK_IDENTIFI_REFERENCE_IDENTIFI">
+      <End Role="Identificador" EntitySet="Identificador" />
+      <End Role="IdentificadorCtaCli" EntitySet="IdentificadorCtaCli" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IDENTIFICADOR2" Association="Unired_HistoricaModel.FK_IDENTIFICADOR2">
+      <End Role="TipoMetaDato" EntitySet="TipoMetaDato" />
+      <End Role="Identificador" EntitySet="Identificador" />
+    </AssociationSet>
+    <AssociationSet Name="IdentificadorCtaCliExpress2" Association="Unired_HistoricaModel.IdentificadorCtaCliExpress2">
+      <End Role="Identificador" EntitySet="Identificador" />
+      <End Role="IdentificadorCtaCliExpress" EntitySet="IdentificadorCtaCliExpress" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IdPublicidad" Association="Unired_HistoricaModel.FK_IdPublicidad">
+      <End Role="IdentificadorPublicidad" EntitySet="IdentificadorPublicidad" />
+      <End Role="MantenedorImagenes" EntitySet="MantenedorImagenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INTENTO_PAGO2" Association="Unired_HistoricaModel.FK_INTENTO_PAGO2">
+      <End Role="MedioPago" EntitySet="MedioPago" />
+      <End Role="IntentoPago" EntitySet="IntentoPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INTENTO_PAGO3" Association="Unired_HistoricaModel.FK_INTENTO_PAGO3">
+      <End Role="Pago" EntitySet="Pago" />
+      <End Role="IntentoPago" EntitySet="IntentoPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_INTENTO_USUARIO" Association="Unired_HistoricaModel.FK_INTENTO_USUARIO">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="IntentoUsuario" EntitySet="IntentoUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MAILING" Association="Unired_HistoricaModel.FK_MAILING">
+      <End Role="TipoMail" EntitySet="TipoMail" />
+      <End Role="Mailing" EntitySet="Mailing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MedioPago_Tipo_MedioPago" Association="Unired_HistoricaModel.FK_MedioPago_Tipo_MedioPago">
+      <End Role="Tipo_MedioPago" EntitySet="Tipo_MedioPago" />
+      <End Role="MedioPago" EntitySet="MedioPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Notificacion2" Association="Unired_HistoricaModel.FK_Notificacion2">
+      <End Role="PagoDetalleBoleta" EntitySet="PagoDetalleBoleta" />
+      <End Role="Notificacion" EntitySet="Notificacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAGO_DETALLE_BOLETA1" Association="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA1">
+      <End Role="Pago" EntitySet="Pago" />
+      <End Role="PagoDetalleBoleta" EntitySet="PagoDetalleBoleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAGO_DETALLE_BOLETA3" Association="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA3">
+      <End Role="Turno" EntitySet="Turno" />
+      <End Role="PagoDetalleBoleta" EntitySet="PagoDetalleBoleta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PROVINCIA" Association="Unired_HistoricaModel.FK_PROVINCIA">
+      <End Role="Region" EntitySet="Region" />
+      <End Role="Provincia" EntitySet="Provincia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REGLA2" Association="Unired_HistoricaModel.FK_REGLA2">
+      <End Role="TipoCartera" EntitySet="TipoCartera" />
+      <End Role="ReglaPresentacion" EntitySet="ReglaPresentacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ZONA" Association="Unired_HistoricaModel.FK_ZONA">
+      <End Role="Zona" EntitySet="Zona" />
+      <End Role="Sucursal" EntitySet="Sucursal" />
+    </AssociationSet>
+    <AssociationSet Name="CanalMedioPago" Association="Unired_HistoricaModel.CanalMedioPago">
+      <End Role="Canal" EntitySet="Canal" />
+      <End Role="MedioPago" EntitySet="MedioPago" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaRubroMP" Association="Unired_HistoricaModel.EmpresaRubroMP">
+      <End Role="EmpresaRubro" EntitySet="EmpresaRubro" />
+      <End Role="MedioPago" EntitySet="MedioPago" />
+    </AssociationSet>
+    <AssociationSet Name="GrupoImagenEstilo" Association="Unired_HistoricaModel.GrupoImagenEstilo">
+      <End Role="ImagenEstilo" EntitySet="ImagenEstilo" />
+      <End Role="Grupo" EntitySet="Grupo" />
+    </AssociationSet>
+    <AssociationSet Name="RolInProfile" Association="Unired_HistoricaModel.RolInProfile">
+      <End Role="Profiles" EntitySet="Profiles" />
+      <End Role="Roles" EntitySet="Roles" />
+    </AssociationSet>
+    <AssociationSet Name="UsersInProfile" Association="Unired_HistoricaModel.UsersInProfile">
+      <End Role="Profiles" EntitySet="Profiles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AbonoDinamico">
+    <Key>
+      <PropertyRef Name="IdAbonoDinamico" />
+    </Key>
+    <Property Type="Int32" Name="IdAbonoDinamico" Nullable="false" />
+    <Property Type="String" Name="NombreAtributo" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodigoAtributo" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TipoMetadato" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Largo" />
+    <Property Type="Int32" Name="IdEmpresaRubro" Nullable="false" />
+    <Property Type="Boolean" Name="estado" />
+    <NavigationProperty Name="EmpresaRubro" Relationship="Unired_HistoricaModel.FK_AbonoDinamico_Empresa" FromRole="AbonoDinamico" ToRole="EmpresaRubro" />
+  </EntityType>
+  <EntityType Name="AtributoImprimir">
+    <Key>
+      <PropertyRef Name="IdAtributoImprimir" />
+    </Key>
+    <Property Type="Int32" Name="IdAtributoImprimir" Nullable="false" />
+    <Property Type="String" Name="NombreAtributo" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodigoAtributo" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TipoMetadato" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Largo" />
+    <Property Type="Int32" Name="IdEmpresaRubro" Nullable="false" />
+    <Property Type="Boolean" Name="estado" />
+    <NavigationProperty Name="CodigoEmpresaImprimir" Relationship="Unired_HistoricaModel.FK_CodigoEmpresaImprimir" FromRole="AtributoImprimir" ToRole="CodigoEmpresaImprimir" />
+    <NavigationProperty Name="EmpresaRubro" Relationship="Unired_HistoricaModel.FK_IdAtributoImprimir" FromRole="AtributoImprimir" ToRole="EmpresaRubro" />
+  </EntityType>
+  <EntityType Name="AtributoInformar">
+    <Key>
+      <PropertyRef Name="IdAtributoInformar" />
+    </Key>
+    <Property Type="Int64" Name="IdAtributoInformar" Nullable="false" />
+    <Property Type="String" Name="NombreAtributo" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodigoAtributo" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TipoMetadato" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Largo" />
+    <Property Type="Int32" Name="IdEmpresaRubro" Nullable="false" />
+    <Property Type="Int32" Name="posicion" />
+    <Property Type="Boolean" Name="estado" />
+    <Property Type="DateTime" Name="FechaModificacion" Nullable="false" Precision="3" />
+    <NavigationProperty Name="CodigoEmpresaInformar" Relationship="Unired_HistoricaModel.FK_CodigoEmpresaInformar" FromRole="AtributoInformar" ToRole="CodigoEmpresaInformar" />
+    <NavigationProperty Name="EmpresaRubro" Relationship="Unired_HistoricaModel.FK_IdAtributoInformar" FromRole="AtributoInformar" ToRole="EmpresaRubro" />
+  </EntityType>
+  <EntityType Name="AtributoNoLlave">
+    <Key>
+      <PropertyRef Name="IdDetalleCuenta" />
+    </Key>
+    <Property Type="Int64" Name="IdDetalleCuenta" Nullable="false" />
+    <Property Type="String" Name="AtributoXML" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DetalleCuenta" Relationship="Unired_HistoricaModel.FK_Atributo" FromRole="AtributoNoLlave" ToRole="DetalleCuenta" />
+  </EntityType>
+  <EntityType Name="CampoOrdenConsulta">
+    <Key>
+      <PropertyRef Name="IdDetalleCuenta" />
+      <PropertyRef Name="OrdenConsulta" />
+    </Key>
+    <Property Type="Int64" Name="IdDetalleCuenta" Nullable="false" />
+    <Property Type="String" Name="NombreCampo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ValorCampo" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="OrdenConsulta" Nullable="false" />
+    <NavigationProperty Name="DetalleCuenta" Relationship="Unired_HistoricaModel.FK_CampoOrden" FromRole="CampoOrdenConsulta" ToRole="DetalleCuenta" />
+  </EntityType>
+  <EntityType Name="Canal">
+    <Key>
+      <PropertyRef Name="IdCanal" />
+    </Key>
+    <Property Type="Int32" Name="IdCanal" Nullable="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="false" />
+    <Property Type="String" Name="NombreCanal" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IdExterno" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CanalXCash" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TerminalXCash" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdSucursal" />
+    <NavigationProperty Name="EstadoGeneral" Relationship="Unired_HistoricaModel.FK_CANAL" FromRole="Canal" ToRole="EstadoGeneral" />
+    <NavigationProperty Name="ConfiguracionCanal" Relationship="Unired_HistoricaModel.FK_IdCanal" FromRole="Canal" ToRole="ConfiguracionCanal" />
+    <NavigationProperty Name="URLPermitidaCanal" Relationship="Unired_HistoricaModel.FK_IdUrlCanak" FromRole="Canal" ToRole="URLPermitidaCanal" />
+    <NavigationProperty Name="RestriccionEPSCanal" Relationship="Unired_HistoricaModel.FK_RestriccionEPSCanal_Canal" FromRole="Canal" ToRole="RestriccionEPSCanal" />
+    <NavigationProperty Name="MedioPago" Relationship="Unired_HistoricaModel.CanalMedioPago" FromRole="Canal" ToRole="MedioPago" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Type="Int64" Name="IdCliente" Nullable="false" />
+    <Property Type="Int32" Name="IdDireccion" />
+    <Property Type="Int32" Name="IdTermino" Nullable="false" />
+    <Property Type="Int32" Name="Rut" Nullable="false" />
+    <Property Type="String" Name="Dv" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Apellido" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EmailAlternativo" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Telefono" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Celular" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdGrupoEtario" />
+    <Property Type="Boolean" Name="RecibePromocion" />
+    <Property Type="Boolean" Name="RecibeCartola" />
+    <Property Type="String" Name="Sexo" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="UrlImagenPerfil" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Direccion" Relationship="Unired_HistoricaModel.FK_CLIENTE2" FromRole="Cliente" ToRole="Direccion" />
+    <NavigationProperty Name="TerminoCondicion" Relationship="Unired_HistoricaModel.FK_CLIENTE3" FromRole="Cliente" ToRole="TerminoCondicion" />
+    <NavigationProperty Name="GrupoEtario" Relationship="Unired_HistoricaModel.FK_CLIENTE4" FromRole="Cliente" ToRole="GrupoEtario" />
+    <NavigationProperty Name="CuentaCliente" Relationship="Unired_HistoricaModel.FK_CUENTA_CLIENTE" FromRole="Cliente" ToRole="CuentaCliente" />
+    <NavigationProperty Name="Grupo" Relationship="Unired_HistoricaModel.FK_GRUPO3" FromRole="Cliente" ToRole="Grupo" />
+    <NavigationProperty Name="IntentoCliente" Relationship="Unired_HistoricaModel.FK_INTENTO_CLIENTE" FromRole="Cliente" ToRole="IntentoCliente" />
+  </EntityType>
+  <EntityType Name="ClienteExpress">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Type="Int64" Name="IdCliente" Nullable="false" />
+    <Property Type="Int32" Name="Rut" />
+    <Property Type="String" Name="Dv" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FechaCreacion" Precision="3" />
+    <Property Type="String" Name="Email" MaxLength="60" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CuentaClienteExpress" Relationship="Unired_HistoricaModel.PK_CtaCliExpress2" FromRole="ClienteExpress" ToRole="CuentaClienteExpress" />
+  </EntityType>
+  <EntityType Name="CodigoEmpresaImprimir">
+    <Key>
+      <PropertyRef Name="IDCodigoEmpresaImprimir" />
+    </Key>
+    <Property Type="Int32" Name="IDCodigoEmpresaImprimir" Nullable="false" />
+    <Property Type="String" Name="Valor" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="IdCuenta" Nullable="false" />
+    <Property Type="Int32" Name="IdAtributoImprimir" Nullable="false" />
+    <NavigationProperty Name="AtributoImprimir" Relationship="Unired_HistoricaModel.FK_CodigoEmpresaImprimir" FromRole="CodigoEmpresaImprimir" ToRole="AtributoImprimir" />
+    <NavigationProperty Name="DetalleCuenta" Relationship="Unired_HistoricaModel.FK_CodigoEmpresaImprimir_DetalleCuenta" FromRole="CodigoEmpresaImprimir" ToRole="DetalleCuenta" />
+  </EntityType>
+  <EntityType Name="CodigoEmpresaInformar">
+    <Key>
+      <PropertyRef Name="IDCodigoEmpresaInformar" />
+    </Key>
+    <Property Type="Int64" Name="IDCodigoEmpresaInformar" Nullable="false" />
+    <Property Type="String" Name="Valor" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="IdDetalleCuenta" Nullable="false" />
+    <Property Type="Int64" Name="IdAtributoInformar" Nullable="false" />
+    <NavigationProperty Name="AtributoInformar" Relationship="Unired_HistoricaModel.FK_CodigoEmpresaInformar" FromRole="CodigoEmpresaInformar" ToRole="AtributoInformar" />
+    <NavigationProperty Name="DetalleCuenta" Relationship="Unired_HistoricaModel.FK_CodigoEmpresaInformar_Detalle" FromRole="CodigoEmpresaInformar" ToRole="DetalleCuenta" />
+  </EntityType>
+  <EntityType Name="Comuna">
+    <Key>
+      <PropertyRef Name="IdComuna" />
+    </Key>
+    <Property Type="Int32" Name="IdComuna" Nullable="false" />
+    <Property Type="Int32" Name="IdProvincia" Nullable="false" />
+    <Property Type="String" Name="NombreComuna" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Provincia" Relationship="Unired_HistoricaModel.FK_COMUNA" FromRole="Comuna" ToRole="Provincia" />
+    <NavigationProperty Name="Direccion" Relationship="Unired_HistoricaModel.FK_DIRECCION" FromRole="Comuna" ToRole="Direccion" />
+    <NavigationProperty Name="Sucursal" Relationship="Unired_HistoricaModel.FK_SUCURSAL" FromRole="Comuna" ToRole="Sucursal" />
+  </EntityType>
+  <EntityType Name="ConfigMantenedorPopUp">
+    <Key>
+      <PropertyRef Name="IdConfig" />
+    </Key>
+    <Property Type="Int32" Name="IdConfig" Nullable="false" />
+    <Property Type="Int32" Name="IdTipoAmbiente" Nullable="false" />
+    <Property Type="Int64" Name="Periodo" Nullable="false" />
+    <Property Type="Boolean" Name="Habilitado" Nullable="false" />
+    <Property Type="Int64" Name="TiempoRotacion" Nullable="false" />
+    <NavigationProperty Name="ConfigVisualMantenedorPopUp" Relationship="Unired_HistoricaModel.fk_ConfigMantendorPopUp" FromRole="ConfigMantenedorPopUp" ToRole="ConfigVisualMantenedorPopUp" />
+  </EntityType>
+  <EntityType Name="Configuracion">
+    <Key>
+      <PropertyRef Name="NombreConfiguracion" />
+    </Key>
+    <Property Type="Int32" Name="IdConfiguracion" Nullable="false" />
+    <Property Type="String" Name="NombreConfiguracion" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ValorConfiguracion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Encriptado" />
+    <Property Type="String" Name="Descripcion" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Tipo" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ConfiguracionCanal">
+    <Key>
+      <PropertyRef Name="IdConfiguracionCanal" />
+    </Key>
+    <Property Type="Int64" Name="IdConfiguracionCanal" Nullable="false" />
+    <Property Type="Int32" Name="IdCanal" Nullable="false" />
+    <Property Type="String" Name="LLaveEncriptación" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CuentasMaximas" Nullable="false" />
+    <Property Type="String" Name="UrlExito" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UrlFracaso" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="segundosRedirección" />
+    <NavigationProperty Name="Canal" Relationship="Unired_HistoricaModel.FK_IdCanal" FromRole="ConfiguracionCanal" ToRole="Canal" />
+  </EntityType>
+  <EntityType Name="ConfiguracionProcesoConsulta">
+    <Key>
+      <PropertyRef Name="idProcesoConsulta" />
+    </Key>
+    <Property Type="Int64" Name="idProcesoConsulta" Nullable="false" />
+    <Property Type="String" Name="keyProcesoConsulta" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="maximoConsulta" />
+    <Property Type="String" Name="correoReporte" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="consultasSimultaneas" />
+    <Property Type="Int32" Name="FrecuenciaEjecucion" />
+    <Property Type="Boolean" Name="permiteSinFecha" />
+    <Property Type="Boolean" Name="reporteEnviado" />
+    <Property Type="Boolean" Name="permiteProceso" />
+    <Property Type="DateTime" Name="FechaInicioFiltro" Precision="3" />
+    <Property Type="DateTime" Name="fechaFinFiltro" Precision="3" />
+    <Property Type="DateTime" Name="fechaEnvioReporte" Precision="3" />
+    <Property Type="String" Name="observacionProceso" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="notificaErrores" />
+    <Property Type="Int32" Name="TipoConsultaActiva" Nullable="false" />
+    <Property Type="Boolean" Name="CargaFinalizada" />
+    <NavigationProperty Name="ServiciosProceso" Relationship="Unired_HistoricaModel.FK_CONFIGURACION_PROCESO" FromRole="ConfiguracionProcesoConsulta" ToRole="ServiciosProceso" />
+    <NavigationProperty Name="CuentaConsultada" Relationship="Unired_HistoricaModel.FK_CONFIGURACION_PROCESO_CUENTAC" FromRole="ConfiguracionProcesoConsulta" ToRole="CuentaConsultada" />
+    <NavigationProperty Name="CuentaProcesoConsulta" Relationship="Unired_HistoricaModel.FK_CuentaProcesoConsulta" FromRole="ConfiguracionProcesoConsulta" ToRole="CuentaProcesoConsulta" />
+  </EntityType>
+  <EntityType Name="ConfigVisualMantenedorPopUp">
+    <Key>
+      <PropertyRef Name="IdConfigVisual" />
+    </Key>
+    <Property Type="Int64" Name="IdConfigVisual" Nullable="false" />
+    <Property Type="String" Name="NombreImagen" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="Imagen" MaxLength="Max" FixedLength="false" />
+    <Property Type="Int64" Name="NumeroImagen" />
+    <Property Type="String" Name="Url" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TargetPag" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdConfig" Nullable="false" />
+    <NavigationProperty Name="ConfigMantenedorPopUp" Relationship="Unired_HistoricaModel.fk_ConfigMantendorPopUp" FromRole="ConfigVisualMantenedorPopUp" ToRole="ConfigMantenedorPopUp" />
+  </EntityType>
+  <EntityType Name="ConsultaBoleta">
+    <Key>
+      <PropertyRef Name="IdConsultaBoleta" />
+    </Key>
+    <Property Type="Int64" Name="IdConsultaBoleta" Nullable="false" />
+    <Property Type="Int64" Name="IdCliente" Nullable="false" />
+    <Property Type="Int32" Name="IdEstadoBoleta" Nullable="false" />
+    <Property Type="Int32" Name="IdTipoCliente" Nullable="false" />
+    <Property Type="Int32" Name="MontoTotalConsulta" Nullable="false" />
+    <Property Type="Boolean" Name="ConsultaNotificado" />
+    <Property Type="DateTime" Name="FechaConsulta" Precision="3" />
+    <Property Type="Boolean" Name="mobile" />
+    <Property Type="Int32" Name="IdCanal" Nullable="false" />
+    <Property Type="Boolean" Name="Desplegada" />
+    <NavigationProperty Name="EstadoBoleta" Relationship="Unired_HistoricaModel.FK_CONSULTA_BOLETA2" FromRole="ConsultaBoleta" ToRole="EstadoBoleta" />
+    <NavigationProperty Name="TipoCliente" Relationship="Unired_HistoricaModel.FK_CONSULTA_BOLETA3" FromRole="ConsultaBoleta" ToRole="TipoCliente" />
+    <NavigationProperty Name="Cuenta" Relationship="Unired_HistoricaModel.FK_CUENTA" FromRole="ConsultaBoleta" ToRole="Cuenta" />
+    <NavigationProperty Name="ParametrosConsulta" Relationship="Unired_HistoricaModel.FK_IdParametrosConsulta" FromRole="ConsultaBoleta" ToRole="ParametrosConsulta" />
+    <NavigationProperty Name="Pago" Relationship="Unired_HistoricaModel.FK_PAGO1" FromRole="ConsultaBoleta" ToRole="Pago" />
+  </EntityType>
+  <EntityType Name="Contacto">
+    <Key>
+      <PropertyRef Name="IdContacto" />
+    </Key>
+    <Property Type="Int32" Name="IdContacto" Nullable="false" />
+    <Property Type="String" Name="NombreContacto" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Telefono" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Asunto" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Mensaje" Nullable="false" MaxLength="3000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Cuenta">
+    <Key>
+      <PropertyRef Name="IdCuenta" />
+    </Key>
+    <Property Type="Int64" Name="IdConsultaBoleta" Nullable="false" />
+    <Property Type="Int32" Name="IdCuentaCliente" Nullable="false" />
+    <Property Type="Int64" Name="IdCuenta" Nullable="false" />
+    <Property Type="Int64" Name="MontoCuenta" />
+    <Property Type="DateTime" Name="FechaRespuestaConsulta" Precision="3" />
+    <Property Type="Int32" Name="codigo" />
+    <Property Type="String" Name="descripcion" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="CuentaPadre" />
+    <NavigationProperty Name="ConsultaBoleta" Relationship="Unired_HistoricaModel.FK_CUENTA" FromRole="Cuenta" ToRole="ConsultaBoleta" />
+    <NavigationProperty Name="DetalleCuenta" Relationship="Unired_HistoricaModel.FK_DETALLE_CUENTA" FromRole="Cuenta" ToRole="DetalleCuenta" />
+  </EntityType>
+  <EntityType Name="CuentaCliente">
+    <Key>
+      <PropertyRef Name="IdCuentaCliente" />
+    </Key>
+    <Property Type="Int32" Name="IdCuentaCliente" Nullable="false" />
+    <Property Type="Int64" Name="IdCliente" Nullable="false" />
+    <Property Type="Int32" Name="IdEmpresaRubro" Nullable="false" />
+    <Property Type="Int32" Name="IdGrupo" Nullable="false" />
+    <Property Type="DateTime" Name="FechaInscripcion" Precision="3" />
+    <Property Type="String" Name="NombreCuentaCliente" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="ClienteRegistrado" />
+    <Property Type="Boolean" Name="clienteEliminado" />
+    <Property Type="Boolean" Name="CuentaHabilitada" />
+    <Property Type="Boolean" Name="CuentaValida" />
+    <Property Type="Boolean" Name="IgnoraCambio" />
+    <Property Type="Boolean" Name="CuentaEliminada" />
+    <Property Type="Int32" Name="CuentaClientePadre" />
+    <Property Type="DateTime" Name="UltimaFechaPago" Precision="3" />
+    <Property Type="Int32" Name="MontoUltimoPago" />
+    <NavigationProperty Name="Cliente" Relationship="Unired_HistoricaModel.FK_CUENTA_CLIENTE" FromRole="CuentaCliente" ToRole="Cliente" />
+    <NavigationProperty Name="EmpresaRubro" Relationship="Unired_HistoricaModel.FK_CUENTA_CLIENTE2" FromRole="CuentaCliente" ToRole="EmpresaRubro" />
+    <NavigationProperty Name="Grupo" Relationship="Unired_HistoricaModel.FK_CUENTA_CLIENTE3" FromRole="CuentaCliente" ToRole="Grupo" />
+    <NavigationProperty Name="CuentaProcesoConsulta" Relationship="Unired_HistoricaModel.FK_CuentaProcesoConsulta_CuentaCliente" FromRole="CuentaCliente" ToRole="CuentaProcesoConsulta" />
+    <NavigationProperty Name="IdentificadorCtaCli" Relationship="Unired_HistoricaModel.FK_IDENTIFI_REFERENCE_CUENTACL" FromRole="CuentaCliente" ToRole="IdentificadorCtaCli" />
+  </EntityType>
+  <EntityType Name="CuentaClienteExpress">
+    <Key>
+      <PropertyRef Name="IdCuentaCliente" />
+    </Key>
+    <Property Type="Int32" Name="IdCuentaCliente" Nullable="false" />
+    <Property Type="Int64" Name="IdCliente" />
+    <Property Type="Int32" Name="IdEmpresaRubro" />
+    <Property Type="DateTime" Name="FechaInscripcion" Precision="3" />
+    <NavigationProperty Name="ClienteExpress" Relationship="Unired_HistoricaModel.PK_CtaCliExpress2" FromRole="CuentaClienteExpress" ToRole="ClienteExpress" />
+    <NavigationProperty Name="IdentificadorCtaCliExpress" Relationship="Unired_HistoricaModel.FK_IdentificadorCtaCliExpress" FromRole="CuentaClienteExpress" ToRole="IdentificadorCtaCliExpress" />
+    <NavigationProperty Name="EmpresaRubro" Relationship="Unired_HistoricaModel.PK_CtaCliExpress3" FromRole="CuentaClienteExpress" ToRole="EmpresaRubro" />
+  </EntityType>
+  <EntityType Name="CuentaConsultada">
+    <Key>
+      <PropertyRef Name="idCuentaConsultada" />
+    </Key>
+    <Property Type="Int64" Name="idCuentaConsultada" Nullable="false" />
+    <Property Type="Int64" Name="idConfiguracion" />
+    <Property Type="Int64" Name="idCuentaCliente" Nullable="false" />
+    <Property Type="DateTime" Name="fechaVencimiento" Precision="3" />
+    <Property Type="Int32" Name="montoAdeudado" />
+    <Property Type="Int64" Name="idcliente" />
+    <Property Type="Boolean" Name="rua" />
+    <Property Type="Boolean" Name="pagoAgrupado" />
+    <Property Type="String" Name="CampoAgrupado" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="numeroCuota" />
+    <Property Type="Int32" Name="idCuentaRua" />
+    <Property Type="Int32" Name="idEstadoConsulta" />
+    <Property Type="DateTime" Name="FechaInicioConsulta" Precision="3" />
+    <Property Type="DateTime" Name="FechaRespuestaConsulta" Precision="3" />
+    <Property Type="String" Name="codigoRespuesta" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="observacionConsutla" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ConfiguracionProcesoConsulta" Relationship="Unired_HistoricaModel.FK_CONFIGURACION_PROCESO_CUENTAC" FromRole="CuentaConsultada" ToRole="ConfiguracionProcesoConsulta" />
+  </EntityType>
+  <EntityType Name="CuentaProcesoConsulta">
+    <Key>
+      <PropertyRef Name="IdCuentaProcesoConsulta" />
+    </Key>
+    <Property Type="Int32" Name="IdCuentaProcesoConsulta" Nullable="false" />
+    <Property Type="Int64" Name="IdProcesoConsulta" Nullable="false" />
+    <Property Type="Int32" Name="IdCuentaCliente" Nullable="false" />
+    <Property Type="String" Name="CodigoInstrumento" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NombreIdentificador" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TipoMetaDato" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Identificador" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MapaFechaVencimiento" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CampoAfectado" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="EsRua" />
+    <Property Type="Int32" Name="TipoConsulta" />
+    <Property Type="Int32" Name="IdEstadoConsulta" />
+    <NavigationProperty Name="ConfiguracionProcesoConsulta" Relationship="Unired_HistoricaModel.FK_CuentaProcesoConsulta" FromRole="CuentaProcesoConsulta" ToRole="ConfiguracionProcesoConsulta" />
+    <NavigationProperty Name="CuentaCliente" Relationship="Unired_HistoricaModel.FK_CuentaProcesoConsulta_CuentaCliente" FromRole="CuentaProcesoConsulta" ToRole="CuentaCliente" />
+  </EntityType>
+  <EntityType Name="CuerpoMail">
+    <Key>
+      <PropertyRef Name="IdTipoMail" />
+      <PropertyRef Name="Correlativo" />
+    </Key>
+    <Property Type="Int32" Name="IdTipoMail" Nullable="false" />
+    <Property Type="Int32" Name="Correlativo" Nullable="false" />
+    <Property Type="String" Name="CuerpoHtmlMail" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TipoMail" Relationship="Unired_HistoricaModel.FK_CuerpoMail" FromRole="CuerpoMail" ToRole="TipoMail" />
+  </EntityType>
+  <EntityType Name="DetalleCuenta">
+    <Key>
+      <PropertyRef Name="IdDetalleCuenta" />
+    </Key>
+    <Property Type="Int64" Name="IdDetalleCuenta" Nullable="false" />
+    <Property Type="Int64" Name="IdCuenta" Nullable="false" />
+    <Property Type="String" Name="FechaVctoCuenta" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="MontoCuenta" Nullable="false" />
+    <Property Type="String" Name="NumeroDocumento" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="NumeroCuota" />
+    <Property Type="DateTime" Name="FechaInicioValidacion" Precision="3" />
+    <Property Type="DateTime" Name="FechaFinValidacion" Precision="3" />
+    <NavigationProperty Name="AtributoNoLlave" Relationship="Unired_HistoricaModel.FK_Atributo" FromRole="DetalleCuenta" ToRole="AtributoNoLlave" />
+    <NavigationProperty Name="CampoOrdenConsulta" Relationship="Unired_HistoricaModel.FK_CampoOrden" FromRole="DetalleCuenta" ToRole="CampoOrdenConsulta" />
+    <NavigationProperty Name="CodigoEmpresaImprimir" Relationship="Unired_HistoricaModel.FK_CodigoEmpresaImprimir_DetalleCuenta" FromRole="DetalleCuenta" ToRole="CodigoEmpresaImprimir" />
+    <NavigationProperty Name="CodigoEmpresaInformar" Relationship="Unired_HistoricaModel.FK_CodigoEmpresaInformar_Detalle" FromRole="DetalleCuenta" ToRole="CodigoEmpresaInformar" />
+    <NavigationProperty Name="Cuenta" Relationship="Unired_HistoricaModel.FK_DETALLE_CUENTA" FromRole="DetalleCuenta" ToRole="Cuenta" />
+    <NavigationProperty Name="PagoDetalleBoleta" Relationship="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA2" FromRole="DetalleCuenta" ToRole="PagoDetalleBoleta" />
+  </EntityType>
+  <EntityType Name="DetalleResumenPago">
+    <Key>
+      <PropertyRef Name="IdPago" />
+      <PropertyRef Name="IdPagoDetalle" />
+      <PropertyRef Name="IdDetalleCuenta" />
+      <PropertyRef Name="IdCuenta" />
+      <PropertyRef Name="OrdenTienda" />
+      <PropertyRef Name="IdEstadoPago" />
+      <PropertyRef Name="DescripcionEstadoPago" />
+      <PropertyRef Name="Monto" />
+      <PropertyRef Name="IdCuentaCliente" />
+      <PropertyRef Name="FechaInsercion" />
+      <PropertyRef Name="IdEmpresaRubro" />
+      <PropertyRef Name="NombreEmpresaRubro" />
+      <PropertyRef Name="Identificador" />
+    </Key>
+    <Property Type="Int64" Name="IdPago" Nullable="false" />
+    <Property Type="Int64" Name="IdPagoDetalle" Nullable="false" />
+    <Property Type="Int64" Name="IdDetalleCuenta" Nullable="false" />
+    <Property Type="Int64" Name="IdCuenta" Nullable="false" />
+    <Property Type="String" Name="OrdenTienda" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdEstadoPago" Nullable="false" />
+    <Property Type="String" Name="DescripcionEstadoPago" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Monto" Nullable="false" />
+    <Property Type="Int32" Name="NumCuotas" />
+    <Property Type="Int32" Name="Numtarjeta" />
+    <Property Type="String" Name="TbkCodAutorizacion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="IdCuentaCliente" Nullable="false" />
+    <Property Type="String" Name="NombreCuentaCliente" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FechaInsercion" Nullable="false" Precision="0" />
+    <Property Type="Int32" Name="IdEmpresaRubro" Nullable="false" />
+    <Property Type="String" Name="NombreEmpresaRubro" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Identificador" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="TbkMontoCuota" />
+    <Property Type="Int32" Name="TbkCodRespuesta" />
+  </EntityType>
+  <EntityType Name="Direccion">
+    <Key>
+      <PropertyRef Name="IdDireccion" />
+    </Key>
+    <Property Type="Int32" Name="IdComuna" />
+    <Property Type="Int32" Name="IdDireccion" Nullable="false" />
+    <Property Type="String" Name="DescDireccion" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Cliente" Relationship="Unired_HistoricaModel.FK_CLIENTE2" FromRole="Direccion" ToRole="Cliente" />
+    <NavigationProperty Name="Comuna" Relationship="Unired_HistoricaModel.FK_DIRECCION" FromRole="Direccion" ToRole="Comuna" />
+  </EntityType>
+  <EntityType Name="Empresa">
+    <Key>
+      <PropertyRef Name="IdEmpresa" />
+    </Key>
+    <Property Type="Int32" Name="IdEmpresa" Nullable="false" />
+    <Property Type="String" Name="CodEmpresa" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="false" />
+    <Property Type="String" Name="NombreEmpresa" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="EstadoGeneral" Relationship="Unired_HistoricaModel.FK_EMPRESA" FromRole="Empresa" ToRole="EstadoGeneral" />
+    <NavigationProperty Name="EmpresaRubro" Relationship="Unired_HistoricaModel.FK_EMPRESA_RUBRO" FromRole="Empresa" ToRole="EmpresaRubro" />
+  </EntityType>
+  <EntityType Name="EmpresaRubro">
+    <Key>
+      <PropertyRef Name="IdEmpresaRubro" />
+    </Key>
+    <Property Type="Int32" Name="IdEmpresaRubro" Nullable="false" />
+    <Property Type="Int32" Name="IdEmpresa" Nullable="false" />
+    <Property Type="Int32" Name="IdRubro" Nullable="false" />
+    <Property Type="String" Name="NombreServicio" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="false" />
+    <Property Type="Boolean" Name="CarteraDesconocida" Nullable="false" />
+    <Property Type="Boolean" Name="AceptaAbono" Nullable="false" />
+    <Property Type="String" Name="UrlLogoServicio" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodigoInstrumento" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MapaFechaVencimiento" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodigoTransbank" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="valida" />
+    <Property Type="String" Name="nombreBoton" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdTipoAbono" Nullable="false" />
+    <Property Type="Int32" Name="TipoConsulta" Nullable="false" />
+    <Property Type="Boolean" Name="AceptaDeudaCero" Nullable="false" />
+    <Property Type="Boolean" Name="Inscripcion" />
+    <Property Type="Boolean" Name="Express" />
+    <NavigationProperty Name="AbonoDinamico" Relationship="Unired_HistoricaModel.FK_AbonoDinamico_Empresa" FromRole="EmpresaRubro" ToRole="AbonoDinamico" />
+    <NavigationProperty Name="AtributoImprimir" Relationship="Unired_HistoricaModel.FK_IdAtributoImprimir" FromRole="EmpresaRubro" ToRole="AtributoImprimir" />
+    <NavigationProperty Name="AtributoInformar" Relationship="Unired_HistoricaModel.FK_IdAtributoInformar" FromRole="EmpresaRubro" ToRole="AtributoInformar" />
+    <NavigationProperty Name="CuentaCliente" Relationship="Unired_HistoricaModel.FK_CUENTA_CLIENTE2" FromRole="EmpresaRubro" ToRole="CuentaCliente" />
+    <NavigationProperty Name="CuentaClienteExpress" Relationship="Unired_HistoricaModel.PK_CtaCliExpress3" FromRole="EmpresaRubro" ToRole="CuentaClienteExpress" />
+    <NavigationProperty Name="Empresa" Relationship="Unired_HistoricaModel.FK_EMPRESA_RUBRO" FromRole="EmpresaRubro" ToRole="Empresa" />
+    <NavigationProperty Name="LinkAccesoPortal" Relationship="Unired_HistoricaModel.FK__LinkAcces__IdEmp__7755B73D" FromRole="EmpresaRubro" ToRole="LinkAccesoPortal" />
+    <NavigationProperty Name="LinkAccesoPortal1" Relationship="Unired_HistoricaModel.FK__LinkAcces__IdEmp__7849DB76" FromRole="EmpresaRubro" ToRole="LinkAccesoPortal" />
+    <NavigationProperty Name="Rubro" Relationship="Unired_HistoricaModel.FK_EMPRESA_RUBRO2" FromRole="EmpresaRubro" ToRole="Rubro" />
+    <NavigationProperty Name="EstadoGeneral" Relationship="Unired_HistoricaModel.FK_EMPRESA_RUBRO4" FromRole="EmpresaRubro" ToRole="EstadoGeneral" />
+    <NavigationProperty Name="Identificador" Relationship="Unired_HistoricaModel.FK_IDENTIFICADOR" FromRole="EmpresaRubro" ToRole="Identificador" />
+    <NavigationProperty Name="TipoAbono" Relationship="Unired_HistoricaModel.FK_IdTipoAbono" FromRole="EmpresaRubro" ToRole="TipoAbono" />
+    <NavigationProperty Name="ReglaPresentacion" Relationship="Unired_HistoricaModel.FK_REGLA" FromRole="EmpresaRubro" ToRole="ReglaPresentacion" />
+    <NavigationProperty Name="RestriccionEPSCanal" Relationship="Unired_HistoricaModel.FK_RestriccionEPSCanal_EmpresaRubro" FromRole="EmpresaRubro" ToRole="RestriccionEPSCanal" />
+    <NavigationProperty Name="MedioPago" Relationship="Unired_HistoricaModel.EmpresaRubroMP" FromRole="EmpresaRubro" ToRole="MedioPago" />
+  </EntityType>
+  <EntityType Name="EstadoBoleta">
+    <Key>
+      <PropertyRef Name="IdEstadoBoleta" />
+    </Key>
+    <Property Type="Int32" Name="IdEstadoBoleta" Nullable="false" />
+    <Property Type="String" Name="DescEstadoBoleta" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ConsultaBoleta" Relationship="Unired_HistoricaModel.FK_CONSULTA_BOLETA2" FromRole="EstadoBoleta" ToRole="ConsultaBoleta" />
+  </EntityType>
+  <EntityType Name="EstadoGeneral">
+    <Key>
+      <PropertyRef Name="IdEstado" />
+    </Key>
+    <Property Type="Int32" Name="IdEstado" Nullable="false" />
+    <Property Type="String" Name="DescEstadoGeneral" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Canal" Relationship="Unired_HistoricaModel.FK_CANAL" FromRole="EstadoGeneral" ToRole="Canal" />
+    <NavigationProperty Name="Empresa" Relationship="Unired_HistoricaModel.FK_EMPRESA" FromRole="EstadoGeneral" ToRole="Empresa" />
+    <NavigationProperty Name="EmpresaRubro" Relationship="Unired_HistoricaModel.FK_EMPRESA_RUBRO4" FromRole="EstadoGeneral" ToRole="EmpresaRubro" />
+    <NavigationProperty Name="Turno" Relationship="Unired_HistoricaModel.FK_ESTADO_GENERAL" FromRole="EstadoGeneral" ToRole="Turno" />
+    <NavigationProperty Name="Grupo" Relationship="Unired_HistoricaModel.FK_GRUPO2" FromRole="EstadoGeneral" ToRole="Grupo" />
+    <NavigationProperty Name="MedioPago" Relationship="Unired_HistoricaModel.FK_MEDIO_PAGO" FromRole="EstadoGeneral" ToRole="MedioPago" />
+    <NavigationProperty Name="Rubro" Relationship="Unired_HistoricaModel.FK_RUBRO" FromRole="EstadoGeneral" ToRole="Rubro" />
+    <NavigationProperty Name="Sucursal" Relationship="Unired_HistoricaModel.FK_SUCURSAL2" FromRole="EstadoGeneral" ToRole="Sucursal" />
+    <NavigationProperty Name="TerminoCondicion" Relationship="Unired_HistoricaModel.FK_TERMINO_CONDICION" FromRole="EstadoGeneral" ToRole="TerminoCondicion" />
+    <NavigationProperty Name="TipoMail" Relationship="Unired_HistoricaModel.FK_TIPOMAIL" FromRole="EstadoGeneral" ToRole="TipoMail" />
+  </EntityType>
+  <EntityType Name="EstadoImagen">
+    <Key>
+      <PropertyRef Name="IdEstadoImagen" />
+    </Key>
+    <Property Type="Int32" Name="IdEstadoImagen" Nullable="false" />
+    <Property Type="String" Name="DescEstadoImagen" Nullable="false" MaxLength="20" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="ImagenEstilo" Relationship="Unired_HistoricaModel.FK_IMAGEN_ESTILO" FromRole="EstadoImagen" ToRole="ImagenEstilo" />
+  </EntityType>
+  <EntityType Name="EstadoMail">
+    <Key>
+      <PropertyRef Name="IdEstadoMail" />
+    </Key>
+    <Property Type="Int32" Name="IdEstadoMail" Nullable="false" />
+    <Property Type="String" Name="DescEstadoMail" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Mailing" Relationship="Unired_HistoricaModel.FK_MAILING2" FromRole="EstadoMail" ToRole="Mailing" />
+  </EntityType>
+  <EntityType Name="EstadoNotificacion">
+    <Key>
+      <PropertyRef Name="IdEstadoNotificacion" />
+    </Key>
+    <Property Type="Int32" Name="IdEstadoNotificacion" Nullable="false" />
+    <Property Type="String" Name="DescEstadoNotif" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Notificacion" Relationship="Unired_HistoricaModel.FK_Notificacion" FromRole="EstadoNotificacion" ToRole="Notificacion" />
+  </EntityType>
+  <EntityType Name="EstadoPago">
+    <Key>
+      <PropertyRef Name="IdEstadoPago" />
+    </Key>
+    <Property Type="Int32" Name="IdEstadoPago" Nullable="false" />
+    <Property Type="String" Name="DescEstadoPago" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="IntentoPago" Relationship="Unired_HistoricaModel.FK_INTENTO_PAGO1" FromRole="EstadoPago" ToRole="IntentoPago" />
+    <NavigationProperty Name="Pago" Relationship="Unired_HistoricaModel.FK_PAGO_1" FromRole="EstadoPago" ToRole="Pago" />
+    <NavigationProperty Name="PagoDetalleBoleta" Relationship="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA4" FromRole="EstadoPago" ToRole="PagoDetalleBoleta" />
+  </EntityType>
+  <EntityType Name="Feriado">
+    <Key>
+      <PropertyRef Name="IdFeriado" />
+    </Key>
+    <Property Type="Int32" Name="IdFeriado" Nullable="false" />
+    <Property Type="DateTime" Name="Fecha" Precision="3" />
+    <Property Type="String" Name="Descripcion" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="FormatoFechaEmpresaRubro">
+    <Key>
+      <PropertyRef Name="idFormatoFechaEmpresaRubro" />
+    </Key>
+    <Property Type="Int64" Name="idFormatoFechaEmpresaRubro" Nullable="false" />
+    <Property Type="Int64" Name="idEmpresaRubro" />
+    <Property Type="String" Name="formatofecha" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="IdGrupo" />
+    </Key>
+    <Property Type="Int32" Name="IdGrupo" Nullable="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="false" />
+    <Property Type="String" Name="NombreGrupo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="IdCliente" />
+    <NavigationProperty Name="Cliente" Relationship="Unired_HistoricaModel.FK_GRUPO3" FromRole="Grupo" ToRole="Cliente" />
+    <NavigationProperty Name="CuentaCliente" Relationship="Unired_HistoricaModel.FK_CUENTA_CLIENTE3" FromRole="Grupo" ToRole="CuentaCliente" />
+    <NavigationProperty Name="EstadoGeneral" Relationship="Unired_HistoricaModel.FK_GRUPO2" FromRole="Grupo" ToRole="EstadoGeneral" />
+    <NavigationProperty Name="ImagenEstilo" Relationship="Unired_HistoricaModel.GrupoImagenEstilo" FromRole="Grupo" ToRole="ImagenEstilo" />
+  </EntityType>
+  <EntityType Name="GrupoEtario">
+    <Key>
+      <PropertyRef Name="IdGrupoEtario" />
+    </Key>
+    <Property Type="Int32" Name="IdGrupoEtario" Nullable="false" />
+    <Property Type="String" Name="DescGrupoEtario" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Cliente" Relationship="Unired_HistoricaModel.FK_CLIENTE4" FromRole="GrupoEtario" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="Identificador">
+    <Key>
+      <PropertyRef Name="IdIdentificador" />
+    </Key>
+    <Property Type="Int32" Name="IdIdentificador" Nullable="false" />
+    <Property Type="Int32" Name="IdEmpresaRubro" Nullable="false" />
+    <Property Type="String" Name="DescIdentificador" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NombreIdentificador" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EjemploIdentificador" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int16" Name="LargoIdentificador" Nullable="false" />
+    <Property Type="String" Name="UrlImagenIdentificador" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdTipoMetaDato" Nullable="false" />
+    <Property Type="Boolean" Name="IdentificadorHabilitado" />
+    <NavigationProperty Name="EmpresaRubro" Relationship="Unired_HistoricaModel.FK_IDENTIFICADOR" FromRole="Identificador" ToRole="EmpresaRubro" />
+    <NavigationProperty Name="IdentificadorCtaCli" Relationship="Unired_HistoricaModel.FK_IDENTIFI_REFERENCE_IDENTIFI" FromRole="Identificador" ToRole="IdentificadorCtaCli" />
+    <NavigationProperty Name="TipoMetaDato" Relationship="Unired_HistoricaModel.FK_IDENTIFICADOR2" FromRole="Identificador" ToRole="TipoMetaDato" />
+    <NavigationProperty Name="IdentificadorCtaCliExpress" Relationship="Unired_HistoricaModel.IdentificadorCtaCliExpress2" FromRole="Identificador" ToRole="IdentificadorCtaCliExpress" />
+  </EntityType>
+  <EntityType Name="IdentificadorCtaCli">
+    <Key>
+      <PropertyRef Name="IdCuentaCliente" />
+      <PropertyRef Name="IdIdentificador" />
+    </Key>
+    <Property Type="Int32" Name="IdCuentaCliente" Nullable="false" />
+    <Property Type="Int32" Name="IdIdentificador" Nullable="false" />
+    <Property Type="String" Name="Identificador" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="idTipoMetadato" />
+    <NavigationProperty Name="CuentaCliente" Relationship="Unired_HistoricaModel.FK_IDENTIFI_REFERENCE_CUENTACL" FromRole="IdentificadorCtaCli" ToRole="CuentaCliente" />
+    <NavigationProperty Name="Identificador1" Relationship="Unired_HistoricaModel.FK_IDENTIFI_REFERENCE_IDENTIFI" FromRole="IdentificadorCtaCli" ToRole="Identificador" />
+  </EntityType>
+  <EntityType Name="IdentificadorCtaCliExpress">
+    <Key>
+      <PropertyRef Name="IdCuentaCliente" />
+      <PropertyRef Name="IdIdentificador" />
+    </Key>
+    <Property Type="Int32" Name="IdCuentaCliente" Nullable="false" />
+    <Property Type="Int32" Name="IdIdentificador" Nullable="false" />
+    <Property Type="String" Name="Identificador" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CuentaClienteExpress" Relationship="Unired_HistoricaModel.FK_IdentificadorCtaCliExpress" FromRole="IdentificadorCtaCliExpress" ToRole="CuentaClienteExpress" />
+    <NavigationProperty Name="Identificador1" Relationship="Unired_HistoricaModel.IdentificadorCtaCliExpress2" FromRole="IdentificadorCtaCliExpress" ToRole="Identificador" />
+  </EntityType>
+  <EntityType Name="IdentificadorPublicidad">
+    <Key>
+      <PropertyRef Name="IdPublicidad" />
+    </Key>
+    <Property Type="Int32" Name="IdPublicidad" Nullable="false" />
+    <Property Type="String" Name="Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MantenedorImagenes" Relationship="Unired_HistoricaModel.FK_IdPublicidad" FromRole="IdentificadorPublicidad" ToRole="MantenedorImagenes" />
+  </EntityType>
+  <EntityType Name="ImagenesCorreo">
+    <Key>
+      <PropertyRef Name="IdImagenesCorreo" />
+    </Key>
+    <Property Type="Int32" Name="IdImagenesCorreo" Nullable="false" />
+    <Property Type="String" Name="NombreImagen" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Link" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="binario" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Type="Int32" Name="Posicion" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ImagenEstilo">
+    <Key>
+      <PropertyRef Name="IdImagen" />
+    </Key>
+    <Property Type="Int32" Name="IdImagen" Nullable="false" />
+    <Property Type="Int32" Name="IdEstadoImagen" Nullable="false" />
+    <Property Type="String" Name="UrlImagen" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="EstadoImagen" Relationship="Unired_HistoricaModel.FK_IMAGEN_ESTILO" FromRole="ImagenEstilo" ToRole="EstadoImagen" />
+    <NavigationProperty Name="Grupo" Relationship="Unired_HistoricaModel.GrupoImagenEstilo" FromRole="ImagenEstilo" ToRole="Grupo" />
+  </EntityType>
+  <EntityType Name="IntentoCliente">
+    <Key>
+      <PropertyRef Name="IdIntento" />
+    </Key>
+    <Property Type="Int64" Name="IdIntento" Nullable="false" />
+    <Property Type="Int64" Name="IdCliente" Nullable="false" />
+    <Property Type="String" Name="IpIntento" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FechaIntento" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Cliente" Relationship="Unired_HistoricaModel.FK_INTENTO_CLIENTE" FromRole="IntentoCliente" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="IntentoPago">
+    <Key>
+      <PropertyRef Name="IdIntentoPago" />
+    </Key>
+    <Property Type="Int64" Name="IdIntentoPago" Nullable="false" />
+    <Property Type="Int32" Name="IdEstadoPago" Nullable="false" />
+    <Property Type="Int32" Name="IdMedioPago" Nullable="false" />
+    <Property Type="DateTime" Name="FechaIntentoPago" Precision="3" />
+    <Property Type="Int64" Name="IdPago" />
+    <Property Type="DateTime" Name="FechaRespuestaMP" Precision="3" />
+    <Property Type="Int32" Name="IdtipoMedioPago" />
+    <NavigationProperty Name="EstadoPago" Relationship="Unired_HistoricaModel.FK_INTENTO_PAGO1" FromRole="IntentoPago" ToRole="EstadoPago" />
+    <NavigationProperty Name="MedioPago" Relationship="Unired_HistoricaModel.FK_INTENTO_PAGO2" FromRole="IntentoPago" ToRole="MedioPago" />
+    <NavigationProperty Name="Pago" Relationship="Unired_HistoricaModel.FK_INTENTO_PAGO3" FromRole="IntentoPago" ToRole="Pago" />
+  </EntityType>
+  <EntityType Name="IntentoUsuario">
+    <Key>
+      <PropertyRef Name="IdIntentoUsuario" />
+    </Key>
+    <Property Type="Int64" Name="IdIntentoUsuario" Nullable="false" />
+    <Property Type="Int32" Name="IdUsuario" Nullable="false" />
+    <Property Type="String" Name="IpIntentoUsuario" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EmailUsuario" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UsuarioIntento" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PasswordIntento" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FechaIntento" Precision="3" />
+    <NavigationProperty Name="Usuario" Relationship="Unired_HistoricaModel.FK_INTENTO_USUARIO" FromRole="IntentoUsuario" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="LinkAccesoPortal">
+    <Key>
+      <PropertyRef Name="IdLink" />
+    </Key>
+    <Property Type="Int64" Name="IdLink" Nullable="false" />
+    <Property Type="Int32" Name="IdEmpresaRubro" />
+    <Property Type="DateTime" Name="FechaInicio" Precision="3" />
+    <Property Type="DateTime" Name="FechaTermino" Precision="3" />
+    <Property Type="Boolean" Name="valido" />
+    <Property Type="String" Name="LinkEncriptado" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="EmpresaRubro" Relationship="Unired_HistoricaModel.FK__LinkAcces__IdEmp__7755B73D" FromRole="LinkAccesoPortal" ToRole="EmpresaRubro" />
+    <NavigationProperty Name="EmpresaRubro1" Relationship="Unired_HistoricaModel.FK__LinkAcces__IdEmp__7849DB76" FromRole="LinkAccesoPortal" ToRole="EmpresaRubro" />
+  </EntityType>
+  <EntityType Name="Mailing">
+    <Key>
+      <PropertyRef Name="IdMailing" />
+    </Key>
+    <Property Type="Int64" Name="IdMailing" Nullable="false" />
+    <Property Type="Int32" Name="IdTipoMail" />
+    <Property Type="String" Name="MailDestino" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FechaIngreso" Precision="3" />
+    <Property Type="DateTime" Name="FechaEnvio" Precision="3" />
+    <Property Type="Int32" Name="IdEstadoMail" />
+    <Property Type="Int64" Name="Id" Nullable="false" />
+    <NavigationProperty Name="EstadoMail" Relationship="Unired_HistoricaModel.FK_MAILING2" FromRole="Mailing" ToRole="EstadoMail" />
+    <NavigationProperty Name="TipoMail" Relationship="Unired_HistoricaModel.FK_MAILING" FromRole="Mailing" ToRole="TipoMail" />
+  </EntityType>
+  <EntityType Name="MantenedorImagenes">
+    <Key>
+      <PropertyRef Name="idMantenedorImagenes" />
+    </Key>
+    <Property Type="Int32" Name="idMantenedorImagenes" Nullable="false" />
+    <Property Type="Int32" Name="IdPublicidad" />
+    <Property Type="String" Name="RutaImagen" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Link" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Orden" />
+    <Property Type="DateTime" Name="FechaCreacion" Precision="3" />
+    <Property Type="Int32" Name="Activa" />
+    <Property Type="String" Name="TARGET" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="binario" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="Titulo" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="IdentificadorPublicidad" Relationship="Unired_HistoricaModel.FK_IdPublicidad" FromRole="MantenedorImagenes" ToRole="IdentificadorPublicidad" />
+  </EntityType>
+  <EntityType Name="MedioPago">
+    <Key>
+      <PropertyRef Name="IdMedioPago" />
+    </Key>
+    <Property Type="Int32" Name="IdMedioPago" Nullable="false" />
+    <Property Type="Int32" Name="IdEstado" />
+    <Property Type="String" Name="NombreMedioPago" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Id_tipoMedioPago" />
+    <NavigationProperty Name="EstadoGeneral" Relationship="Unired_HistoricaModel.FK_MEDIO_PAGO" FromRole="MedioPago" ToRole="EstadoGeneral" />
+    <NavigationProperty Name="IntentoPago" Relationship="Unired_HistoricaModel.FK_INTENTO_PAGO2" FromRole="MedioPago" ToRole="IntentoPago" />
+    <NavigationProperty Name="Tipo_MedioPago" Relationship="Unired_HistoricaModel.FK_MedioPago_Tipo_MedioPago" FromRole="MedioPago" ToRole="Tipo_MedioPago" />
+    <NavigationProperty Name="Canal" Relationship="Unired_HistoricaModel.CanalMedioPago" FromRole="MedioPago" ToRole="Canal" />
+    <NavigationProperty Name="EmpresaRubro" Relationship="Unired_HistoricaModel.EmpresaRubroMP" FromRole="MedioPago" ToRole="EmpresaRubro" />
+  </EntityType>
+  <EntityType Name="MultiIndustria">
+    <Key>
+      <PropertyRef Name="idMultiIndustria" />
+    </Key>
+    <Property Type="Int64" Name="idMultiIndustria" Nullable="false" />
+    <Property Type="Int64" Name="idEmpresaRubro" Nullable="false" />
+    <Property Type="Int64" Name="idRubro" Nullable="false" />
+    <Property Type="DateTime" Name="FechaRegistro" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="FechaUltimaModificacion" Precision="3" />
+    <Property Type="Boolean" Name="estado" />
+  </EntityType>
+  <EntityType Name="Notificacion">
+    <Key>
+      <PropertyRef Name="IdNotificacion" />
+    </Key>
+    <Property Type="Int64" Name="IdNotificacion" Nullable="false" />
+    <Property Type="Int64" Name="IdPagoDetalle" />
+    <Property Type="DateTime" Name="FechaIngreso" Precision="3" />
+    <Property Type="DateTime" Name="FechaNotificacion" Precision="3" />
+    <Property Type="Int32" Name="IdEstadoNotificacion" Nullable="false" />
+    <Property Type="Int32" Name="NumIntento" />
+    <Property Type="Boolean" Name="Habilitado" />
+    <NavigationProperty Name="EstadoNotificacion" Relationship="Unired_HistoricaModel.FK_Notificacion" FromRole="Notificacion" ToRole="EstadoNotificacion" />
+    <NavigationProperty Name="PagoDetalleBoleta" Relationship="Unired_HistoricaModel.FK_Notificacion2" FromRole="Notificacion" ToRole="PagoDetalleBoleta" />
+  </EntityType>
+  <EntityType Name="Pago">
+    <Key>
+      <PropertyRef Name="IdPago" />
+    </Key>
+    <Property Type="Int64" Name="IdPago" Nullable="false" />
+    <Property Type="Int64" Name="IdConsultaBoleta" Nullable="false" />
+    <Property Type="Int64" Name="CodigoTbk" />
+    <Property Type="DateTime" Name="FechaContable" Precision="3" />
+    <Property Type="Int32" Name="FolioXCash" />
+    <Property Type="String" Name="TicketXCash" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Cub" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdEstadoPago" Nullable="false" />
+    <Property Type="DateTime" Name="FechaPago" Precision="3" />
+    <Property Type="DateTime" Name="FechaRegistroNotificacion" Precision="3" />
+    <Property Type="String" Name="TbkToken" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdTipoMP" />
+    <Property Type="String" Name="FechaPagoString" MaxLength="30" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="ConsultaBoleta" Relationship="Unired_HistoricaModel.FK_PAGO1" FromRole="Pago" ToRole="ConsultaBoleta" />
+    <NavigationProperty Name="EstadoPago" Relationship="Unired_HistoricaModel.FK_PAGO_1" FromRole="Pago" ToRole="EstadoPago" />
+    <NavigationProperty Name="IntentoPago" Relationship="Unired_HistoricaModel.FK_INTENTO_PAGO3" FromRole="Pago" ToRole="IntentoPago" />
+    <NavigationProperty Name="PagoDetalleBoleta" Relationship="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA1" FromRole="Pago" ToRole="PagoDetalleBoleta" />
+  </EntityType>
+  <EntityType Name="PagoDetalleBoleta">
+    <Key>
+      <PropertyRef Name="IdPagoDetalle" />
+    </Key>
+    <Property Type="Int64" Name="IdPagoDetalle" Nullable="false" />
+    <Property Type="Int64" Name="IdDetalleCuenta" Nullable="false" />
+    <Property Type="Int64" Name="IdPago" Nullable="false" />
+    <Property Type="String" Name="IdTurno" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TbkTipoPago" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="TbkNumCuota" />
+    <Property Type="String" Name="TbkCodAutoriza" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="TbkNumTarjeta" />
+    <Property Type="String" Name="TbkIdTrx" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="MontoPagado" />
+    <Property Type="Int32" Name="IdEstadoPago" Nullable="false" />
+    <Property Type="Int64" Name="IdIntentoPago" />
+    <Property Type="Int64" Name="TbkMontoCuota" />
+    <Property Type="Int32" Name="TbkCodRespuesta" />
+    <Property Type="String" Name="TbkMontoTienda" MaxLength="26" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TipoPago" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Notificado" />
+    <NavigationProperty Name="DetalleCuenta" Relationship="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA2" FromRole="PagoDetalleBoleta" ToRole="DetalleCuenta" />
+    <NavigationProperty Name="EstadoPago" Relationship="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA4" FromRole="PagoDetalleBoleta" ToRole="EstadoPago" />
+    <NavigationProperty Name="Notificacion" Relationship="Unired_HistoricaModel.FK_Notificacion2" FromRole="PagoDetalleBoleta" ToRole="Notificacion" />
+    <NavigationProperty Name="Pago" Relationship="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA1" FromRole="PagoDetalleBoleta" ToRole="Pago" />
+    <NavigationProperty Name="Turno" Relationship="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA3" FromRole="PagoDetalleBoleta" ToRole="Turno" />
+  </EntityType>
+  <EntityType Name="ParametrosConsulta">
+    <Key>
+      <PropertyRef Name="IdParametrosConsulta" />
+    </Key>
+    <Property Type="Int64" Name="IdParametrosConsulta" Nullable="false" />
+    <Property Type="Int64" Name="IdConsultaBoleta" Nullable="false" />
+    <Property Type="String" Name="UrlExito" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UrlFracaso" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IdTransaccionExterna" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="IdTicketEncriptado" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FechaDespliegue" Precision="3" />
+    <Property Type="DateTime" Name="FechaPago" Precision="3" />
+    <Property Type="Boolean" Name="Pagado" />
+    <Property Type="Boolean" Name="Procesado" />
+    <Property Type="Boolean" Name="Notificado" />
+    <Property Type="DateTime" Name="FechaNotificacion" Precision="3" />
+    <NavigationProperty Name="ConsultaBoleta" Relationship="Unired_HistoricaModel.FK_IdParametrosConsulta" FromRole="ParametrosConsulta" ToRole="ConsultaBoleta" />
+  </EntityType>
+  <EntityType Name="PortalDisponible">
+    <Key>
+      <PropertyRef Name="IdPortalDisponible" />
+    </Key>
+    <Property Type="Int32" Name="IdPortalDisponible" Nullable="false" />
+    <Property Type="DateTime" Name="FechaInicio" Precision="3" />
+    <Property Type="DateTime" Name="FechaFin" Precision="3" />
+    <Property Type="Boolean" Name="Disponible" />
+  </EntityType>
+  <EntityType Name="Profiles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Roles" Relationship="Unired_HistoricaModel.RolInProfile" FromRole="Profiles" ToRole="Roles" />
+    <NavigationProperty Name="Users" Relationship="Unired_HistoricaModel.UsersInProfile" FromRole="Profiles" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Promociones">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="IdPromocion" Nullable="false" />
+    <Property Type="String" Name="Titulo" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Contenido" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Link" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NombreLink" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="PermiteLink" />
+    <Property Type="Boolean" Name="PermiteBases" />
+    <Property Type="String" Name="TextoBases" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NombreBases" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="Bases" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="NombreLogo" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="Logo" MaxLength="Max" FixedLength="false" />
+    <Property Type="String" Name="NombrePromocion" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Binary" Name="Promocion" MaxLength="Max" FixedLength="false" />
+    <Property Type="Boolean" Name="Activo" />
+  </EntityType>
+  <EntityType Name="Provincia">
+    <Key>
+      <PropertyRef Name="IdProvincia" />
+    </Key>
+    <Property Type="Int32" Name="IdProvincia" Nullable="false" />
+    <Property Type="Int32" Name="IdRegion" Nullable="false" />
+    <Property Type="String" Name="NombreProvincia" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Comuna" Relationship="Unired_HistoricaModel.FK_COMUNA" FromRole="Provincia" ToRole="Comuna" />
+    <NavigationProperty Name="Region" Relationship="Unired_HistoricaModel.FK_PROVINCIA" FromRole="Provincia" ToRole="Region" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="IdRegion" />
+    </Key>
+    <Property Type="Int32" Name="IdRegion" Nullable="false" />
+    <Property Type="String" Name="NombreRegion" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Provincia" Relationship="Unired_HistoricaModel.FK_PROVINCIA" FromRole="Region" ToRole="Provincia" />
+  </EntityType>
+  <EntityType Name="ReglaPresentacion">
+    <Key>
+      <PropertyRef Name="IdRegla" />
+      <PropertyRef Name="IdEmpresaRubro" />
+      <PropertyRef Name="IdTipoCartera" />
+    </Key>
+    <Property Type="Int32" Name="IdRegla" Nullable="false" />
+    <Property Type="Int32" Name="IdEmpresaRubro" Nullable="false" />
+    <Property Type="Int32" Name="IdTipoCartera" Nullable="false" />
+    <Property Type="String" Name="CampoAfectado" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NombreCampoAfectado" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="EmpresaRubro" Relationship="Unired_HistoricaModel.FK_REGLA" FromRole="ReglaPresentacion" ToRole="EmpresaRubro" />
+    <NavigationProperty Name="TipoCartera" Relationship="Unired_HistoricaModel.FK_REGLA2" FromRole="ReglaPresentacion" ToRole="TipoCartera" />
+  </EntityType>
+  <EntityType Name="RestriccionEPSCanal">
+    <Key>
+      <PropertyRef Name="IdRestriccion" />
+    </Key>
+    <Property Type="Int32" Name="IdRestriccion" Nullable="false" />
+    <Property Type="Int32" Name="IdCanal" Nullable="false" />
+    <Property Type="Int32" Name="IdEmpresaRubro" Nullable="false" />
+    <NavigationProperty Name="Canal" Relationship="Unired_HistoricaModel.FK_RestriccionEPSCanal_Canal" FromRole="RestriccionEPSCanal" ToRole="Canal" />
+    <NavigationProperty Name="EmpresaRubro" Relationship="Unired_HistoricaModel.FK_RestriccionEPSCanal_EmpresaRubro" FromRole="RestriccionEPSCanal" ToRole="EmpresaRubro" />
+  </EntityType>
+  <EntityType Name="ResumenPago">
+    <Key>
+      <PropertyRef Name="IdPago" />
+      <PropertyRef Name="FechaInserción" />
+      <PropertyRef Name="FechaPago" />
+      <PropertyRef Name="FechaContable" />
+      <PropertyRef Name="Canal" />
+      <PropertyRef Name="Web" />
+      <PropertyRef Name="IdCliente" />
+      <PropertyRef Name="Rut" />
+      <PropertyRef Name="dv" />
+      <PropertyRef Name="Registrado" />
+      <PropertyRef Name="MontoPago" />
+      <PropertyRef Name="Cub" />
+    </Key>
+    <Property Type="Int64" Name="IdPago" Nullable="false" />
+    <Property Type="DateTime" Name="FechaInserción" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="FechaPago" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="FechaContable" Nullable="false" Precision="3" />
+    <Property Type="Int64" Name="Folio" />
+    <Property Type="String" Name="Ticket" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MedioPago" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="DescripcionMedioPago" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="Canal" Nullable="false" />
+    <Property Type="Boolean" Name="Web" Nullable="false" />
+    <Property Type="Boolean" Name="MailEnviado" />
+    <Property Type="DateTime" Name="FechaEnvioMail" Precision="0" />
+    <Property Type="Int64" Name="IdCliente" Nullable="false" />
+    <Property Type="String" Name="Rut" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="dv" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Registrado" Nullable="false" />
+    <Property Type="String" Name="Email" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NombreCliente" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="MontoPago" Nullable="false" />
+    <Property Type="Int64" Name="idConsultaBoleta" />
+    <Property Type="Int32" Name="EstadoPago" />
+    <Property Type="String" Name="DescripcionEstadoPago" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Cub" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Turno" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Guid" Name="ApplicationId" Nullable="false" />
+    <Property Type="String" Name="Name" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Profiles" Relationship="Unired_HistoricaModel.RolInProfile" FromRole="Roles" ToRole="Profiles" />
+  </EntityType>
+  <EntityType Name="Rubro">
+    <Key>
+      <PropertyRef Name="IdRubro" />
+    </Key>
+    <Property Type="Int32" Name="IdRubro" Nullable="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="false" />
+    <Property Type="String" Name="NombreRubro" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Codigo" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="EmpresaRubro" Relationship="Unired_HistoricaModel.FK_EMPRESA_RUBRO2" FromRole="Rubro" ToRole="EmpresaRubro" />
+    <NavigationProperty Name="EstadoGeneral" Relationship="Unired_HistoricaModel.FK_RUBRO" FromRole="Rubro" ToRole="EstadoGeneral" />
+  </EntityType>
+  <EntityType Name="ServiciosProceso">
+    <Key>
+      <PropertyRef Name="idServiciosProceso" />
+    </Key>
+    <Property Type="Int64" Name="idServiciosProceso" Nullable="false" />
+    <Property Type="Int64" Name="idConfiguracion" />
+    <Property Type="Int32" Name="idEmpresaRubro" />
+    <NavigationProperty Name="ConfiguracionProcesoConsulta" Relationship="Unired_HistoricaModel.FK_CONFIGURACION_PROCESO" FromRole="ServiciosProceso" ToRole="ConfiguracionProcesoConsulta" />
+  </EntityType>
+  <EntityType Name="Sucursal">
+    <Key>
+      <PropertyRef Name="DireccionSucursal" />
+    </Key>
+    <Property Type="Int32" Name="IdSucursal" Nullable="false" />
+    <Property Type="Int32" Name="IdComuna" Nullable="false" />
+    <Property Type="String" Name="DireccionSucursal" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="false" />
+    <Property Type="String" Name="Sucursal1" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdZona" />
+    <NavigationProperty Name="Comuna" Relationship="Unired_HistoricaModel.FK_SUCURSAL" FromRole="Sucursal" ToRole="Comuna" />
+    <NavigationProperty Name="EstadoGeneral" Relationship="Unired_HistoricaModel.FK_SUCURSAL2" FromRole="Sucursal" ToRole="EstadoGeneral" />
+    <NavigationProperty Name="Zona" Relationship="Unired_HistoricaModel.FK_ZONA" FromRole="Sucursal" ToRole="Zona" />
+  </EntityType>
+  <EntityType Name="TerminoCondicion">
+    <Key>
+      <PropertyRef Name="IdTermino" />
+    </Key>
+    <Property Type="Int32" Name="IdTermino" Nullable="false" />
+    <Property Type="Int32" Name="IdEstado" />
+    <Property Type="String" Name="UrlTerminoCondicion" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FechaIngresoTermino" Precision="3" />
+    <NavigationProperty Name="Cliente" Relationship="Unired_HistoricaModel.FK_CLIENTE3" FromRole="TerminoCondicion" ToRole="Cliente" />
+    <NavigationProperty Name="EstadoGeneral" Relationship="Unired_HistoricaModel.FK_TERMINO_CONDICION" FromRole="TerminoCondicion" ToRole="EstadoGeneral" />
+  </EntityType>
+  <EntityType Name="Tipo_MedioPago">
+    <Key>
+      <PropertyRef Name="Id_tipoMedioPago" />
+    </Key>
+    <Property Type="Int32" Name="Id_tipoMedioPago" Nullable="false" />
+    <Property Type="String" Name="Nombre" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Estado" />
+    <Property Type="String" Name="UrlHubPago" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MedioPago" Relationship="Unired_HistoricaModel.FK_MedioPago_Tipo_MedioPago" FromRole="Tipo_MedioPago" ToRole="MedioPago" />
+  </EntityType>
+  <EntityType Name="TipoAbono">
+    <Key>
+      <PropertyRef Name="IdTipoAbono" />
+    </Key>
+    <Property Type="Int32" Name="IdTipoAbono" Nullable="false" />
+    <Property Type="String" Name="NombreTipoAbono" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="EmpresaRubro" Relationship="Unired_HistoricaModel.FK_IdTipoAbono" FromRole="TipoAbono" ToRole="EmpresaRubro" />
+  </EntityType>
+  <EntityType Name="TipoCartera">
+    <Key>
+      <PropertyRef Name="IdTipoCartera" />
+    </Key>
+    <Property Type="Int32" Name="IdTipoCartera" Nullable="false" />
+    <Property Type="String" Name="DescTipoCartera" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ReglaPresentacion" Relationship="Unired_HistoricaModel.FK_REGLA2" FromRole="TipoCartera" ToRole="ReglaPresentacion" />
+  </EntityType>
+  <EntityType Name="TipoCliente">
+    <Key>
+      <PropertyRef Name="IdTipoCliente" />
+    </Key>
+    <Property Type="Int32" Name="IdTipoCliente" Nullable="false" />
+    <Property Type="String" Name="TipoCliente1" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ConsultaBoleta" Relationship="Unired_HistoricaModel.FK_CONSULTA_BOLETA3" FromRole="TipoCliente" ToRole="ConsultaBoleta" />
+  </EntityType>
+  <EntityType Name="TipoMail">
+    <Key>
+      <PropertyRef Name="IdTipoMail" />
+    </Key>
+    <Property Type="Int32" Name="IdTipoMail" Nullable="false" />
+    <Property Type="String" Name="DescTipoMail" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IdEstado" Nullable="false" />
+    <NavigationProperty Name="CuerpoMail" Relationship="Unired_HistoricaModel.FK_CuerpoMail" FromRole="TipoMail" ToRole="CuerpoMail" />
+    <NavigationProperty Name="EstadoGeneral" Relationship="Unired_HistoricaModel.FK_TIPOMAIL" FromRole="TipoMail" ToRole="EstadoGeneral" />
+    <NavigationProperty Name="Mailing" Relationship="Unired_HistoricaModel.FK_MAILING" FromRole="TipoMail" ToRole="Mailing" />
+  </EntityType>
+  <EntityType Name="TipoMetaDato">
+    <Key>
+      <PropertyRef Name="IdTipoMetaDato" />
+    </Key>
+    <Property Type="Int32" Name="IdTipoMetaDato" Nullable="false" />
+    <Property Type="String" Name="TipoMetaDato1" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ProcValidacion" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Identificador" Relationship="Unired_HistoricaModel.FK_IDENTIFICADOR2" FromRole="TipoMetaDato" ToRole="Identificador" />
+  </EntityType>
+  <EntityType Name="Turno">
+    <Key>
+      <PropertyRef Name="IdTurno" />
+    </Key>
+    <Property Type="String" Name="IdTurno" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FechaCierreTurno" Nullable="false" Precision="3" />
+    <Property Type="Int32" Name="IdEstado" Nullable="false" />
+    <Property Type="Int32" Name="IdCanal" Nullable="false" />
+    <NavigationProperty Name="EstadoGeneral" Relationship="Unired_HistoricaModel.FK_ESTADO_GENERAL" FromRole="Turno" ToRole="EstadoGeneral" />
+    <NavigationProperty Name="PagoDetalleBoleta" Relationship="Unired_HistoricaModel.FK_PAGO_DETALLE_BOLETA3" FromRole="Turno" ToRole="PagoDetalleBoleta" />
+  </EntityType>
+  <EntityType Name="URLPermitidaCanal">
+    <Key>
+      <PropertyRef Name="idUrlCanal" />
+    </Key>
+    <Property Type="Int64" Name="idUrlCanal" Nullable="false" />
+    <Property Type="Int32" Name="IdCanal" Nullable="false" />
+    <Property Type="String" Name="url" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Descripcion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Canal" Relationship="Unired_HistoricaModel.FK_IdUrlCanak" FromRole="URLPermitidaCanal" ToRole="Canal" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Password" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DateCreated" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="LastActivity" Nullable="false" Precision="3" />
+    <Property Type="DateTime" Name="LastLoginDate" Precision="3" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="LastPasswordDate" Precision="3" />
+    <Property Type="Int32" Name="FailedPasswordAttempCount" />
+    <Property Type="String" Name="Comment" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Profiles" Relationship="Unired_HistoricaModel.UsersInProfile" FromRole="Users" ToRole="Profiles" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Type="Int32" Name="IdUsuario" Nullable="false" />
+    <Property Type="Int32" Name="RutUsuario" Nullable="false" />
+    <Property Type="String" Name="DvUsuario" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="NombreUsuario" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PasswordUsuario" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EmailUsuario" MaxLength="60" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="IntentoUsuario" Relationship="Unired_HistoricaModel.FK_INTENTO_USUARIO" FromRole="Usuario" ToRole="IntentoUsuario" />
+  </EntityType>
+  <EntityType Name="Zona">
+    <Key>
+      <PropertyRef Name="IdZona" />
+    </Key>
+    <Property Type="Int32" Name="IdZona" Nullable="false" />
+    <Property Type="String" Name="DescZona" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Sucursal" Relationship="Unired_HistoricaModel.FK_ZONA" FromRole="Zona" ToRole="Sucursal" />
+  </EntityType>
+  <Association Name="FK_AbonoDinamico_Empresa">
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.AbonoDinamico" Role="AbonoDinamico" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="AbonoDinamico">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CodigoEmpresaImprimir">
+    <End Type="Unired_HistoricaModel.AtributoImprimir" Role="AtributoImprimir" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.CodigoEmpresaImprimir" Role="CodigoEmpresaImprimir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AtributoImprimir">
+        <PropertyRef Name="IdAtributoImprimir" />
+      </Principal>
+      <Dependent Role="CodigoEmpresaImprimir">
+        <PropertyRef Name="IdAtributoImprimir" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdAtributoImprimir">
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.AtributoImprimir" Role="AtributoImprimir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="AtributoImprimir">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CodigoEmpresaInformar">
+    <End Type="Unired_HistoricaModel.AtributoInformar" Role="AtributoInformar" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.CodigoEmpresaInformar" Role="CodigoEmpresaInformar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AtributoInformar">
+        <PropertyRef Name="IdAtributoInformar" />
+      </Principal>
+      <Dependent Role="CodigoEmpresaInformar">
+        <PropertyRef Name="IdAtributoInformar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdAtributoInformar">
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.AtributoInformar" Role="AtributoInformar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="AtributoInformar">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Atributo">
+    <End Type="Unired_HistoricaModel.DetalleCuenta" Role="DetalleCuenta" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.AtributoNoLlave" Role="AtributoNoLlave" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleCuenta">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Principal>
+      <Dependent Role="AtributoNoLlave">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CampoOrden">
+    <End Type="Unired_HistoricaModel.DetalleCuenta" Role="DetalleCuenta" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.CampoOrdenConsulta" Role="CampoOrdenConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleCuenta">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Principal>
+      <Dependent Role="CampoOrdenConsulta">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CANAL">
+    <End Type="Unired_HistoricaModel.EstadoGeneral" Role="EstadoGeneral" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Canal" Role="Canal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="Canal">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdCanal">
+    <End Type="Unired_HistoricaModel.Canal" Role="Canal" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.ConfiguracionCanal" Role="ConfiguracionCanal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Canal">
+        <PropertyRef Name="IdCanal" />
+      </Principal>
+      <Dependent Role="ConfiguracionCanal">
+        <PropertyRef Name="IdCanal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdUrlCanak">
+    <End Type="Unired_HistoricaModel.Canal" Role="Canal" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.URLPermitidaCanal" Role="URLPermitidaCanal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Canal">
+        <PropertyRef Name="IdCanal" />
+      </Principal>
+      <Dependent Role="URLPermitidaCanal">
+        <PropertyRef Name="IdCanal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RestriccionEPSCanal_Canal">
+    <End Type="Unired_HistoricaModel.Canal" Role="Canal" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.RestriccionEPSCanal" Role="RestriccionEPSCanal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Canal">
+        <PropertyRef Name="IdCanal" />
+      </Principal>
+      <Dependent Role="RestriccionEPSCanal">
+        <PropertyRef Name="IdCanal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTE2">
+    <End Type="Unired_HistoricaModel.Direccion" Role="Direccion" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Direccion">
+        <PropertyRef Name="IdDireccion" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdDireccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTE3">
+    <End Type="Unired_HistoricaModel.TerminoCondicion" Role="TerminoCondicion" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TerminoCondicion">
+        <PropertyRef Name="IdTermino" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdTermino" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CLIENTE4">
+    <End Type="Unired_HistoricaModel.GrupoEtario" Role="GrupoEtario" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GrupoEtario">
+        <PropertyRef Name="IdGrupoEtario" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdGrupoEtario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CUENTA_CLIENTE">
+    <End Type="Unired_HistoricaModel.Cliente" Role="Cliente" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.CuentaCliente" Role="CuentaCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="CuentaCliente">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GRUPO3">
+    <End Type="Unired_HistoricaModel.Cliente" Role="Cliente" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.Grupo" Role="Grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="Grupo">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INTENTO_CLIENTE">
+    <End Type="Unired_HistoricaModel.Cliente" Role="Cliente" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.IntentoCliente" Role="IntentoCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="IntentoCliente">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PK_CtaCliExpress2">
+    <End Type="Unired_HistoricaModel.ClienteExpress" Role="ClienteExpress" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.CuentaClienteExpress" Role="CuentaClienteExpress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClienteExpress">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="CuentaClienteExpress">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CodigoEmpresaImprimir_DetalleCuenta">
+    <End Type="Unired_HistoricaModel.DetalleCuenta" Role="DetalleCuenta" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.CodigoEmpresaImprimir" Role="CodigoEmpresaImprimir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleCuenta">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Principal>
+      <Dependent Role="CodigoEmpresaImprimir">
+        <PropertyRef Name="IdCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CodigoEmpresaInformar_Detalle">
+    <End Type="Unired_HistoricaModel.DetalleCuenta" Role="DetalleCuenta" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.CodigoEmpresaInformar" Role="CodigoEmpresaInformar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleCuenta">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Principal>
+      <Dependent Role="CodigoEmpresaInformar">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_COMUNA">
+    <End Type="Unired_HistoricaModel.Provincia" Role="Provincia" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Comuna" Role="Comuna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provincia">
+        <PropertyRef Name="IdProvincia" />
+      </Principal>
+      <Dependent Role="Comuna">
+        <PropertyRef Name="IdProvincia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DIRECCION">
+    <End Type="Unired_HistoricaModel.Comuna" Role="Comuna" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.Direccion" Role="Direccion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comuna">
+        <PropertyRef Name="IdComuna" />
+      </Principal>
+      <Dependent Role="Direccion">
+        <PropertyRef Name="IdComuna" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUCURSAL">
+    <End Type="Unired_HistoricaModel.Comuna" Role="Comuna" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Sucursal" Role="Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comuna">
+        <PropertyRef Name="IdComuna" />
+      </Principal>
+      <Dependent Role="Sucursal">
+        <PropertyRef Name="IdComuna" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_ConfigMantendorPopUp">
+    <End Type="Unired_HistoricaModel.ConfigMantenedorPopUp" Role="ConfigMantenedorPopUp" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.ConfigVisualMantenedorPopUp" Role="ConfigVisualMantenedorPopUp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConfigMantenedorPopUp">
+        <PropertyRef Name="IdConfig" />
+      </Principal>
+      <Dependent Role="ConfigVisualMantenedorPopUp">
+        <PropertyRef Name="IdConfig" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONFIGURACION_PROCESO">
+    <End Type="Unired_HistoricaModel.ConfiguracionProcesoConsulta" Role="ConfiguracionProcesoConsulta" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.ServiciosProceso" Role="ServiciosProceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConfiguracionProcesoConsulta">
+        <PropertyRef Name="idProcesoConsulta" />
+      </Principal>
+      <Dependent Role="ServiciosProceso">
+        <PropertyRef Name="idConfiguracion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONFIGURACION_PROCESO_CUENTAC">
+    <End Type="Unired_HistoricaModel.ConfiguracionProcesoConsulta" Role="ConfiguracionProcesoConsulta" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.CuentaConsultada" Role="CuentaConsultada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConfiguracionProcesoConsulta">
+        <PropertyRef Name="idProcesoConsulta" />
+      </Principal>
+      <Dependent Role="CuentaConsultada">
+        <PropertyRef Name="idConfiguracion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CuentaProcesoConsulta">
+    <End Type="Unired_HistoricaModel.ConfiguracionProcesoConsulta" Role="ConfiguracionProcesoConsulta" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.CuentaProcesoConsulta" Role="CuentaProcesoConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConfiguracionProcesoConsulta">
+        <PropertyRef Name="idProcesoConsulta" />
+      </Principal>
+      <Dependent Role="CuentaProcesoConsulta">
+        <PropertyRef Name="IdProcesoConsulta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONSULTA_BOLETA2">
+    <End Type="Unired_HistoricaModel.EstadoBoleta" Role="EstadoBoleta" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.ConsultaBoleta" Role="ConsultaBoleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoBoleta">
+        <PropertyRef Name="IdEstadoBoleta" />
+      </Principal>
+      <Dependent Role="ConsultaBoleta">
+        <PropertyRef Name="IdEstadoBoleta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CONSULTA_BOLETA3">
+    <End Type="Unired_HistoricaModel.TipoCliente" Role="TipoCliente" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.ConsultaBoleta" Role="ConsultaBoleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoCliente">
+        <PropertyRef Name="IdTipoCliente" />
+      </Principal>
+      <Dependent Role="ConsultaBoleta">
+        <PropertyRef Name="IdTipoCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CUENTA">
+    <End Type="Unired_HistoricaModel.ConsultaBoleta" Role="ConsultaBoleta" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Cuenta" Role="Cuenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConsultaBoleta">
+        <PropertyRef Name="IdConsultaBoleta" />
+      </Principal>
+      <Dependent Role="Cuenta">
+        <PropertyRef Name="IdConsultaBoleta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdParametrosConsulta">
+    <End Type="Unired_HistoricaModel.ConsultaBoleta" Role="ConsultaBoleta" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.ParametrosConsulta" Role="ParametrosConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConsultaBoleta">
+        <PropertyRef Name="IdConsultaBoleta" />
+      </Principal>
+      <Dependent Role="ParametrosConsulta">
+        <PropertyRef Name="IdConsultaBoleta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAGO1">
+    <End Type="Unired_HistoricaModel.ConsultaBoleta" Role="ConsultaBoleta" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Pago" Role="Pago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConsultaBoleta">
+        <PropertyRef Name="IdConsultaBoleta" />
+      </Principal>
+      <Dependent Role="Pago">
+        <PropertyRef Name="IdConsultaBoleta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DETALLE_CUENTA">
+    <End Type="Unired_HistoricaModel.Cuenta" Role="Cuenta" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.DetalleCuenta" Role="DetalleCuenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cuenta">
+        <PropertyRef Name="IdCuenta" />
+      </Principal>
+      <Dependent Role="DetalleCuenta">
+        <PropertyRef Name="IdCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CUENTA_CLIENTE2">
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.CuentaCliente" Role="CuentaCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="CuentaCliente">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CUENTA_CLIENTE3">
+    <End Type="Unired_HistoricaModel.Grupo" Role="Grupo" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.CuentaCliente" Role="CuentaCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="IdGrupo" />
+      </Principal>
+      <Dependent Role="CuentaCliente">
+        <PropertyRef Name="IdGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CuentaProcesoConsulta_CuentaCliente">
+    <End Type="Unired_HistoricaModel.CuentaCliente" Role="CuentaCliente" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.CuentaProcesoConsulta" Role="CuentaProcesoConsulta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CuentaCliente">
+        <PropertyRef Name="IdCuentaCliente" />
+      </Principal>
+      <Dependent Role="CuentaProcesoConsulta">
+        <PropertyRef Name="IdCuentaCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDENTIFI_REFERENCE_CUENTACL">
+    <End Type="Unired_HistoricaModel.CuentaCliente" Role="CuentaCliente" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.IdentificadorCtaCli" Role="IdentificadorCtaCli" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CuentaCliente">
+        <PropertyRef Name="IdCuentaCliente" />
+      </Principal>
+      <Dependent Role="IdentificadorCtaCli">
+        <PropertyRef Name="IdCuentaCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdentificadorCtaCliExpress">
+    <End Type="Unired_HistoricaModel.CuentaClienteExpress" Role="CuentaClienteExpress" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.IdentificadorCtaCliExpress" Role="IdentificadorCtaCliExpress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CuentaClienteExpress">
+        <PropertyRef Name="IdCuentaCliente" />
+      </Principal>
+      <Dependent Role="IdentificadorCtaCliExpress">
+        <PropertyRef Name="IdCuentaCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PK_CtaCliExpress3">
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.CuentaClienteExpress" Role="CuentaClienteExpress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="CuentaClienteExpress">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CuerpoMail">
+    <End Type="Unired_HistoricaModel.TipoMail" Role="TipoMail" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.CuerpoMail" Role="CuerpoMail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoMail">
+        <PropertyRef Name="IdTipoMail" />
+      </Principal>
+      <Dependent Role="CuerpoMail">
+        <PropertyRef Name="IdTipoMail" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAGO_DETALLE_BOLETA2">
+    <End Type="Unired_HistoricaModel.DetalleCuenta" Role="DetalleCuenta" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.PagoDetalleBoleta" Role="PagoDetalleBoleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleCuenta">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Principal>
+      <Dependent Role="PagoDetalleBoleta">
+        <PropertyRef Name="IdDetalleCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPRESA">
+    <End Type="Unired_HistoricaModel.EstadoGeneral" Role="EstadoGeneral" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Empresa" Role="Empresa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="Empresa">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPRESA_RUBRO">
+    <End Type="Unired_HistoricaModel.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="IdEmpresa" />
+      </Principal>
+      <Dependent Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LinkAcces__IdEmp__7755B73D">
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.LinkAccesoPortal" Role="LinkAccesoPortal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="LinkAccesoPortal">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__LinkAcces__IdEmp__7849DB76">
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.LinkAccesoPortal" Role="LinkAccesoPortal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="LinkAccesoPortal">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPRESA_RUBRO2">
+    <End Type="Unired_HistoricaModel.Rubro" Role="Rubro" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rubro">
+        <PropertyRef Name="IdRubro" />
+      </Principal>
+      <Dependent Role="EmpresaRubro">
+        <PropertyRef Name="IdRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EMPRESA_RUBRO4">
+    <End Type="Unired_HistoricaModel.EstadoGeneral" Role="EstadoGeneral" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="EmpresaRubro">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDENTIFICADOR">
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Identificador" Role="Identificador" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="Identificador">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdTipoAbono">
+    <End Type="Unired_HistoricaModel.TipoAbono" Role="TipoAbono" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoAbono">
+        <PropertyRef Name="IdTipoAbono" />
+      </Principal>
+      <Dependent Role="EmpresaRubro">
+        <PropertyRef Name="IdTipoAbono" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGLA">
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.ReglaPresentacion" Role="ReglaPresentacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="ReglaPresentacion">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RestriccionEPSCanal_EmpresaRubro">
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.RestriccionEPSCanal" Role="RestriccionEPSCanal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpresaRubro">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Principal>
+      <Dependent Role="RestriccionEPSCanal">
+        <PropertyRef Name="IdEmpresaRubro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ESTADO_GENERAL">
+    <End Type="Unired_HistoricaModel.EstadoGeneral" Role="EstadoGeneral" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Turno" Role="Turno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="Turno">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GRUPO2">
+    <End Type="Unired_HistoricaModel.EstadoGeneral" Role="EstadoGeneral" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Grupo" Role="Grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="Grupo">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MEDIO_PAGO">
+    <End Type="Unired_HistoricaModel.EstadoGeneral" Role="EstadoGeneral" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.MedioPago" Role="MedioPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="MedioPago">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RUBRO">
+    <End Type="Unired_HistoricaModel.EstadoGeneral" Role="EstadoGeneral" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Rubro" Role="Rubro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="Rubro">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SUCURSAL2">
+    <End Type="Unired_HistoricaModel.EstadoGeneral" Role="EstadoGeneral" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Sucursal" Role="Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="Sucursal">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TERMINO_CONDICION">
+    <End Type="Unired_HistoricaModel.EstadoGeneral" Role="EstadoGeneral" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.TerminoCondicion" Role="TerminoCondicion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="TerminoCondicion">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TIPOMAIL">
+    <End Type="Unired_HistoricaModel.EstadoGeneral" Role="EstadoGeneral" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.TipoMail" Role="TipoMail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoGeneral">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="TipoMail">
+        <PropertyRef Name="IdEstado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IMAGEN_ESTILO">
+    <End Type="Unired_HistoricaModel.EstadoImagen" Role="EstadoImagen" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.ImagenEstilo" Role="ImagenEstilo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoImagen">
+        <PropertyRef Name="IdEstadoImagen" />
+      </Principal>
+      <Dependent Role="ImagenEstilo">
+        <PropertyRef Name="IdEstadoImagen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MAILING2">
+    <End Type="Unired_HistoricaModel.EstadoMail" Role="EstadoMail" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.Mailing" Role="Mailing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoMail">
+        <PropertyRef Name="IdEstadoMail" />
+      </Principal>
+      <Dependent Role="Mailing">
+        <PropertyRef Name="IdEstadoMail" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notificacion">
+    <End Type="Unired_HistoricaModel.EstadoNotificacion" Role="EstadoNotificacion" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Notificacion" Role="Notificacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoNotificacion">
+        <PropertyRef Name="IdEstadoNotificacion" />
+      </Principal>
+      <Dependent Role="Notificacion">
+        <PropertyRef Name="IdEstadoNotificacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INTENTO_PAGO1">
+    <End Type="Unired_HistoricaModel.EstadoPago" Role="EstadoPago" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.IntentoPago" Role="IntentoPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoPago">
+        <PropertyRef Name="IdEstadoPago" />
+      </Principal>
+      <Dependent Role="IntentoPago">
+        <PropertyRef Name="IdEstadoPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAGO_1">
+    <End Type="Unired_HistoricaModel.EstadoPago" Role="EstadoPago" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Pago" Role="Pago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoPago">
+        <PropertyRef Name="IdEstadoPago" />
+      </Principal>
+      <Dependent Role="Pago">
+        <PropertyRef Name="IdEstadoPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAGO_DETALLE_BOLETA4">
+    <End Type="Unired_HistoricaModel.EstadoPago" Role="EstadoPago" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.PagoDetalleBoleta" Role="PagoDetalleBoleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoPago">
+        <PropertyRef Name="IdEstadoPago" />
+      </Principal>
+      <Dependent Role="PagoDetalleBoleta">
+        <PropertyRef Name="IdEstadoPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDENTIFI_REFERENCE_IDENTIFI">
+    <End Type="Unired_HistoricaModel.Identificador" Role="Identificador" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.IdentificadorCtaCli" Role="IdentificadorCtaCli" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Identificador">
+        <PropertyRef Name="IdIdentificador" />
+      </Principal>
+      <Dependent Role="IdentificadorCtaCli">
+        <PropertyRef Name="IdIdentificador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IDENTIFICADOR2">
+    <End Type="Unired_HistoricaModel.TipoMetaDato" Role="TipoMetaDato" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Identificador" Role="Identificador" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoMetaDato">
+        <PropertyRef Name="IdTipoMetaDato" />
+      </Principal>
+      <Dependent Role="Identificador">
+        <PropertyRef Name="IdTipoMetaDato" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="IdentificadorCtaCliExpress2">
+    <End Type="Unired_HistoricaModel.Identificador" Role="Identificador" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.IdentificadorCtaCliExpress" Role="IdentificadorCtaCliExpress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Identificador">
+        <PropertyRef Name="IdIdentificador" />
+      </Principal>
+      <Dependent Role="IdentificadorCtaCliExpress">
+        <PropertyRef Name="IdIdentificador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IdPublicidad">
+    <End Type="Unired_HistoricaModel.IdentificadorPublicidad" Role="IdentificadorPublicidad" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.MantenedorImagenes" Role="MantenedorImagenes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="IdentificadorPublicidad">
+        <PropertyRef Name="IdPublicidad" />
+      </Principal>
+      <Dependent Role="MantenedorImagenes">
+        <PropertyRef Name="IdPublicidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INTENTO_PAGO2">
+    <End Type="Unired_HistoricaModel.MedioPago" Role="MedioPago" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.IntentoPago" Role="IntentoPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MedioPago">
+        <PropertyRef Name="IdMedioPago" />
+      </Principal>
+      <Dependent Role="IntentoPago">
+        <PropertyRef Name="IdMedioPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INTENTO_PAGO3">
+    <End Type="Unired_HistoricaModel.Pago" Role="Pago" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.IntentoPago" Role="IntentoPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pago">
+        <PropertyRef Name="IdPago" />
+      </Principal>
+      <Dependent Role="IntentoPago">
+        <PropertyRef Name="IdPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_INTENTO_USUARIO">
+    <End Type="Unired_HistoricaModel.Usuario" Role="Usuario" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.IntentoUsuario" Role="IntentoUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="IntentoUsuario">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MAILING">
+    <End Type="Unired_HistoricaModel.TipoMail" Role="TipoMail" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.Mailing" Role="Mailing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoMail">
+        <PropertyRef Name="IdTipoMail" />
+      </Principal>
+      <Dependent Role="Mailing">
+        <PropertyRef Name="IdTipoMail" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MedioPago_Tipo_MedioPago">
+    <End Type="Unired_HistoricaModel.Tipo_MedioPago" Role="Tipo_MedioPago" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.MedioPago" Role="MedioPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo_MedioPago">
+        <PropertyRef Name="Id_tipoMedioPago" />
+      </Principal>
+      <Dependent Role="MedioPago">
+        <PropertyRef Name="Id_tipoMedioPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Notificacion2">
+    <End Type="Unired_HistoricaModel.PagoDetalleBoleta" Role="PagoDetalleBoleta" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.Notificacion" Role="Notificacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PagoDetalleBoleta">
+        <PropertyRef Name="IdPagoDetalle" />
+      </Principal>
+      <Dependent Role="Notificacion">
+        <PropertyRef Name="IdPagoDetalle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAGO_DETALLE_BOLETA1">
+    <End Type="Unired_HistoricaModel.Pago" Role="Pago" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.PagoDetalleBoleta" Role="PagoDetalleBoleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pago">
+        <PropertyRef Name="IdPago" />
+      </Principal>
+      <Dependent Role="PagoDetalleBoleta">
+        <PropertyRef Name="IdPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAGO_DETALLE_BOLETA3">
+    <End Type="Unired_HistoricaModel.Turno" Role="Turno" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.PagoDetalleBoleta" Role="PagoDetalleBoleta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turno">
+        <PropertyRef Name="IdTurno" />
+      </Principal>
+      <Dependent Role="PagoDetalleBoleta">
+        <PropertyRef Name="IdTurno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PROVINCIA">
+    <End Type="Unired_HistoricaModel.Region" Role="Region" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.Provincia" Role="Provincia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Region">
+        <PropertyRef Name="IdRegion" />
+      </Principal>
+      <Dependent Role="Provincia">
+        <PropertyRef Name="IdRegion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REGLA2">
+    <End Type="Unired_HistoricaModel.TipoCartera" Role="TipoCartera" Multiplicity="1" />
+    <End Type="Unired_HistoricaModel.ReglaPresentacion" Role="ReglaPresentacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoCartera">
+        <PropertyRef Name="IdTipoCartera" />
+      </Principal>
+      <Dependent Role="ReglaPresentacion">
+        <PropertyRef Name="IdTipoCartera" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ZONA">
+    <End Type="Unired_HistoricaModel.Zona" Role="Zona" Multiplicity="0..1" />
+    <End Type="Unired_HistoricaModel.Sucursal" Role="Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zona">
+        <PropertyRef Name="IdZona" />
+      </Principal>
+      <Dependent Role="Sucursal">
+        <PropertyRef Name="IdZona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CanalMedioPago">
+    <End Type="Unired_HistoricaModel.Canal" Role="Canal" Multiplicity="*" />
+    <End Type="Unired_HistoricaModel.MedioPago" Role="MedioPago" Multiplicity="*" />
+  </Association>
+  <Association Name="EmpresaRubroMP">
+    <End Type="Unired_HistoricaModel.EmpresaRubro" Role="EmpresaRubro" Multiplicity="*" />
+    <End Type="Unired_HistoricaModel.MedioPago" Role="MedioPago" Multiplicity="*" />
+  </Association>
+  <Association Name="GrupoImagenEstilo">
+    <End Type="Unired_HistoricaModel.ImagenEstilo" Role="ImagenEstilo" Multiplicity="*" />
+    <End Type="Unired_HistoricaModel.Grupo" Role="Grupo" Multiplicity="*" />
+  </Association>
+  <Association Name="RolInProfile">
+    <End Type="Unired_HistoricaModel.Profiles" Role="Profiles" Multiplicity="*" />
+    <End Type="Unired_HistoricaModel.Roles" Role="Roles" Multiplicity="*" />
+  </Association>
+  <Association Name="UsersInProfile">
+    <End Type="Unired_HistoricaModel.Profiles" Role="Profiles" Multiplicity="*" />
+    <End Type="Unired_HistoricaModel.Users" Role="Users" Multiplicity="*" />
+  </Association>
+</Schema>

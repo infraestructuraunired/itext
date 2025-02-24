@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ModeloModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Configuracion">
+          <Key>
+            <PropertyRef Name="NombreConfiguracion" />
+          </Key>
+          <Property Name="IdConfiguracion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NombreConfiguracion" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="ValorConfiguracion" Type="varchar" MaxLength="4000" />
+          <Property Name="Encriptado" Type="bit" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="150" />
+          <Property Name="Tipo" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="ImagenesCorreo">
+          <Key>
+            <PropertyRef Name="IdImagenesCorreo" />
+          </Key>
+          <Property Name="IdImagenesCorreo" Type="int" Nullable="false" />
+          <Property Name="NombreImagen" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="Link" Type="varchar" MaxLength="255" />
+          <Property Name="binario" Type="image" Nullable="false" />
+          <Property Name="Posicion" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ModeloModelStoreContainer">
+          <EntitySet Name="Configuracion" EntityType="Self.Configuracion" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ImagenesCorreo" EntityType="Self.ImagenesCorreo" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ModeloModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Configuracion">
+          <Key>
+            <PropertyRef Name="NombreConfiguracion" />
+          </Key>
+          <Property Name="IdConfiguracion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NombreConfiguracion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ValorConfiguracion" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Name="Encriptado" Type="Boolean" />
+          <Property Name="Descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="Tipo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="ModeloEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Configuracion" EntityType="Self.Configuracion" />
+          <EntitySet Name="ImagenesCorreo" EntityType="ModeloModel.ImagenesCorreo" />
+        </EntityContainer>
+        <EntityType Name="ImagenesCorreo">
+          <Key>
+            <PropertyRef Name="IdImagenesCorreo" />
+          </Key>
+          <Property Name="IdImagenesCorreo" Type="Int32" Nullable="false" />
+          <Property Name="NombreImagen" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Link" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="binario" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="Posicion" Type="Int32" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModeloModelStoreContainer" CdmEntityContainer="ModeloEntities">
+          <EntitySetMapping Name="Configuracion">
+            <EntityTypeMapping TypeName="ModeloModel.Configuracion">
+              <MappingFragment StoreEntitySet="Configuracion">
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Encriptado" ColumnName="Encriptado" />
+                <ScalarProperty Name="IdConfiguracion" ColumnName="IdConfiguracion" />
+                <ScalarProperty Name="NombreConfiguracion" ColumnName="NombreConfiguracion" />
+                <ScalarProperty Name="ValorConfiguracion" ColumnName="ValorConfiguracion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ImagenesCorreo">
+            <EntityTypeMapping TypeName="ModeloModel.ImagenesCorreo">
+              <MappingFragment StoreEntitySet="ImagenesCorreo">
+                <ScalarProperty Name="Posicion" ColumnName="Posicion" />
+                <ScalarProperty Name="binario" ColumnName="binario" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="NombreImagen" ColumnName="NombreImagen" />
+                <ScalarProperty Name="IdImagenesCorreo" ColumnName="IdImagenesCorreo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

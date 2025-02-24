@@ -1,0 +1,46 @@
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\bin\Release\ModeloBD.dll.config
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\bin\Release\ModeloBD.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\bin\Release\ModeloBD.pdb
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\bin\Release\EntityFramework.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\bin\Release\EntityFramework.SqlServer.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\bin\Release\ephtmltopdf.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\bin\Release\itextsharp.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\bin\Release\log4net.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\bin\Release\Newtonsoft.Json.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\bin\Release\EntityFramework.xml
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\bin\Release\EntityFramework.SqlServer.xml
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\bin\Release\log4net.xml
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\bin\Release\Newtonsoft.Json.xml
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\obj\Release\ModeloBD.dll
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\obj\Release\ModeloBD.pdb
+C:\Proyectos\Unired\SVN Desarrollo Anticipa\Desarrollos en Curso 2019\Desarrollo Pago Efectivo\ServicioMail\ServicioCorreo\ModeloBD\obj\Release\ModeloBD.csprojResolveAssemblyReference.cache
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\bin\Release\ModeloBD.dll.config
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\bin\Release\ModeloBD.dll
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\bin\Release\ModeloBD.pdb
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\bin\Release\EntityFramework.dll
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\bin\Release\EntityFramework.SqlServer.dll
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\bin\Release\log4net.dll
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\bin\Release\Newtonsoft.Json.dll
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\bin\Release\EntityFramework.xml
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\bin\Release\EntityFramework.SqlServer.xml
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\bin\Release\log4net.xml
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\obj\Release\ModeloBD.csprojResolveAssemblyReference.cache
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\obj\Release\ModeloBD.dll
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\obj\Release\ModeloBD.pdb
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\bin\Release\Anticipa.Security.Cryptograpy.dll
+C:\Proyectos\Unired\SVN Fuentes Última versión productiva\ServicioMail\ModeloBD\bin\Release\Anticipa.Security.Cryptograpy.pdb
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\bin\Release\ModeloBD.dll.config
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\bin\Release\ModeloBD.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\bin\Release\ModeloBD.pdb
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\bin\Release\Anticipa.Security.Cryptograpy.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\bin\Release\EntityFramework.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\bin\Release\EntityFramework.SqlServer.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\bin\Release\log4net.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\bin\Release\Newtonsoft.Json.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\bin\Release\Anticipa.Security.Cryptograpy.pdb
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\bin\Release\EntityFramework.xml
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\bin\Release\EntityFramework.SqlServer.xml
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\bin\Release\log4net.xml
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\obj\Release\ModeloBD.csprojResolveAssemblyReference.cache
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\obj\Release\ModeloBD.dll
+C:\RVENEGAS\Proyectos\Unired\.NET\Fuentes SVN Unired\ServicioMail\ModeloBD\obj\Release\ModeloBD.pdb

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UniredModelStoreContainer" CdmEntityContainer="UniredModelEntities">
+    <FunctionImportMapping FunctionImportName="P_Portal_ComprobanteResumenPDF" FunctionName="UniredModel.Store.P_Portal_ComprobanteResumenPDF">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="UniredModel.P_Portal_ComprobanteResumenPDF_Result">
+          <ScalarProperty Name="NombreCliente" ColumnName="NombreCliente" />
+          <ScalarProperty Name="IdPago" ColumnName="IdPago" />
+          <ScalarProperty Name="Cub" ColumnName="Cub" />
+          <ScalarProperty Name="FechaPago" ColumnName="FechaPago" />
+          <ScalarProperty Name="MedioPago" ColumnName="MedioPago" />
+          <ScalarProperty Name="OrdenTienda" ColumnName="OrdenTienda" />
+          <ScalarProperty Name="NombreEmpresaRubro" ColumnName="NombreEmpresaRubro" />
+          <ScalarProperty Name="Identificador" ColumnName="Identificador" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="FechaVctoCuenta" ColumnName="FechaVctoCuenta" />
+          <ScalarProperty Name="TbkCodAutorizacion" ColumnName="TbkCodAutorizacion" />
+          <ScalarProperty Name="CodigoEmpresa" ColumnName="CodigoEmpresa" />
+          <ScalarProperty Name="IdEmpresaRubro" ColumnName="IdEmpresaRubro" />
+          <ScalarProperty Name="IdCuenta" ColumnName="IdCuenta" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="P_Portal_ComprobanteResumenPDFHistorico" FunctionName="UniredModel.Store.P_Portal_ComprobanteResumenPDFHistorico">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="UniredModel.P_Portal_ComprobanteResumenPDFHistorico_Result">
+          <ScalarProperty Name="NombreCliente" ColumnName="NombreCliente" />
+          <ScalarProperty Name="IdPago" ColumnName="IdPago" />
+          <ScalarProperty Name="Cub" ColumnName="Cub" />
+          <ScalarProperty Name="FechaPago" ColumnName="FechaPago" />
+          <ScalarProperty Name="MedioPago" ColumnName="MedioPago" />
+          <ScalarProperty Name="OrdenTienda" ColumnName="OrdenTienda" />
+          <ScalarProperty Name="NombreEmpresaRubro" ColumnName="NombreEmpresaRubro" />
+          <ScalarProperty Name="Identificador" ColumnName="Identificador" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="FechaVctoCuenta" ColumnName="FechaVctoCuenta" />
+          <ScalarProperty Name="TbkCodAutorizacion" ColumnName="TbkCodAutorizacion" />
+          <ScalarProperty Name="CodigoEmpresa" ColumnName="CodigoEmpresa" />
+          <ScalarProperty Name="IdEmpresaRubro" ColumnName="IdEmpresaRubro" />
+          <ScalarProperty Name="IdCuenta" ColumnName="IdCuenta" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Configuracion">
+      <EntityTypeMapping TypeName="UniredModel.Configuracion">
+        <MappingFragment StoreEntitySet="Configuracion">
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Encriptado" ColumnName="Encriptado" />
+          <ScalarProperty Name="ValorConfiguracion" ColumnName="ValorConfiguracion" />
+          <ScalarProperty Name="NombreConfiguracion" ColumnName="NombreConfiguracion" />
+          <ScalarProperty Name="IdConfiguracion" ColumnName="IdConfiguracion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

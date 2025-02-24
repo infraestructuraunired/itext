@@ -1,0 +1,426 @@
+﻿using System;
+using System.Data.Entity.Migrations;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Net;
+using System.Net.Mail;
+using System.Runtime.CompilerServices;
+using System.Threading;
+using log4net.Config;
+using ModeloBD.ObjetoConfig;
+using log4net;
+using System.Configuration;
+using System.Net.Mime;
+using System.Collections.Generic;
+using PagoPdf.Models;
+using PagoPdf.Imp;
+
+namespace ModeloBD.Procesos
+{
+    public class EnvioCorreo
+    {
+        protected static readonly ILog Logger = LogManager.GetLogger(typeof(EnvioCorreo));
+        protected static List<ImagenesCorreo> imagenes = null;
+        readonly string agente = ConfigurationSettings.AppSettings["Agente"].ToString(CultureInfo.InvariantCulture);
+        readonly string archivoCorreo = ConfigurationSettings.AppSettings["ArchivoCorreo"].ToString(CultureInfo.InvariantCulture);
+
+
+        public MensajeCorreo Msj(proc_ObtenerDatosMail_Result mailing, ConfiguracionServer cnfsrv)
+        {
+            var cadena = string.Empty;
+            MensajeCorreo msg = null;
+            try
+            {
+                if (mailing != null && cnfsrv != null && !cnfsrv.esComprobante)
+                {
+                    using (var context = new MailingEntities())
+                    {
+                        var respuesta = context.proc_mail_leer1(agente, mailing.id_mail).ToList();
+                        var html = (from r in respuesta where r.cl1 == "100" select r.cl3).ToList();
+                        #region armaMail
+                        foreach (var r in html)
+                        {
+                            cadena += r;
+                        }
+                        var asunto = (from r in respuesta where r.cl1 == "50" select r.cl3).FirstOrDefault();
+
+                        msg = new MensajeCorreo
+                        {
+                            IdMailing = mailing.id_mail,
+                            MensajeHtml = cadena,
+                            Remitente = ConfigurationSettings.AppSettings["MAIL_REMITENTE"], //ConfigurationSettings.AppSettings["MAIL_CREDENCIAL_USER_CONTACTO"],
+                            Destinatario = mailing.mail_to,
+                            Asunto = asunto,
+                            Tipomail = mailing.id_tipo_mail,
+                            CantidadporTipo = 1
+                        };
+                        #endregion
+
+                    }
+                }
+                else
+                {
+                    var listaHtml = new List<string>();
+                    using (var context = new MailingEntities())
+                    {
+                        switch (mailing.id_tipo_mail)
+                        {
+                            case 6:
+                                listaHtml = context.proc_mail_leer_tipo_06(mailing.mail_llave_externa, mailing.id_tipo_mail, mailing.id_mail).Select(x => x.msg_mail).ToList<string>();
+                                break;
+                            case 9:
+                                listaHtml = context.proc_mail_leer_tipo_09(mailing.mail_llave_externa, mailing.id_tipo_mail, mailing.id_mail).Select(x => x.msg_mail).ToList<string>();
+                                break;
+                            case 10:
+                                listaHtml = context.proc_mail_leer_tipo_10(mailing.mail_llave_externa, mailing.id_tipo_mail, mailing.id_mail).Select(x => x.msg_mail).ToList<string>();
+                                break;
+                            case 11:
+                                listaHtml = context.proc_mail_leer_tipo_11(mailing.mail_llave_externa, mailing.id_tipo_mail, mailing.id_mail).Select(x => x.msg_mail).ToList<string>();
+                                break;
+                        }
+                    }
+                    foreach (var r in listaHtml)
+                    {
+                        cadena += r;
+                    }
+
+                    //cadena = "<!doctype html><html><head>" +
+                    //      "<meta charset=\"UTF-8\"><title>Documento sin título</title>   <style type=\"text/css\">" +
+                    //     " @font-face {font-family: \"milootregular\";   src: url(\"http://www.unired.cl/Content/css/miloot-webfont.eot\"); " +
+                    //     " src: url(\"http://www.unired.cl/Content/css/miloot-webfont.eot?#iefix\") format(\"embedded-opentype\"), " +
+                    //     " url(\"http://www.unired.cl/Content/css/miloot-webfont.woff\") format(\"woff\")," +
+                    //     " url(\"http://www.unired.cl/Content/css/miloot-webfont.ttf\") format(\"truetype\")," +
+                    //     " url(\"http://www.unired.cl/Content/css/miloot-webfont.svg#milootregular\")" +
+                    //     " format(\"svg\");font-weight: normal;font-style: normal;}   </style></head><body>" +
+                    //     " <table width=\"611px\" border=\"0\"><tbody><tr >      <td colspan=\"2\"> " +
+                    //     " <h3 style=\"display: block;font-family: 'milootregular', Arial, Helvetica, sans-serif;font-size:25px;line-height:15px;padding:" +
+                    //     " 0px;	  margin:10px 0px;color:#4b4b4b\">		Estimado(a): Usuario</h3>	" +
+                    //      "<center><h1 style=\"display: block;font-family: 'milootregular', Arial, Helvetica, sans-serif;margin:0 auto;" +
+                    //      "padding:0px;margin:5px 0px 20px 0px;color:#4b4b4b;font-size:25px;\"><strong>TU CUENTA 		YA EST&Aacute; PAGADA<strong></h1>" +
+                    //      "</center></td></tr><tr><td colspan=\"2\"><a href=\"#\" target=\"_blank\">	" +
+                    //      "<img src=\"https://www.unired.cl/Content/img/comprobante/img/comprobante_-pancho(1).jpg\"/>				" +
+                    //      "</a></td></tr><tr><td colspan=\"2\">	  " +
+                    //   " <p style=\"color:#4b4b4b;display: block;font-family: 'milootregular', Arial, Helvetica, sans-serif;font-size:22px;\"><strong><br />" +
+                    //    "Tu comprobante de pago viene en documento adjunto.</strong></p></td>    </tr>    <tr>      <td width=\"343px\" style=\"color:#4b4b4b;display: " +
+                    //   " block;font-family: 'milootregular', Arial, Helvetica, sans-serif;font-size: 14px;\">		" +
+                    //    "<strong>Recuerda que puedes registrar tus cuentas<br/>para que el proximo pago sea aun mas rapido</strong>	</td>      " +
+                    //   " <td width=\"200px\" rowspan=\"2\"> <a href=\"#\" target=\"_blank\">				" +
+                    //   " <img src=\"https://www.unired.cl/Content/img/comprobante/img/cuentas_n.jpg\"/>			" +
+                    //   " </a></td></tr><tr><td colspan=\"1\"><center> <a href=\"https://www.unired.cl\" target=\"_blank\">			" +
+                    //   " <img src=\"https://www.unired.cl/Content/img/comprobante/img/registrate_n.png\"/>				</a></center></td>    </tr>  " +
+                    //   " <tr>      <td colspan=\"2\" height=\"30px;\">			  <a href=\"#\" target=\"_blank\">		" +
+                    //   " <img src=\"https://www.unired.cl/Content/img/comprobante/img/footer_n.jpg\"/></a></td></tr>    <tr>" +
+                    //   " <td colspan=\"2\"><p style=\"color:#4b4b4b;display: block;font-family: 'milootregular', Arial, Helvetica, sans-serif;font-size:10px;\">" +
+                    //   " <strong>Importante:</strong><br /><br />Este mail es generado automáticamente. Por favor no lo responda.<br /><br />" +
+                    //   " El archivo adjunto está en formato PDF. Para abrirlo debes tener instalado Adobe Acrobat Reader 7.0 o superior. Si no lo tienes, puedes<br/> " +
+                    //   " descargar su versión gratuita en get.adobe .com/es/reader.</p></td></tr></tbody></table></body></html>";
+
+                    if (cadena == string.Empty)
+                        return null;
+                    msg = new MensajeCorreo
+                    {
+                        IdMailing = mailing.id_mail,
+                        MensajeHtml = cadena,
+                        Remitente = ConfigurationSettings.AppSettings["MAIL_REMITENTE"],
+                        Destinatario = mailing.mail_to,
+                        Asunto = "Comprobante de Pago",
+                        Tipomail = mailing.id_tipo_mail,
+                        CantidadporTipo = 1
+                    };
+
+                }
+            }
+            catch (Exception e)
+            {
+                Logger.Error("ERROR EN MSJ::: " + e.Message, e.InnerException);
+            }
+            return msg;
+        }
+
+        public void MarcaRetorno(int idmail, int retorno)
+        {
+            try
+            {
+                using (var context = new MailingEntities())
+                {
+                    context.proc_MarcaRespuestaEnvio(idmail, retorno);
+                }
+            }
+            catch (Exception e)
+            {
+                Logger.Error("ERROR EN MARCARETORNO::: " + e.Message, e.InnerException);
+            }
+        }
+
+        public void MarcaEnProceso(int idmail)
+        {
+            try
+            {
+                using (var context = new MailingEntities())
+                {
+                    context.proc_MarcaEnProceso(idmail);
+                }
+            }
+            catch (Exception e)
+            {
+                Logger.Error("ERROR EN MARCAPROCESO::: " + e.Message, e.InnerException);
+            }
+        }
+
+        public void Enviar()
+        {
+            proc_ObtenerDatosMail_Result mailingRow;
+            MailMessage mail = null;
+            if (Thread.CurrentThread.Name != null)
+            {
+                var idMail = Int32.Parse(Thread.CurrentThread.Name.Replace("Mail-", ""));
+                Logger.Info("En proceso de envio de mail, proceso:" + idMail);
+                #region obtenerdatosbaseConfiguraServer
+                Logger.Debug("Obteniendo configuracion del mail : " + idMail);
+
+                using (var context = new MailingEntities())
+                {
+                    mailingRow = (proc_ObtenerDatosMail_Result)context.proc_ObtenerDatosMail(idMail).FirstOrDefault();
+                }
+
+                if (mailingRow == null)
+                {
+                    Logger.Debug("Tipo Mail is null:" + idMail);
+                    MarcaRetorno(idMail, 1);
+                    return;
+                }
+
+                Logger.Debug("Tipo Mail : " + mailingRow.id_tipo_mail + " ,proceso: " + idMail);
+
+                if (mailingRow.mail_to.Trim() == string.Empty)
+                {
+                    MarcaRetorno(idMail, 0);
+                    return;
+                }
+                var cnfserv = Parametros.ConfServerConfig(mailingRow.id_tipo_mail);
+                #region configuraSMTP
+                var smtp = new SmtpClient { Host = cnfserv.smtp };
+                if (cnfserv.requierePuerto == "S")
+                    smtp.Port = Convert.ToInt32(cnfserv.puerto);
+                if (cnfserv.requiereCredencial == "S")
+                    smtp.Credentials = new NetworkCredential(cnfserv.CredencialUser, cnfserv.CredencialPass);
+                if (cnfserv.requiereSSL == "S")
+                    smtp.EnableSsl = true;
+
+                var timeout = 20000;
+                Logger.Debug("Obteniendo Time Out para el envio de mail : " + idMail);
+                try
+                {
+                    timeout = Int32.Parse(ConfigurationSettings.AppSettings["MAIL_TIME_OUT"]) * 1000;
+                }
+                catch (Exception e)
+                {
+                    Logger.Error("ERROR OBTENCION TIMEOUT correo::: " + mailingRow + "//idMailing::" + mailingRow.id_mail + " ::: " + e.Message, e.InnerException);
+                }
+                smtp.Timeout = timeout;
+                #endregion
+                #endregion
+                try
+                {
+                    Logger.Debug(" Obteniendo Mensaje a Enviar: " + idMail);
+                    var mensaje = Msj(mailingRow, cnfserv);
+                    if (mensaje == null)
+                    {
+                        Logger.Debug(" Obteniendo Mensaje nulo, no cumple las condiciones para Enviar: " + idMail);
+                        MarcaRetorno(idMail, 2);
+                        return;
+                    }
+
+                    mail = new MailMessage()
+                    {
+                        Body = mensaje.MensajeHtml,
+                        IsBodyHtml = true,
+                        From = new MailAddress(cnfserv.MailRemitente)
+                    };
+                    Logger.Debug("Id Mail > 0 , proceso : " + idMail);
+                    try
+                    {
+                        Attachment thisAttachment = null;
+                        #region pdfPago
+                        if (cnfserv.esComprobante)
+                        {
+
+                            if (cnfserv.adjuntaComprobante.ToUpper().Trim().Equals("S"))
+                            {
+                                var builder = new PdfBuilder();
+                                RespuestaPdf resp;
+                                if (mailingRow.id_tipo_mail == 6 || mailingRow.id_tipo_mail == 9)
+                                    resp = builder.PdfPago(long.Parse(mailingRow.mail_llave_externa), 0);
+                                else
+                                    resp = builder.PdfPago(0, long.Parse(mailingRow.mail_llave_externa));
+
+                                Logger.Debug("Antes evaluación PDF-> " + idMail);
+                                if (resp != null && resp.PdfByte != null)
+                                {
+                                    Logger.Debug("PDF no nulo -> " + idMail);
+                                    var memStream = new MemoryStream(resp.PdfByte);
+                                    var streamWriter = new StreamWriter(memStream);
+                                    Logger.Debug("Streamwriter asociado -> " + idMail);
+                                    streamWriter.Flush();
+                                    memStream.Position = 0;
+                                    Logger.Debug("PDF Flush -> " + idMail);
+                                    thisAttachment = new Attachment(memStream, "Comprobante de Pago.pdf");
+                                    thisAttachment.ContentDisposition.FileName = "Comprobante de Pago.pdf";
+                                    mail.Attachments.Add(thisAttachment);
+                                }
+                                else
+                                {
+                                    Logger.Debug("PDF nulo -> " + idMail);
+                                    if (resp != null)
+                                        Logger.Debug("PDF nulo -> " + idMail + ", Excp->" + resp.MsgError);
+                                    MarcaRetorno(idMail, 4);
+                                    return;
+                                }
+                            }
+                            #region actualizaHtml
+
+                            Logger.Debug(" Obteniendo Imagenes: " + idMail);
+                            using (var context2 = new UniredModelEntities())
+                            {
+                                imagenes = (from i in context2.ImagenesCorreo select i).ToList();
+                            }
+
+                            if (imagenes != null && imagenes.Count > 0)
+                            {
+                                mail.Body = mail.Body.Replace("cid:", "");
+                                var max = imagenes.Max(x => x.Posicion);
+                                Logger.Debug(" Creando html , idMail : " + idMail);
+                                for (var j = 1; j <= max; j++)
+                                {
+                                    var imagenCorreo = imagenes.Where(x => x.Posicion == j).FirstOrDefault();
+                                    if (imagenCorreo == null) continue;
+
+                                    var numLink = "#link" + j;
+                                    mail.Body = mail.Body.Replace(numLink, imagenCorreo.Link.ToString(CultureInfo.InvariantCulture));
+                                    var ruta = archivoCorreo;
+                                    var ContentId = "imagen" + j;
+                                    ruta = string.Format(ruta + "/{0}", imagenCorreo.NombreImagen);
+                                    mail.Body = mail.Body.Replace(ContentId, ruta);
+                                }
+                            }
+                            #endregion
+                        }
+                        #endregion
+
+                        mail.To.Add(mailingRow.id_tipo_mail == 4 ? mensaje.Remitente : mensaje.Destinatario);
+                        mail.Subject = mensaje.Asunto;
+
+                        var enviado = false;
+                        Logger.Debug("Intentando Enviar Mail , proceso : " + idMail);
+                        try
+                        {
+                            Logger.Info("INICIO sendMail ::: " + mensaje.Destinatario + " || ID_MAIL ::" + mensaje.IdMailing + " ::: ", null);
+                            if(smtp!=null){
+                                smtp.Send(mail);
+                                Logger.Info("FIN sendMail ::: " + mensaje.Destinatario + " || ID_MAIL ::" + mensaje.IdMailing + " ::: ", null);
+                                enviado = true;
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            enviado = false;
+                            Logger.Error("Error enviar mail ::: " + mensaje.Destinatario + "//idMailing::" + mensaje.IdMailing + " ::: " + e.Message, e.InnerException);
+                        }
+                        if (mail != null)
+                            mail.Dispose();
+                        if (smtp != null)
+                            smtp.Dispose();
+
+                        if (!enviado)
+                            throw new Exception("correo imposible de enviar " + mensaje.Destinatario + "//idMailing::" + mensaje.IdMailing + " ::: ");
+                        else
+                            MarcaRetorno(mensaje.IdMailing, 0);
+                    }
+                    catch (Exception e)
+                    {
+                        Logger.Error("correo::: " + mensaje.Destinatario + "//idMailing::" + mensaje.IdMailing + " ::: " + e.Message, e.InnerException);
+                        MarcaRetorno(mensaje.IdMailing, 3);
+                    }
+                }
+                catch (Exception e)
+                {
+                    Logger.Error("ERROR EN ENVIAR::: " + e.Message, e.InnerException);
+                }
+            }
+        }
+
+        public List<int> HilosDisponibles()
+        {
+            Logger.Info("INICIO HilosDisponibles::: " + DateTime.Now);
+            var respuesta = new List<int>();
+            try
+            {
+                using (var context = new MailingEntities())
+                {
+                    var resp = context.proc_ObtenerHilos();
+                    foreach (var r in resp)
+                    {
+                        if (r != null)
+                            respuesta.Add(r.Value);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Logger.Error("ERROR EN HilosDisponibles::: " + e.Message, e.InnerException);
+            }
+            Logger.Info("INICIO HilosDisponibles::: " + DateTime.Now);
+            return respuesta;
+        }
+
+        public void ResetearCorreosEnProceso()
+        {
+            Logger.Info("INICIO CORREOSENPROCESO::: " + DateTime.Now);
+            try
+            {
+                using (var context = new MailingEntities())
+                {
+                    var correosEnProceso = (from m in context.Mailing
+                                            where m.id_estado_mail == 2
+                                            select m).ToList();
+
+                    foreach (var mailing in correosEnProceso)
+                    {
+                        mailing.id_estado_mail = 1;
+                        mailing.fecha_envio = null;
+                        context.Mailing.AddOrUpdate(mailing);
+                        context.SaveChanges();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Logger.Error("ERROR EN RESETEARCORREOS EN PROCESO::: " + e.Message, e.InnerException);
+            }
+            Logger.Info("FIN CORREOSENPROCESO::: " + DateTime.Now);
+        }
+
+        public string ObtenerPathPortal()
+        {
+            Logger.Info("INICIO ObtenerPathPortal::: " + DateTime.Now);
+            try
+            {
+                using (var context2 = new UniredModelEntities())
+                {
+                    var config = (from m in context2.Configuracion where m.NombreConfiguracion == "SITIO_COMPROBANTE" select m).FirstOrDefault();
+                    if(config!=null){
+                        return config.ValorConfiguracion;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Logger.Error("ERROR EN ObtenerPathPortal ::: " + e.Message, e.InnerException);
+            }
+            return "https://www.unired.cl";
+        }
+
+    }
+
+}

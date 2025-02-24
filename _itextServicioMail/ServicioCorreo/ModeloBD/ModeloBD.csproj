@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{151C0E68-ECB5-4427-B701-CFEC775D51C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ModeloBD</RootNamespace>
+    <AssemblyName>ModeloBD</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ephtmltopdf">
+      <HintPath>..\..\..\Portal\Unired.PortalPago.Portal.MVC4\bin\ephtmltopdf.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\Portal\Unired.PortalPago.Portal.MVC4\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Portal\Unired.PortalPago.Portal.MVC4\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbonoDinamico.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtributoImprimir.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtributoInformar.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtributoNoLlave.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CampoOrdenConsulta.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Canal.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteExpress.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CodigoEmpresaImprimir.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CodigoEmpresaInformar.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Comuna.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigMantenedorPopUp.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion.cs">
+      <DependentUpon>ModeloTransaccional.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConfiguracionCanal.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConfiguracionProcesoConsulta.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigVisualMantenedorPopUp.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaBoleta.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Contacto.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cuenta.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuentaCliente.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuentaClienteExpress.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuentaConsultada.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuentaProcesoConsulta.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CuerpoMail.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleCuenta.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleResumenPago.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Direccion.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmpresaRubro.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoBoleta.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoGeneral.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoImagen.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoMail.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoNotificacion.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoPago.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Feriado.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormatoFechaEmpresaRubro.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Grupo.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GrupoEtario.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Historico.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Historico.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Historico.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Historico.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Historico.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Identificador.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IdentificadorCtaCli.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IdentificadorCtaCliExpress.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IdentificadorPublicidad.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ImagenesCorreo.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ImagenEstilo.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Imp\PagoDAL.cs" />
+    <Compile Include="Imp\PdfBuilder.cs" />
+    <Compile Include="IntentoCliente.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IntentoPago.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IntentoUsuario.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LinkAccesoPortal.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mailing.cs">
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MailingModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MailingModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MailingModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MailingModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MailingModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorImagenes.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MedioPago.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloTransaccional.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloTransaccional.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloTransaccional.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloTransaccional.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloTransaccional.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloTransaccional.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CabeceraPago.cs" />
+    <Compile Include="Models\Header.cs" />
+    <Compile Include="Models\PagoEfectivo.cs" />
+    <Compile Include="Models\PagoEfectivoResponde.cs" />
+    <Compile Include="Models\PagoEfectivoRequest.cs" />
+    <Compile Include="Models\DetallePago.cs" />
+    <Compile Include="Models\PagoPdfModel.cs" />
+    <Compile Include="Models\RespuestaPdf.cs" />
+    <Compile Include="MultiIndustria.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Notificacion.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ObjetoConfig\ConfiguracionServer.cs" />
+    <Compile Include="ObjetoConfig\MensajeCorreo.cs" />
+    <Compile Include="ObjetoConfig\PdfHelper.cs" />
+    <Compile Include="Pago.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PagoDetalleBoleta.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Parametros.cs" />
+    <Compile Include="ParametrosConsulta.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortalDisponible.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\EnvioCorreo.cs" />
+    <Compile Include="proc_mail_ConsultaPagoGeneralNR_Result.cs">
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_mail_ConsultaPagoGeneral_Result.cs">
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_mail_ConsultaPagoNR_Result.cs">
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_mail_ConsultaPago_Result.cs">
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_mail_html_Result.cs">
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_mail_ImagenesCorreo_Result.cs">
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_mail_leer1_Result.cs">
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_mail_leer_Efectivo_Result.cs">
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_mail_leer_tipo_06_Result.cs">
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_mail_leer_tipo_09_Result.cs">
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_mail_leer_tipo_10_Result.cs">
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_mail_leer_tipo_11_Result.cs">
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="proc_ObtenerDatosMail_Result.cs">
+      <DependentUpon>MailingModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Profiles.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Promociones.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provincia.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="P_Portal_ComprobanteResumenPDFHistorico_Result.cs">
+      <DependentUpon>ModeloTransaccional.tt</DependentUpon>
+    </Compile>
+    <Compile Include="P_Portal_ComprobanteResumenPDF_Result.cs">
+      <DependentUpon>ModeloTransaccional.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Region.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReglaPresentacion.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RestriccionEPSCanal.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ResumenPago.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Roles.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rubro.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiciosProceso.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sucursal.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TerminoCondicion.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoAbono.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoCartera.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoCliente.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoMail.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoMetaDato.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_MedioPago.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Turno.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="URLPermitidaCanal.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Zona.cs">
+      <DependentUpon>Historico.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="MailingModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MailingModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Historico.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Historico.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Historico.edmx.diagram">
+      <DependentUpon>Historico.edmx</DependentUpon>
+    </None>
+    <None Include="MailingModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MailingModel.edmx</DependentUpon>
+      <LastGenOutput>MailingModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="MailingModel.edmx.diagram">
+      <DependentUpon>MailingModel.edmx</DependentUpon>
+    </None>
+    <None Include="MailingModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MailingModel.edmx</DependentUpon>
+      <LastGenOutput>MailingModel.cs</LastGenOutput>
+    </None>
+    <EntityDeploy Include="ModeloTransaccional.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModeloTransaccional.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModeloTransaccional.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeloTransaccional.edmx</DependentUpon>
+      <LastGenOutput>ModeloTransaccional.Context.cs</LastGenOutput>
+    </None>
+    <None Include="ModeloTransaccional.edmx.diagram">
+      <DependentUpon>ModeloTransaccional.edmx</DependentUpon>
+    </None>
+    <None Include="ModeloTransaccional.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeloTransaccional.edmx</DependentUpon>
+      <LastGenOutput>ModeloTransaccional.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Historico.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Historico.edmx</DependentUpon>
+      <LastGenOutput>Historico.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Historico.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Historico.edmx</DependentUpon>
+      <LastGenOutput>Historico.cs</LastGenOutput>
+    </Content>
+    <Content Include="img\facebook.jpg" />
+    <Content Include="img\pagado.png" />
+    <Content Include="img\twitter.jpg" />
+    <Content Include="img\unired-logo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

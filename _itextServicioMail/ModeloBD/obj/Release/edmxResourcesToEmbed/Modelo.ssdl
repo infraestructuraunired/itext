@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModeloModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Configuracion">
+    <Key>
+      <PropertyRef Name="NombreConfiguracion" />
+    </Key>
+    <Property Name="IdConfiguracion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreConfiguracion" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="ValorConfiguracion" Type="varchar" MaxLength="4000" />
+    <Property Name="Encriptado" Type="bit" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="150" />
+    <Property Name="Tipo" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ImagenesCorreo">
+    <Key>
+      <PropertyRef Name="IdImagenesCorreo" />
+    </Key>
+    <Property Name="IdImagenesCorreo" Type="int" Nullable="false" />
+    <Property Name="NombreImagen" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Link" Type="varchar" MaxLength="255" />
+    <Property Name="binario" Type="image" Nullable="false" />
+    <Property Name="Posicion" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ModeloModelStoreContainer">
+    <EntitySet Name="Configuracion" EntityType="Self.Configuracion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ImagenesCorreo" EntityType="Self.ImagenesCorreo" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

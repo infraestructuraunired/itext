@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MailModelStoreContainer" CdmEntityContainer="MailEntities">
+    <EntitySetMapping Name="Mailing">
+      <EntityTypeMapping TypeName="MailModel.Mailing">
+        <MappingFragment StoreEntitySet="Mailing">
+          <ScalarProperty Name="id_mail" ColumnName="id_mail" />
+          <ScalarProperty Name="id_tipo_mail" ColumnName="id_tipo_mail" />
+          <ScalarProperty Name="mail_to" ColumnName="mail_to" />
+          <ScalarProperty Name="fecha_solicitud" ColumnName="fecha_solicitud" />
+          <ScalarProperty Name="id_agente_mail" ColumnName="id_agente_mail" />
+          <ScalarProperty Name="fecha_envio" ColumnName="fecha_envio" />
+          <ScalarProperty Name="id_estado_mail" ColumnName="id_estado_mail" />
+          <ScalarProperty Name="mail_llave_externa" ColumnName="mail_llave_externa" />
+          <ScalarProperty Name="retorno_server_mail" ColumnName="retorno_server_mail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="proc_mail_leer" FunctionName="MailModel.Store.proc_mail_leer" />
+    <EntitySetMapping Name="Mailing_3Columnas">
+      <EntityTypeMapping TypeName="MailModel.Mailing_3Columnas">
+        <MappingFragment StoreEntitySet="Mailing_3Columnas">
+          <ScalarProperty Name="columna3" ColumnName="columna3" />
+          <ScalarProperty Name="columna2" ColumnName="columna2" />
+          <ScalarProperty Name="columna1" ColumnName="columna1" />
+          <ScalarProperty Name="idMailing3" ColumnName="idMailing3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="proc_mail_leer1" FunctionName="MailModel.Store.proc_mail_leer1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MailModel.proc_mail_leer1_Result">
+          <ScalarProperty Name="cl1" ColumnName="cl1" />
+          <ScalarProperty Name="cl2" ColumnName="cl2" />
+          <ScalarProperty Name="cl3" ColumnName="cl3" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="proc_mail_confirmar" FunctionName="MailModel.Store.proc_mail_confirmar" />
+    <FunctionImportMapping FunctionImportName="proc_mail_leer_encabezado" FunctionName="MailModel.Store.proc_mail_leer_encabezado" />
+    <FunctionImportMapping FunctionImportName="proc_MarcaEnProceso" FunctionName="MailModel.Store.proc_MarcaEnProceso" />
+    <FunctionImportMapping FunctionImportName="proc_MarcaRespuestaEnvio" FunctionName="MailModel.Store.proc_MarcaRespuestaEnvio" />
+    <FunctionImportMapping FunctionImportName="proc_ResetMail" FunctionName="MailModel.Store.proc_ResetMail" />
+  </EntityContainerMapping>
+</Mapping>

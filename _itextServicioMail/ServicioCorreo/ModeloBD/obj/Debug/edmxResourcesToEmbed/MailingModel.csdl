@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MailingModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MailingEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Mailing" EntityType="MailingModel.Mailing" />
+    <EntitySet Name="MailingAgentes" EntityType="MailingModel.MailingAgentes" />
+    <EntitySet Name="MailingCorrelativos" EntityType="MailingModel.MailingCorrelativos" />
+    <EntitySet Name="MailingEstado" EntityType="MailingModel.MailingEstado" />
+    <EntitySet Name="MailingHistorico" EntityType="MailingModel.MailingHistorico" />
+    <EntitySet Name="MailingParametros" EntityType="MailingModel.MailingParametros" />
+    <EntitySet Name="MailingSemaforo" EntityType="MailingModel.MailingSemaforo" />
+    <EntitySet Name="MailingSemaforoEnvio" EntityType="MailingModel.MailingSemaforoEnvio" />
+    <EntitySet Name="MailingServicioTipo" EntityType="MailingModel.MailingServicioTipo" />
+    <EntitySet Name="MailingTipo" EntityType="MailingModel.MailingTipo" />
+    <EntitySet Name="MailingTipoDetalle" EntityType="MailingModel.MailingTipoDetalle" />
+    <FunctionImport Name="proc_mail_confirmar">
+      <Parameter Name="psAgenteMail" Mode="In" Type="String" />
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+      <Parameter Name="piRetServerMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_ConsultaPago" ReturnType="Collection(MailingModel.proc_mail_ConsultaPago_Result)">
+      <Parameter Name="piIdCuenta" Mode="In" Type="Int32" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_ConsultaPagoGeneral" ReturnType="Collection(MailingModel.proc_mail_ConsultaPagoGeneral_Result)">
+      <Parameter Name="piIdPago" Mode="In" Type="Int64" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_ConsultaPagoGeneralNR" ReturnType="Collection(MailingModel.proc_mail_ConsultaPagoGeneralNR_Result)">
+      <Parameter Name="piIdPago" Mode="In" Type="Int64" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_ConsultaPagoNR" ReturnType="Collection(MailingModel.proc_mail_ConsultaPagoNR_Result)">
+      <Parameter Name="piIdCuenta" Mode="In" Type="Int64" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_enviar">
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+      <Parameter Name="psMailTo" Mode="In" Type="String" />
+      <Parameter Name="psMailLlaveExterna" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_html" ReturnType="Collection(MailingModel.proc_mail_html_Result)">
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+      <Parameter Name="psMailTo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer">
+      <Parameter Name="psAgenteMail" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer_encabezado">
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer_parametro">
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+      <Parameter Name="piIdParametro" Mode="In" Type="Int32" />
+      <Parameter Name="psValorParametro" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer_tipo_00">
+      <Parameter Name="psLlaveExterna" Mode="In" Type="String" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer_tipo_01">
+      <Parameter Name="psLlaveExterna" Mode="In" Type="String" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer_tipo_02">
+      <Parameter Name="psLlaveExterna" Mode="In" Type="String" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer_tipo_03">
+      <Parameter Name="psLlaveExterna" Mode="In" Type="String" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer_tipo_06" ReturnType="Collection(MailingModel.proc_mail_leer_tipo_06_Result)">
+      <Parameter Name="psLlaveExterna" Mode="In" Type="String" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer_tipo_07">
+      <Parameter Name="psLlaveExterna" Mode="In" Type="String" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer_tipo_08">
+      <Parameter Name="psLlaveExterna" Mode="In" Type="String" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer_tipo_09" ReturnType="Collection(MailingModel.proc_mail_leer_tipo_09_Result)">
+      <Parameter Name="psLlaveExterna" Mode="In" Type="String" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer_tipo_10" ReturnType="Collection(MailingModel.proc_mail_leer_tipo_10_Result)">
+      <Parameter Name="psLlaveExterna" Mode="In" Type="String" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer_tipo_11" ReturnType="Collection(MailingModel.proc_mail_leer_tipo_11_Result)">
+      <Parameter Name="psLlaveExterna" Mode="In" Type="String" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer_tipo_12">
+      <Parameter Name="psLlaveExterna" Mode="In" Type="String" />
+      <Parameter Name="piIdTipoMail" Mode="In" Type="Int32" />
+      <Parameter Name="piIdMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_leer1" ReturnType="Collection(MailingModel.proc_mail_leer1_Result)">
+      <Parameter Name="psAgenteMail" Mode="In" Type="String" />
+      <Parameter Name="psIdMail" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="proc_mail_parser_var">
+      <Parameter Name="psMsg" Mode="In" Type="String" />
+      <Parameter Name="psTag" Mode="In" Type="String" />
+      <Parameter Name="psValor" Mode="In" Type="String" />
+      <Parameter Name="psMsgOut" Mode="InOut" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="proc_MarcaEnProceso">
+      <Parameter Name="idmailing" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_MarcaRespuestaEnvio">
+      <Parameter Name="idmailing" Mode="In" Type="Int32" />
+      <Parameter Name="retorno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_ObtenerDatosMail" ReturnType="Collection(MailingModel.proc_ObtenerDatosMail_Result)">
+      <Parameter Name="IdMail" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc_ObtenerHilos" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="proc_ResetMail">
+      <Parameter Name="idmailing" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="procU_Reemplazar_Acentos">
+      <Parameter Name="psTx_Original" Mode="In" Type="String" />
+      <Parameter Name="tiene_acento" Mode="In" Type="String" />
+      <Parameter Name="psTx_OriginalOut" Mode="InOut" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="Mailing">
+    <Key>
+      <PropertyRef Name="id_mail" />
+      <PropertyRef Name="id_tipo_mail" />
+      <PropertyRef Name="mail_to" />
+      <PropertyRef Name="fecha_solicitud" />
+      <PropertyRef Name="id_estado_mail" />
+    </Key>
+    <Property Name="id_mail" Type="Int32" Nullable="false" />
+    <Property Name="id_tipo_mail" Type="Int32" Nullable="false" />
+    <Property Name="mail_to" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="fecha_solicitud" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="id_agente_mail" Type="Int32" />
+    <Property Name="fecha_envio" Type="DateTime" Precision="3" />
+    <Property Name="id_estado_mail" Type="Int16" Nullable="false" />
+    <Property Name="mail_llave_externa" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="retorno_server_mail" Type="Int32" />
+  </EntityType>
+  <EntityType Name="MailingAgentes">
+    <Key>
+      <PropertyRef Name="agente_mail" />
+      <PropertyRef Name="id_agente_mail" />
+      <PropertyRef Name="fecha_ultimo_reporte" />
+    </Key>
+    <Property Name="agente_mail" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="id_agente_mail" Type="Int16" Nullable="false" />
+    <Property Name="fecha_ultimo_reporte" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="agente_mail_estado" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="MailingCorrelativos">
+    <Key>
+      <PropertyRef Name="id_correlativo" />
+      <PropertyRef Name="descripcion" />
+      <PropertyRef Name="valor" />
+    </Key>
+    <Property Name="id_correlativo" Type="Int32" Nullable="false" />
+    <Property Name="descripcion" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="valor" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MailingEstado">
+    <Key>
+      <PropertyRef Name="id_estado_mail" />
+      <PropertyRef Name="descripcion_estado" />
+    </Key>
+    <Property Name="id_estado_mail" Type="Int16" Nullable="false" />
+    <Property Name="descripcion_estado" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MailingHistorico">
+    <Key>
+      <PropertyRef Name="id_mail" />
+      <PropertyRef Name="id_tipo_mail" />
+      <PropertyRef Name="mail_to" />
+      <PropertyRef Name="fecha_solicitud" />
+      <PropertyRef Name="id_estado_mail" />
+    </Key>
+    <Property Name="id_mail" Type="Int32" Nullable="false" />
+    <Property Name="id_tipo_mail" Type="Int32" Nullable="false" />
+    <Property Name="mail_to" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="fecha_solicitud" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="id_agente_mail" Type="Int32" />
+    <Property Name="fecha_envio" Type="DateTime" Precision="3" />
+    <Property Name="id_estado_mail" Type="Int16" Nullable="false" />
+    <Property Name="mail_llave_externa" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="retorno_server_mail" Type="Int32" />
+  </EntityType>
+  <EntityType Name="MailingParametros">
+    <Key>
+      <PropertyRef Name="id_tipo_mail" />
+      <PropertyRef Name="id_parametro_mail" />
+      <PropertyRef Name="descripcion_parametro" />
+      <PropertyRef Name="valor_parametro" />
+    </Key>
+    <Property Name="id_tipo_mail" Type="Int32" Nullable="false" />
+    <Property Name="id_parametro_mail" Type="Int32" Nullable="false" />
+    <Property Name="descripcion_parametro" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="valor_parametro" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MailingSemaforo">
+    <Key>
+      <PropertyRef Name="id_semaforo" />
+      <PropertyRef Name="semaforo" />
+    </Key>
+    <Property Name="id_semaforo" Type="Int16" Nullable="false" />
+    <Property Name="semaforo" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MailingSemaforoEnvio">
+    <Key>
+      <PropertyRef Name="id_semaforo" />
+      <PropertyRef Name="semaforo" />
+    </Key>
+    <Property Name="id_semaforo" Type="Int16" Nullable="false" />
+    <Property Name="semaforo" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MailingServicioTipo">
+    <Key>
+      <PropertyRef Name="id_tipo_mail" />
+      <PropertyRef Name="servicio_ejecutar" />
+    </Key>
+    <Property Name="id_tipo_mail" Type="Int32" Nullable="false" />
+    <Property Name="servicio_ejecutar" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="variables" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="mail_llave_externa" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MailingTipo">
+    <Key>
+      <PropertyRef Name="id_tipo_mail" />
+      <PropertyRef Name="descripcion_tipo" />
+    </Key>
+    <Property Name="id_tipo_mail" Type="Int32" Nullable="false" />
+    <Property Name="descripcion_tipo" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="MailingTipoDetalle">
+    <Key>
+      <PropertyRef Name="id_tipo_mail" />
+      <PropertyRef Name="id_seccion_mail" />
+      <PropertyRef Name="id_linea" />
+      <PropertyRef Name="linea_mail" />
+    </Key>
+    <Property Name="id_tipo_mail" Type="Int32" Nullable="false" />
+    <Property Name="id_seccion_mail" Type="Int16" Nullable="false" />
+    <Property Name="id_linea" Type="Int16" Nullable="false" />
+    <Property Name="linea_mail" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <ComplexType Name="proc_mail_ConsultaPago_Result">
+    <Property Type="Int32" Name="tipo_mail" Nullable="true" />
+    <Property Type="Int32" Name="seq_mail" Nullable="true" />
+    <Property Type="String" Name="msg_mail" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="proc_mail_ConsultaPagoGeneral_Result">
+    <Property Type="Int32" Name="tipo_mail" Nullable="true" />
+    <Property Type="Int32" Name="seq_mail" Nullable="true" />
+    <Property Type="String" Name="msg_mail" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="proc_mail_ConsultaPagoGeneralNR_Result">
+    <Property Type="Int32" Name="tipo_mail" Nullable="true" />
+    <Property Type="Int32" Name="seq_mail" Nullable="true" />
+    <Property Type="String" Name="msg_mail" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="proc_mail_ConsultaPagoNR_Result">
+    <Property Type="Int32" Name="tipo_mail" Nullable="true" />
+    <Property Type="Int32" Name="seq_mail" Nullable="true" />
+    <Property Type="String" Name="msg_mail" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="proc_mail_html_Result">
+    <Property Type="Int32" Name="Column1" Nullable="false" />
+    <Property Type="String" Name="Column2" Nullable="false" MaxLength="182" />
+  </ComplexType>
+  <ComplexType Name="proc_mail_leer_tipo_06_Result">
+    <Property Type="Int32" Name="tipo_mail" Nullable="true" />
+    <Property Type="Int32" Name="seq_mail" Nullable="true" />
+    <Property Type="String" Name="msg_mail" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="proc_mail_leer_tipo_09_Result">
+    <Property Type="Int32" Name="tipo_mail" Nullable="true" />
+    <Property Type="Int32" Name="seq_mail" Nullable="true" />
+    <Property Type="String" Name="msg_mail" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="proc_mail_leer1_Result">
+    <Property Type="String" Name="cl1" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="cl2" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="cl3" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="proc_ObtenerDatosMail_Result">
+    <Property Type="Int32" Name="id_mail" Nullable="false" />
+    <Property Type="Int32" Name="id_tipo_mail" Nullable="false" />
+    <Property Type="String" Name="mail_to" Nullable="false" MaxLength="255" />
+    <Property Type="DateTime" Name="fecha_solicitud" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="id_agente_mail" Nullable="true" />
+    <Property Type="DateTime" Name="fecha_envio" Nullable="true" Precision="23" />
+    <Property Type="Int16" Name="id_estado_mail" Nullable="false" />
+    <Property Type="String" Name="mail_llave_externa" Nullable="true" MaxLength="255" />
+    <Property Type="Int32" Name="retorno_server_mail" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="proc_mail_leer_tipo_11_Result">
+    <Property Type="Int32" Name="tipo_mail" Nullable="true" />
+    <Property Type="Int32" Name="seq_mail" Nullable="true" />
+    <Property Type="String" Name="msg_mail" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="proc_mail_leer_tipo_10_Result">
+    <Property Type="Int32" Name="tipo_mail" Nullable="true" />
+    <Property Type="Int32" Name="seq_mail" Nullable="true" />
+    <Property Type="String" Name="msg_mail" Nullable="true" />
+  </ComplexType>
+</Schema>

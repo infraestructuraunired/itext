@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UniredModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="UniredModelEntities" p1:LazyLoadingEnabled="true">
+    <FunctionImport Name="P_Portal_ComprobanteResumenPDF" ReturnType="Collection(UniredModel.P_Portal_ComprobanteResumenPDF_Result)">
+      <Parameter Name="Pi_IdPago" Mode="In" Type="Int64" />
+      <Parameter Name="Pi_IdCuenta" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="P_Portal_ComprobanteResumenPDFHistorico" ReturnType="Collection(UniredModel.P_Portal_ComprobanteResumenPDFHistorico_Result)">
+      <Parameter Name="Pi_IdPago" Mode="In" Type="Int64" />
+      <Parameter Name="Pi_IdCuenta" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <EntitySet Name="Configuracion" EntityType="UniredModel.Configuracion" />
+  </EntityContainer>
+  <ComplexType Name="P_Portal_ComprobanteResumenPDF_Result">
+    <Property Type="String" Name="NombreCliente" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="IdPago" Nullable="false" />
+    <Property Type="String" Name="Cub" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="FechaPago" Nullable="false" Precision="23" />
+    <Property Type="String" Name="MedioPago" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="OrdenTienda" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NombreEmpresaRubro" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Identificador" Nullable="false" MaxLength="500" />
+    <Property Type="Int32" Name="Monto" Nullable="false" />
+    <Property Type="String" Name="FechaVctoCuenta" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="TbkCodAutorizacion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CodigoEmpresa" Nullable="true" MaxLength="250" />
+    <Property Type="Int32" Name="IdEmpresaRubro" Nullable="false" />
+    <Property Type="Int64" Name="IdCuenta" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="P_Portal_ComprobanteResumenPDFHistorico_Result">
+    <Property Type="String" Name="NombreCliente" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="IdPago" Nullable="false" />
+    <Property Type="String" Name="Cub" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="FechaPago" Nullable="false" Precision="23" />
+    <Property Type="String" Name="MedioPago" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="OrdenTienda" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NombreEmpresaRubro" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Identificador" Nullable="false" MaxLength="500" />
+    <Property Type="Int32" Name="Monto" Nullable="false" />
+    <Property Type="String" Name="FechaVctoCuenta" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="TbkCodAutorizacion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CodigoEmpresa" Nullable="true" MaxLength="250" />
+    <Property Type="Int32" Name="IdEmpresaRubro" Nullable="false" />
+    <Property Type="Int64" Name="IdCuenta" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="Configuracion">
+    <Key>
+      <PropertyRef Name="NombreConfiguracion" />
+    </Key>
+    <Property Type="Int32" Name="IdConfiguracion" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="NombreConfiguracion" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ValorConfiguracion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Encriptado" />
+    <Property Type="String" Name="Descripcion" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Tipo" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModeloModelStoreContainer" CdmEntityContainer="ModeloEntities">
+    <EntitySetMapping Name="Configuracion">
+      <EntityTypeMapping TypeName="ModeloModel.Configuracion">
+        <MappingFragment StoreEntitySet="Configuracion">
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Encriptado" ColumnName="Encriptado" />
+          <ScalarProperty Name="IdConfiguracion" ColumnName="IdConfiguracion" />
+          <ScalarProperty Name="NombreConfiguracion" ColumnName="NombreConfiguracion" />
+          <ScalarProperty Name="ValorConfiguracion" ColumnName="ValorConfiguracion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImagenesCorreo">
+      <EntityTypeMapping TypeName="ModeloModel.ImagenesCorreo">
+        <MappingFragment StoreEntitySet="ImagenesCorreo">
+          <ScalarProperty Name="Posicion" ColumnName="Posicion" />
+          <ScalarProperty Name="binario" ColumnName="binario" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="NombreImagen" ColumnName="NombreImagen" />
+          <ScalarProperty Name="IdImagenesCorreo" ColumnName="IdImagenesCorreo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

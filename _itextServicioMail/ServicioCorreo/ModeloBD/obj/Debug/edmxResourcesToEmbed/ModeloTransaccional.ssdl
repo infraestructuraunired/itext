@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UniredModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="UniredModelStoreContainer">
+    <EntitySet Name="ImagenesCorreo" EntityType="UniredModel.Store.ImagenesCorreo" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="ImagenesCorreo">
+    <Key>
+      <PropertyRef Name="IdImagenesCorreo" />
+    </Key>
+    <Property Name="IdImagenesCorreo" Type="int" Nullable="false" />
+    <Property Name="NombreImagen" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="Link" Type="varchar" MaxLength="255" />
+    <Property Name="binario" Type="image" Nullable="false" />
+    <Property Name="Posicion" Type="int" Nullable="false" />
+  </EntityType>
+  <Function Name="P_Portal_ComprobanteResumenPDF" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Pi_IdPago" Type="bigint" Mode="In" />
+    <Parameter Name="Pi_IdCuenta" Type="bigint" Mode="In" />
+  </Function>
+</Schema>
